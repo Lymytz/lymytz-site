@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@keyframes spotlight {
+    0% { transform: translate(-30%, -30%) }
+    25% { transform: translate(10%, -20%) }
+    50% { transform: translate(30%, 30%) }
+    75% { transform: translate(-10%, 20%) }
+    100% { transform: translate(-30%, -30%) }
+}
+@theme {
+    --color-primary: oklch(0.424 0.199 265.638);
+    --color-secondary: oklch(0.705 0.213 47.604);
+    --font-primary: Montserrat, sans-serif;
+    --animate-spotlight: spotlight 1s ease-in-out infinite alternate;
+}
+
+.clip-arrow-right {
+    clip-path: polygon(0 0, 100% 50%, 0 100%, 0 0);
+}
+
+.clip-right-end {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 0, 0% 10%, 100% 50%, 0% 90%);
+}
+
+.clip-right-fold {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0% 90%, 80% 50%, 0% 10%);
+}
