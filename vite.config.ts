@@ -6,8 +6,11 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineConfig({
     plugins: [
         react(),
-        tailwindcss()
+        tailwindcss(),
     ],
+    optimizeDeps: {
+        include: ['swiper/react', 'swiper', 'swiper/modules'],
+    },
     css:{
         postcss: './postcss.config.js'
     }

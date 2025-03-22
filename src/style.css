@@ -1,4 +1,7 @@
 @import "tailwindcss";
+@import "swiper/css";
+@import 'swiper/css/navigation';
+@import 'swiper/css/pagination';
 
 @keyframes spotlight {
     0% { transform: translate(-30%, -30%) }
@@ -24,4 +27,51 @@
 
 .clip-right-fold {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0% 90%, 80% 50%, 0% 10%);
+}
+.swiper{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.mySwiper{
+    height: 100%;
+}
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+}
+
+.swiper-slide img {
+    width: 100%;
+}
+
+.autoplay-progress {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    z-index: 10;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: var(--swiper-theme-color);
+}
+
+.autoplay-progress svg {
+    --progress: 0;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    stroke-width: 4px;
+    stroke: var(--swiper-theme-color);
+    fill: none;
+    stroke-dashoffset: calc(125.6px * (1 - var(--progress)));
+    stroke-dasharray: 125.6;
+    transform: rotate(-90deg);
 }
