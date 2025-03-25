@@ -6,11 +6,11 @@ const steps = [
     {num: "05", text: "Savoir quelles sont vos marges !", color: "bg-amber-800", arrow: "bg-amber-900"},
     {num: "06", text: "Maîtriser votre planning et agenda", color: "bg-emerald-600", arrow: "bg-emerald-700"},
     {num: "07", text: "Prendre en main votre production", color: "bg-red-500", arrow: "bg-red-600"},
-    {num: "08", text: "Et plus encore", color: "bg-teal-600", arrow: "bg-teal-700"},
+    {num: "00", text: "Et plus encore", color: "bg-teal-600", arrow: "bg-teal-700"},
 ];
 const FrontItem = () => {
     return (
-        <div className="relative w-[70%] py-5">
+        <div className="relative lg:w-[70%] lg:py-5">
             {steps.map((step, idx) => (
                 <div
                     key={step.num}
