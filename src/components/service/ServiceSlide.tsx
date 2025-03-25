@@ -4,16 +4,16 @@ import SlideServiceItems from "./SlideServiceItems.tsx";
 import {useRef} from "react";
 
 
-const textDev = <p className={'text-2xl/10'}>
+const textDev = <p className={'text-lg lg:text-2xl/10'}>
     Notre objectif premier étant de booster votre croissance, <br/>
     nous écoutons vos besoins propres et vous apportons des développements spécfiques
 </p>
-const textFormation = <p className={'text-2xl/10'}>
+const textFormation = <p className={'text-lg lg:text-2xl/10'}>
     Nous avons conscience que votre coeur de métier n'est pas l'informatique, <br/>
     aussi, nous mettons un accent <span className={'text-red-500'}>particulier sur l'accompagnement</span> permanent de
     vos équipes afin de leur offrir une expérience de travail la plus fluide possible
 </p>
-const textEditeur = <p className={'text-2xl/10'}>
+const textEditeur = <p className={'text-lg lg:text-2xl/10'}>
     Notre expertise est le développement de solutions logiciels standard et sur mesure.<br/>
     Discutez de vos besoins avec nos experts et nous les transformerons en solutions digitale à forte valeur ajouté
 </p>

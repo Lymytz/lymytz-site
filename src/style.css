@@ -16,7 +16,10 @@
     --font-primary: Montserrat, sans-serif;
     --animate-spotlight: spotlight 1s ease-in-out infinite alternate;
 }
-
+html{
+    margin: 0 !important;
+    padding: 0;
+}
 .clip-arrow-right {
     clip-path: polygon(0 0, 100% 50%, 0 100%, 0 0);
 }

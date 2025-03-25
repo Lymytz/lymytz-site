@@ -1,6 +1,6 @@
 const HomeAbout = () => {
     return (
-        <div className={'text-gray-200 w-[50%] m-auto p-10'}>
+        <div className={'text-gray-200 w-[98%] lg:w-[50%] m-auto p-5 lg:p-10'}>
             <h1 className={'text-center p-5'}>Qui sommes-nous?</h1>
             <p className={'text-justify'}>
                 Lymytz System est un éditeur de logiciels basé à Lille (France),
