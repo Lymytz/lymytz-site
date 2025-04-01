@@ -1,5 +1,4 @@
 import Banner from "../components/Banner.tsx";
-import Header from "../components/Header.tsx";
 import FrontItem from "../components/MisEnAvant/FrontItem.tsx";
 import ProductFront from "../components/ProductFront.tsx";
 import ServiceSlide from "../components/service/ServiceSlide.tsx";
@@ -18,10 +17,9 @@ const title = 'Reprenez le contrôle avec Lymytz'
 const Home = () => {
     return (
         <>
-            <Header/>
             <Banner title={title} subText={subtext}/>
-            <div className={'bg-blue-900 p-10 flex justify-center'}>
-                <p className={'text-4xl text-center text-gray-200 w-[80%]'}>
+            <div className={'bg-blue-900 py-5 lg:p-10 flex justify-center'}>
+                <p className={'text-2xl md:text-4xl text-center text-gray-200 w-[80%]'}>
                     La solution <span className={'text-secondary'}>Lymytz System</span> en quelque mot
                 </p>
             </div>
@@ -35,7 +33,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <div className={'flex justify-center bg-blue-900 p-12'}>
+            <div className={'flex justify-center bg-blue-900 px-2 py-5 lg:p-10 mt-10'}>
                 <h2 className={'text-4xl text-white font-bold'}>
                     Comment pouvons nous <span className={'text-secondary'}>accélérer</span> votre transformation
                     digitale?</h2>
@@ -43,7 +41,7 @@ const Home = () => {
             <div className={'h-100 lg:h-150 flex max-w-[1450px] w-full m-auto'}>
                 <ServiceSlide/>
             </div>
-            <div className={'flex justify-center bg-blue-900 p-12'}>
+            <div className={'flex justify-center bg-blue-900 px-2 py-5 lg:p-10'}>
                 <h2 className={'text-4xl text-white font-bold'}>
                     Qu'est ce que la solution <span className={'text-secondary'}>Lymytz System</span> apporte à votre entreprise?</h2>
             </div>

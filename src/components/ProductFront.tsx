@@ -1,6 +1,6 @@
 const ProductFront = () => {
     return (
-        <section className="relative w-full h-[500px] flex items-center justify-center overflow-hidden mt-15
+        <section className="relative w-[98%] m-auto h-[500px] flex items-center justify-center overflow-hidden mt-5 md:mt-15
         rounded-2xl ">
             {/* Image de fond nette */}
             <div className="absolute inset-0">
