@@ -1,11 +1,13 @@
 import {Outlet} from "react-router";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faFacebook, faLinkedin, faYoutube} from "@fortawesome/free-brands-svg-icons";
+import Header from "../components/Header.tsx";
 
 const Layout = () => {
     return (
         <div className="flex flex-col min-h-screen w-full">
             <main className="flex-grow justify-center">
+                <Header/>
                 <Outlet/>
             </main>
             <footer className="bg-secondary text-white p-5 text-center w-full text-sm px-10">

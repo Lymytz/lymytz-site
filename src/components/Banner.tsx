@@ -8,12 +8,12 @@ interface BannerProps {
 
 const Banner = ({title, subText}: BannerProps) => {
     return (
-        <section className="relative flex justify-between w-full bg-white h-140 mt-8 pl-10">
+        <section className="relative flex justify-between w-full bg-white py-10 md:py-0 lg:h-140 mt-4 lg:mt-8 pl-10">
             <div className="w-[70%] flex flex-col justify-center">
                 <motion.h1 initial={{opacity: 0, y: 150}}
                            animate={{opacity: 1, y: 0}}
                            transition={{duration: 0.8, ease: "easeOut"}}
-                           className="text-7xl font-bold text-black">
+                           className="text-4xl md:text-7xl font-bold text-black">
                     {title}
                 </motion.h1>
                 <motion.p initial={{opacity: 0, y: 150}}
@@ -35,7 +35,7 @@ const Banner = ({title, subText}: BannerProps) => {
                     </button>
                 </div>
             </div>
-            <div className="relative w-[30%] bg-gray-300 poly">
+            <div className="relative w-[30%] bg-gray-300 poly hidden lg:block">
                 <video controls={false} autoPlay loop className={'w-full h-full bg-secondary object-cover '}>
                     <source src="/video/banner_video.webm" type="video/webm"/>
                 </video>

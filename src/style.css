@@ -78,3 +78,8 @@ html{
     stroke-dasharray: 125.6;
     transform: rotate(-90deg);
 }
+@media screen and (max-width: 380px){
+    .swiper-pagination{
+        padding: 10px !important;
+    }
+}
