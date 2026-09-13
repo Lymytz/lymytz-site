@@ -1,14 +1,659 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lymytz Site</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lymytz ERP – Abonnez votre entreprise</title>
+  <meta name="description" content="Démarrez avec Lymytz ERP : une solution modulaire tout-en-un pour gérer la comptabilité, les ventes, la GRH, la production et plus encore. Inscription en ligne en quelques minutes." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════ NAVBAR ═════════════════════════════ -->
+<nav class="navbar" id="navbar">
+  <div class="container">
+    <div class="navbar-inner">
+      <a href="#" class="logo">
+        <div class="logo-icon">L</div>
+        <span class="logo-text">Lymytz<span>ERP</span></span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#modules">Modules</a></li>
+        <li><a href="#pricing">Tarifs</a></li>
+        <li><a href="#how-it-works">Comment ça marche</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a href="#register" class="btn btn-primary" style="padding:10px 22px;font-size:0.85rem;">
+          Commencer gratuit
+        </a>
+      </div>
+      <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Menu">☰</button>
+    </div>
+  </div>
+</nav>
+
+<!-- ═══════════════════════════════════════════ HERO ══════════════════════════════ -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-mesh"></div>
+  <div class="hero-grid"></div>
+  <div class="container">
+    <div class="hero-content">
+      <!-- Left -->
+      <div class="hero-left">
+        <div class="hero-badge">
+          <span class="hero-badge-dot"></span>
+          ERP SaaS Multi-entreprises · Version 7.4
+        </div>
+        <h1 class="hero-title">
+          Gérez votre entreprise avec<br/>
+          <em class="text-gradient">l'intelligence de Lymytz</em>
+        </h1>
+        <p class="hero-desc">
+          Lymytz ERP regroupe tous vos processus métier dans une seule plateforme :
+          achats, ventes, comptabilité, paie, production et projets.
+          Activez uniquement les modules dont vous avez besoin.
+        </p>
+        <div class="hero-cta">
+          <a href="#register" class="btn btn-primary" id="hero-cta-btn">
+            🚀 Démarrer gratuitement
+          </a>
+          <a href="#modules" class="btn btn-secondary">Découvrir les modules</a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <div class="hero-stat-num">6</div>
+            <div class="hero-stat-label">Modules</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-num">100%</div>
+            <div class="hero-stat-label">Personnalisable</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-num">∞</div>
+            <div class="hero-stat-label">Agences</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right – visual card stack -->
+      <div class="hero-visual">
+        <div class="hero-card-stack">
+          <!-- Back cards -->
+          <div class="hero-card hero-card-back2"></div>
+          <div class="hero-card hero-card-back1"></div>
+          <!-- Main card -->
+          <div class="hero-card hero-card-main">
+            <div class="hero-card-title">✦ Nouveau tenant</div>
+            <div class="hero-card-company">Entreprise ACME SARL</div>
+            <div class="hero-card-sub">Cameroun · Activé le 03/09/2026</div>
+            <div class="hero-card-modules">
+              <div class="hero-card-module"><span class="dot"></span>Commercial</div>
+              <div class="hero-card-module"><span class="dot"></span>Comptabilité</div>
+              <div class="hero-card-module"><span class="dot"></span>GRH</div>
+              <div class="hero-card-module"><span class="dot"></span>Production</div>
+              <div class="hero-card-module"><span class="dot"></span>Mutuelle</div>
+              <div class="hero-card-module"><span class="dot"></span>Projets</div>
+            </div>
+          </div>
+          <!-- Floating badges -->
+          <div class="floating-badge floating-badge-1">✅ Compte créé</div>
+          <div class="floating-badge floating-badge-2">⚡ Accès immédiat</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════ MODULES ══════════════════════════ -->
+<section id="modules" class="section">
+  <div class="container">
+    <div class="section-header fade-up">
+      <span class="section-tag">Modules</span>
+      <h2>Tout ce dont votre entreprise a besoin</h2>
+      <p>Choisissez les modules adaptés à votre activité. Chaque module est indépendant et peut être activé ou désactivé à tout moment.</p>
+    </div>
+    <div class="modules-grid">
+
+      <div class="module-card mod-commercial fade-up" style="transition-delay:0.0s">
+        <div class="module-icon">🛒</div>
+        <h3>Commercial</h3>
+        <p>Gestion complète du cycle commercial : achats, ventes, inventaires et facturation clients/fournisseurs.</p>
+        <ul class="module-features">
+          <li>Bons de commande &amp; réception</li>
+          <li>Facturation &amp; devis</li>
+          <li>Gestion des stocks multi-dépôts</li>
+          <li>Vente en ligne intégrée</li>
+        </ul>
+      </div>
+
+      <div class="module-card mod-compta fade-up" style="transition-delay:0.1s">
+        <div class="module-icon">📊</div>
+        <h3>Comptabilité</h3>
+        <p>Plan comptable OHADA, grand livre, journaux, bilans et tableaux de bord financiers en temps réel.</p>
+        <ul class="module-features">
+          <li>Plan comptable personnalisable</li>
+          <li>Journaux &amp; grand livre</li>
+          <li>Bilan &amp; compte de résultat</li>
+          <li>États financiers (PDF)</li>
+        </ul>
+      </div>
+
+      <div class="module-card mod-grh fade-up" style="transition-delay:0.2s">
+        <div class="module-icon">👥</div>
+        <h3>GRH</h3>
+        <p>Gestion des ressources humaines : fiches employés, paie, congés, formations et évaluations.</p>
+        <ul class="module-features">
+          <li>Dossiers &amp; contrats employés</li>
+          <li>Calcul de la paie (CNPS)</li>
+          <li>Gestion des congés</li>
+          <li>Plans de formation</li>
+        </ul>
+      </div>
+
+      <div class="module-card mod-production fade-up" style="transition-delay:0.3s">
+        <div class="module-icon">🏭</div>
+        <h3>Production</h3>
+        <p>Planification et suivi des ordres de fabrication, nomenclatures et traçabilité de la chaîne de production.</p>
+        <ul class="module-features">
+          <li>Ordres de fabrication</li>
+          <li>Nomenclatures BOM</li>
+          <li>Suivi des OF en temps réel</li>
+          <li>Coûts de revient</li>
+        </ul>
+      </div>
+
+      <div class="module-card mod-mutuelle fade-up" style="transition-delay:0.4s">
+        <div class="module-icon">🏥</div>
+        <h3>Mutuelle</h3>
+        <p>Gestion des cotisations sociales, prestations membres, remboursements et tableau de bord mutuelle.</p>
+        <ul class="module-features">
+          <li>Adhérents &amp; cotisations</li>
+          <li>Prestations &amp; remboursements</li>
+          <li>Dépenses &amp; budgets</li>
+          <li>Rapports statistiques</li>
+        </ul>
+      </div>
+
+      <div class="module-card mod-projets fade-up" style="transition-delay:0.5s">
+        <div class="module-icon">📋</div>
+        <h3>Projets</h3>
+        <p>Suivi de projets, allocation des ressources, gestion des budgets et reporting d'avancement.</p>
+        <ul class="module-features">
+          <li>Création &amp; planification</li>
+          <li>Allocation de ressources</li>
+          <li>Suivi budgétaire</li>
+          <li>Rapports d'avancement</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════ PRICING ══════════════════════════ -->
+<section id="pricing" class="section">
+  <div class="container">
+    <div class="section-header fade-up">
+      <span class="section-tag">Tarifs</span>
+      <h2>Des plans adaptés à toute taille d'entreprise</h2>
+      <p>Commencez gratuitement, évoluez à votre rythme. Pas de frais cachés, pas d'engagement.</p>
+    </div>
+    <div class="pricing-grid">
+
+      <!-- STARTER -->
+      <div class="pricing-card fade-up" style="transition-delay:0s">
+        <div class="pricing-plan">Starter</div>
+        <div class="pricing-price">
+          <span class="pricing-amount">Gratuit</span>
+        </div>
+        <div class="pricing-period">Pendant 3 mois · Puis sur devis</div>
+        <div class="pricing-tagline">Idéal pour découvrir Lymytz ERP et tester vos processus.</div>
+        <div class="pricing-separator"></div>
+        <ul class="pricing-features">
+          <li><span class="check">✓</span> Jusqu'à 3 modules</li>
+          <li><span class="check">✓</span> 1 agence / 5 utilisateurs</li>
+          <li><span class="check">✓</span> Facturation de base</li>
+          <li><span class="check">✓</span> Rapports standards</li>
+          <li class="disabled"><span class="cross">✗</span> Modules avancés</li>
+          <li class="disabled"><span class="cross">✗</span> Support prioritaire</li>
+          <li class="disabled"><span class="cross">✗</span> API &amp; intégrations</li>
+        </ul>
+        <button class="btn btn-outline" data-plan-cta="starter">Démarrer gratuitement</button>
+      </div>
+
+      <!-- PRO (Featured) -->
+      <div class="pricing-card featured fade-up" style="transition-delay:0.1s">
+        <div class="pricing-badge">Populaire</div>
+        <div class="pricing-plan">Pro</div>
+        <div class="pricing-price">
+          <span class="pricing-currency">CFA</span>
+          <span class="pricing-amount">49 000</span>
+        </div>
+        <div class="pricing-period">par mois · facturation annuelle possible</div>
+        <div class="pricing-tagline">La solution complète pour les PME en croissance rapide.</div>
+        <div class="pricing-separator"></div>
+        <ul class="pricing-features">
+          <li><span class="check">✓</span> 6 modules inclus</li>
+          <li><span class="check">✓</span> Agences illimitées</li>
+          <li><span class="check">✓</span> Utilisateurs illimités</li>
+          <li><span class="check">✓</span> Rapports avancés &amp; JasperReports</li>
+          <li><span class="check">✓</span> Support prioritaire (48h)</li>
+          <li><span class="check">✓</span> Mises à jour incluses</li>
+          <li><span class="check">✓</span> Export Excel &amp; PDF</li>
+        </ul>
+        <button class="btn btn-primary" data-plan-cta="pro">Choisir Pro</button>
+      </div>
+
+      <!-- ENTERPRISE -->
+      <div class="pricing-card fade-up" style="transition-delay:0.2s">
+        <div class="pricing-plan">Enterprise</div>
+        <div class="pricing-price">
+          <span class="pricing-amount" style="font-size:2rem;">Sur devis</span>
+        </div>
+        <div class="pricing-period">Personnalisé selon vos besoins</div>
+        <div class="pricing-tagline">Pour les grandes entreprises avec des besoins spécifiques.</div>
+        <div class="pricing-separator"></div>
+        <ul class="pricing-features">
+          <li><span class="check">✓</span> Tout le plan Pro</li>
+          <li><span class="check">✓</span> Déploiement on-premise</li>
+          <li><span class="check">✓</span> Personnalisation avancée</li>
+          <li><span class="check">✓</span> Intégration SOAP / REST</li>
+          <li><span class="check">✓</span> SLA garanti</li>
+          <li><span class="check">✓</span> Formation &amp; accompagnement</li>
+          <li><span class="check">✓</span> Support dédié</li>
+        </ul>
+        <button class="btn btn-secondary" data-plan-cta="enterprise">Nous contacter</button>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════ HOW IT WORKS ══════════════════════ -->
+<section id="how-it-works" class="section">
+  <div class="container">
+    <div class="section-header fade-up">
+      <span class="section-tag">Processus</span>
+      <h2>Opérationnel en quelques minutes</h2>
+      <p>Quatre étapes simples pour onboarder votre entreprise sur Lymytz ERP.</p>
+    </div>
+    <div class="steps-grid">
+      <div class="step-card fade-up" data-step="1" style="transition-delay:0s">
+        <div class="step-number">1</div>
+        <h3>Créez votre compte société</h3>
+        <p>Renseignez les informations de votre entreprise : nom, forme juridique, coordonnées et localisation.</p>
+      </div>
+      <div class="step-card fade-up" data-step="2" style="transition-delay:0.1s">
+        <div class="step-number">2</div>
+        <h3>Choisissez vos modules</h3>
+        <p>Sélectionnez uniquement les modules dont vous avez besoin parmi les 6 disponibles.</p>
+      </div>
+      <div class="step-card fade-up" data-step="3" style="transition-delay:0.2s">
+        <div class="step-number">3</div>
+        <h3>Sélectionnez votre plan</h3>
+        <p>Starter gratuit, Pro ou Enterprise. Changez de plan à tout moment selon votre croissance.</p>
+      </div>
+      <div class="step-card fade-up" data-step="4" style="transition-delay:0.3s">
+        <div class="step-number">4</div>
+        <h3>Accès immédiat</h3>
+        <p>Notre équipe configure votre espace en moins de 24h. Vous recevez vos identifiants par email.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════ REGISTER FORM ═════════════════════ -->
+<section id="register" class="section">
+  <div class="container">
+    <div class="section-header fade-up">
+      <span class="section-tag">Inscription</span>
+      <h2>Créez votre compte entreprise</h2>
+      <p>Abonnez votre société à Lymytz ERP en quelques étapes simples.</p>
+    </div>
+
+    <div class="form-wrapper fade-up">
+      <!-- Progress -->
+      <div class="form-progress" id="form-progress">
+        <div class="progress-fill" id="progress-fill" style="position:absolute;top:20px;left:0;height:2px;background:linear-gradient(90deg,#6366f1,#8b5cf6,#06b6d4);transition:width 0.4s ease;z-index:1;width:0%"></div>
+        <div class="progress-step active" data-step="1">
+          <div class="progress-dot">1</div>
+          <span class="progress-label">Société</span>
+        </div>
+        <div class="progress-step" data-step="2">
+          <div class="progress-dot">2</div>
+          <span class="progress-label">Modules</span>
+        </div>
+        <div class="progress-step" data-step="3">
+          <div class="progress-dot">3</div>
+          <span class="progress-label">Plan</span>
+        </div>
+        <div class="progress-step" data-step="4">
+          <div class="progress-dot">4</div>
+          <span class="progress-label">Confirmation</span>
+        </div>
+      </div>
+
+      <!-- Form Card -->
+      <div class="form-card">
+
+        <!-- ── STEP 1 : Infos Société ── -->
+        <div class="form-step active" data-step="1">
+          <div class="form-step-title">Informations de votre société</div>
+          <div class="form-step-subtitle">Ces informations correspondent à votre tenant dans le système.</div>
+
+          <div class="form-grid">
+            <div class="form-group full">
+              <label class="form-label" for="societe_nom">Raison sociale <span>*</span></label>
+              <input class="form-input" id="societe_nom" type="text" placeholder="Ex : ACME Sarl, Tech Solutions SA..." />
+              <span class="form-error" id="err-nom">Veuillez saisir un nom d'au moins 2 caractères.</span>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="societe_forme">Forme juridique <span>*</span></label>
+              <select class="form-select" id="societe_forme">
+                <option value="">— Sélectionner —</option>
+                <option value="SARL">SARL</option>
+                <option value="SA">SA</option>
+                <option value="SAS">SAS</option>
+                <option value="SNC">SNC</option>
+                <option value="EURL">EURL</option>
+                <option value="GIE">GIE</option>
+                <option value="Association">Association</option>
+                <option value="Autre">Autre</option>
+              </select>
+              <span class="form-error" id="err-forme">Veuillez sélectionner une forme juridique.</span>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="societe_capital">Capital social (FCFA)</label>
+              <input class="form-input" id="societe_capital" type="number" placeholder="Ex : 1000000" min="0" />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="societe_email">Email professionnel <span>*</span></label>
+              <input class="form-input" id="societe_email" type="email" placeholder="contact@masociete.com" />
+              <span class="form-error" id="err-email">Veuillez saisir un email valide.</span>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="societe_tel">Téléphone <span>*</span></label>
+              <input class="form-input" id="societe_tel" type="tel" placeholder="+237 6XX XXX XXX" />
+              <span class="form-error" id="err-tel">Veuillez saisir un numéro valide.</span>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="societe_pays">Pays</label>
+              <select class="form-select" id="societe_pays">
+                <option value="">— Sélectionner —</option>
+                <option value="Cameroun" selected>Cameroun</option>
+                <option value="Côte d'Ivoire">Côte d'Ivoire</option>
+                <option value="Sénégal">Sénégal</option>
+                <option value="Gabon">Gabon</option>
+                <option value="Congo">Congo</option>
+                <option value="Tchad">Tchad</option>
+                <option value="RDC">RDC</option>
+                <option value="Mali">Mali</option>
+                <option value="Burkina Faso">Burkina Faso</option>
+                <option value="Autre">Autre</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="societe_ville">Ville / Siège social</label>
+              <input class="form-input" id="societe_ville" type="text" placeholder="Ex : Douala, Yaoundé..." />
+            </div>
+
+            <div class="form-group full">
+              <label class="form-label" for="societe_adresse">Adresse du siège</label>
+              <input class="form-input" id="societe_adresse" type="text" placeholder="Rue, quartier, BP..." />
+            </div>
+          </div>
+
+          <div class="form-nav">
+            <span class="hint">Étape 1 sur 4</span>
+            <button class="btn btn-primary" data-action="next">Suivant →</button>
+          </div>
+        </div>
+
+        <!-- ── STEP 2 : Modules ── -->
+        <div class="form-step" data-step="2">
+          <div class="form-step-title">Sélectionnez vos modules ERP</div>
+          <div class="form-step-subtitle">Activez les modules correspondant à votre activité. Vous pourrez en ajouter ou retirer à tout moment.</div>
+
+          <div class="modules-select-grid" id="module-select-grid">
+            <!-- Filled by JS -->
+          </div>
+          <div id="module-count" style="text-align:center;font-size:0.85rem;color:var(--text-muted);margin-bottom:8px;">0 module(s) sélectionné(s)</div>
+          <div id="modules-warning" style="display:none;text-align:center;color:#ef4444;font-size:0.83rem;margin-bottom:8px;">Veuillez sélectionner au moins un module.</div>
+
+          <div class="form-nav">
+            <button class="btn btn-secondary" data-action="prev">← Retour</button>
+            <span class="hint">Étape 2 sur 4</span>
+            <button class="btn btn-primary" data-action="next">Suivant →</button>
+          </div>
+        </div>
+
+        <!-- ── STEP 3 : Plan ── -->
+        <div class="form-step" data-step="3">
+          <div class="form-step-title">Choisissez votre plan</div>
+          <div class="form-step-subtitle">Vous pourrez changer de plan à tout moment depuis votre espace administrateur.</div>
+
+          <div class="plans-select-grid" id="plan-select-grid">
+            <!-- Filled by JS -->
+          </div>
+          <div id="plan-warning" style="display:none;text-align:center;color:#ef4444;font-size:0.83rem;margin-bottom:8px;">Veuillez sélectionner un plan.</div>
+
+          <div class="form-nav">
+            <button class="btn btn-secondary" data-action="prev">← Retour</button>
+            <span class="hint">Étape 3 sur 4</span>
+            <button class="btn btn-primary" data-action="next">Suivant →</button>
+          </div>
+        </div>
+
+        <!-- ── STEP 4 : Confirmation ── -->
+        <div class="form-step" data-step="4">
+          <div class="form-step-title">Récapitulatif &amp; confirmation</div>
+          <div class="form-step-subtitle">Vérifiez vos informations avant de valider votre inscription.</div>
+
+          <!-- Recap content -->
+          <div id="form-recap-content">
+            <div class="recap-grid">
+              <div class="recap-item">
+                <div class="recap-label">Raison sociale</div>
+                <div class="recap-value" id="recap-name">—</div>
+              </div>
+              <div class="recap-item">
+                <div class="recap-label">Forme juridique</div>
+                <div class="recap-value" id="recap-forme">—</div>
+              </div>
+              <div class="recap-item">
+                <div class="recap-label">Email</div>
+                <div class="recap-value" id="recap-email">—</div>
+              </div>
+              <div class="recap-item">
+                <div class="recap-label">Téléphone</div>
+                <div class="recap-value" id="recap-tel">—</div>
+              </div>
+              <div class="recap-item">
+                <div class="recap-label">Pays</div>
+                <div class="recap-value" id="recap-pays">—</div>
+              </div>
+              <div class="recap-item">
+                <div class="recap-label">Ville</div>
+                <div class="recap-value" id="recap-ville">—</div>
+              </div>
+              <div class="recap-item" style="grid-column:1/-1">
+                <div class="recap-label">Modules sélectionnés</div>
+                <div class="recap-modules-list" id="recap-modules">—</div>
+              </div>
+              <div class="recap-item">
+                <div class="recap-label">Plan choisi</div>
+                <div class="recap-value" id="recap-plan">—</div>
+              </div>
+            </div>
+
+            <div class="recap-total">
+              <div class="recap-total-label">💳 Montant mensuel estimé</div>
+              <div class="recap-total-price" id="recap-total-price">—</div>
+            </div>
+
+            <p style="font-size:0.82rem;color:var(--text-muted);margin-bottom:8px;text-align:center;">
+              En cliquant sur "Confirmer l'inscription", vous acceptez nos
+              <a href="#" style="color:var(--accent-primary)">Conditions Générales d'Utilisation</a>.
+              Votre accès sera activé sous 24h.
+            </p>
+          </div>
+
+          <!-- Success state -->
+          <div class="form-success" id="form-success">
+            <div class="success-icon">✅</div>
+            <h3 style="margin-bottom:12px">Inscription envoyée avec succès !</h3>
+            <p style="margin-bottom:8px">Merci ! Notre équipe traitera votre demande et vous contactera à l'adresse email fournie dans les <strong>24 heures</strong>.</p>
+            <p style="margin-bottom:28px;color:var(--text-muted);font-size:0.85rem;">Vérifiez votre boîte mail et vos spams.</p>
+            <button class="btn btn-secondary" id="restart-btn">Inscrire une autre société</button>
+          </div>
+
+          <div class="form-nav" id="form-nav-step4">
+            <button class="btn btn-secondary" data-action="prev">← Retour</button>
+            <span class="hint">Étape 4 sur 4</span>
+            <button class="btn btn-primary" id="submit-btn">Confirmer l'inscription</button>
+          </div>
+        </div>
+
+      </div><!-- /form-card -->
+    </div><!-- /form-wrapper -->
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════ FAQ ══════════════════════════════ -->
+<section id="faq" class="section">
+  <div class="container">
+    <div class="section-header fade-up">
+      <span class="section-tag">FAQ</span>
+      <h2>Questions fréquentes</h2>
+    </div>
+
+    <div class="faq-list">
+
+      <div class="faq-item fade-up">
+        <div class="faq-question">
+          Qu'est-ce qu'un "tenant" dans Lymytz ERP ?
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-answer">
+          Un tenant représente votre entreprise (société) dans le système. Chaque société dispose de son propre espace isolé avec ses données, ses utilisateurs, ses agences et ses modules activés. Plusieurs sociétés peuvent coexister dans la même installation.
+        </div>
+      </div>
+
+      <div class="faq-item fade-up">
+        <div class="faq-question">
+          Puis-je changer de modules après l'inscription ?
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-answer">
+          Oui, absolument. Depuis votre espace administrateur, vous pouvez activer ou désactiver des modules à tout moment. Les données existantes ne sont jamais supprimées lors d'une désactivation de module.
+        </div>
+      </div>
+
+      <div class="faq-item fade-up">
+        <div class="faq-question">
+          Le plan Starter est-il vraiment gratuit ?
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-answer">
+          Oui, le plan Starter est gratuit pendant 3 mois sans carte bancaire requise. Il vous permet de tester jusqu'à 3 modules avec 1 agence et 5 utilisateurs. À l'issue de la période d'essai, un devis vous sera proposé pour continuer.
+        </div>
+      </div>
+
+      <div class="faq-item fade-up">
+        <div class="faq-question">
+          Mes données sont-elles sécurisées ?
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-answer">
+          Oui. Chaque tenant possède une base de données PostgreSQL isolée. Les accès sont protégés par des mécanismes d'authentification et les données sont sauvegardées quotidiennement. L'option Enterprise inclut un déploiement on-premise pour une maîtrise totale de vos données.
+        </div>
+      </div>
+
+      <div class="faq-item fade-up">
+        <div class="faq-question">
+          Combien d'utilisateurs puis-je créer ?
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-answer">
+          Le plan Starter est limité à 5 utilisateurs. Le plan Pro et Enterprise permettent un nombre illimité d'utilisateurs et d'agences. Chaque utilisateur dispose de droits d'accès granulaires configurables par module et par page.
+        </div>
+      </div>
+
+      <div class="faq-item fade-up">
+        <div class="faq-question">
+          Quel est le délai d'activation après inscription ?
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-answer">
+          Notre équipe traite les demandes en moins de 24 heures ouvrables. Vous recevrez vos identifiants d'accès par email ainsi qu'un guide de démarrage rapide pour configurer votre espace.
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════ FOOTER ═══════════════════════════ -->
+<footer>
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="#" class="logo">
+          <div class="logo-icon">L</div>
+          <span class="logo-text">Lymytz<span>ERP</span></span>
+        </a>
+        <p>Solution ERP modulaire pour entreprises africaines. Gérez l'ensemble de vos processus métier dans une seule plateforme sécurisée.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Produit</h4>
+        <ul>
+          <li><a href="#modules">Modules</a></li>
+          <li><a href="#pricing">Tarifs</a></li>
+          <li><a href="#how-it-works">Comment ça marche</a></li>
+          <li><a href="#register">Inscription</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Modules</h4>
+        <ul>
+          <li><a href="#modules">Commercial</a></li>
+          <li><a href="#modules">Comptabilité</a></li>
+          <li><a href="#modules">GRH</a></li>
+          <li><a href="#modules">Production</a></li>
+          <li><a href="#modules">Mutuelle</a></li>
+          <li><a href="#modules">Projets</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:contact@lymytz.com">contact@lymytz.com</a></li>
+          <li><a href="tel:+237000000000">+237 000 000 000</a></li>
+          <li><a href="#faq">Support &amp; FAQ</a></li>
+          <li><a href="#">Documentation</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Lymytz ERP · Tous droits réservés</p>
+      <p>
+        <a href="#">Politique de confidentialité</a> ·
+        <a href="#">CGU</a> ·
+        <a href="#">Mentions légales</a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
 </html>
