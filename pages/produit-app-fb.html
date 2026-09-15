@@ -1,0 +1,958 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Mobile F&B — Lymytz | Gestion Restaurant, Bar & Snack</title>
+    <meta name="description"
+        content="L'application mobile Lymytz pour les établissements F&B : prise de commande en salle, caisse, gestion des tables, stocks bar et reporting en temps réel. Référence : Yatch Center (Cameroun).">
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+    <link rel="apple-touch-icon" href="../assets/favicon.svg">
+    <!-- SEO -->
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.lymytz.com/produit-app-fb.html">
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.lymytz.com/produit-app-fb.html">
+    <meta property="og:title" content="Application F&amp;B — Lymytz | Restaurants, Bars &amp; Snacks">
+    <meta property="og:description"
+        content="App mobile F&amp;B Lymytz : commandes en salle, caisse, tables, stocks bar et reporting temps réel. Pour restaurants, bars et snacks.">
+    <meta property="og:image" content="https://www.lymytz.com/assets/og-lymytz.png">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:site_name" content="Lymytz">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Application F&amp;B — Lymytz | Restaurants, Bars &amp; Snacks">
+    <meta name="twitter:description"
+        content="App mobile F&amp;B Lymytz : commandes en salle, caisse, tables, stocks bar et reporting temps réel.">
+    <meta name="twitter:image" content="https://www.lymytz.com/assets/og-lymytz.png">
+    <!-- Schema.org SoftwareApplication -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MobileApplication",
+      "name": "Lymytz App F&B",
+      "url": "https://www.lymytz.com/produit-app-fb.html",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Android, iOS",
+      "description": "Application mobile pour la gestion des établissements F&B : prises de commande, caisse, tables et reporting.",
+      "author": {"@type": "Organization", "name": "Lymytz", "url": "https://www.lymytz.com"},
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://www.lymytz.com/"},
+          {"@type": "ListItem", "position": 2, "name": "Produits", "item": "https://www.lymytz.com/produits.html"},
+          {"@type": "ListItem", "position": 3, "name": "App F&B", "item": "https://www.lymytz.com/produit-app-fb.html"}
+        ]
+      }
+    }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        .detail-hero {
+            padding: 9rem 0 6rem;
+            position: relative;
+            overflow: hidden
+        }
+
+        .detail-hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(ellipse 60% 60% at 10% 60%, rgba(34, 211, 238, .14) 0%, transparent 65%), radial-gradient(ellipse 50% 40% at 85% 25%, rgba(13, 184, 123, .1) 0%, transparent 65%);
+            pointer-events: none
+        }
+
+        .dh-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5rem;
+            align-items: center
+        }
+
+        .dh-breadcrumb {
+            font-size: .78rem;
+            color: var(--muted);
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: .5rem
+        }
+
+        .dh-breadcrumb a {
+            color: var(--muted)
+        }
+
+        .dh-breadcrumb span {
+            color: var(--subtle)
+        }
+
+        .dh-eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: .5rem;
+            margin-bottom: 1.25rem;
+            font-size: .7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: .14em;
+            color: var(--cyan)
+        }
+
+        .dh-h1 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            margin-bottom: 1.25rem;
+            line-height: 1.1
+        }
+
+        .dh-lead {
+            color: var(--muted);
+            font-size: 1.05rem;
+            line-height: 1.8;
+            margin-bottom: 2.5rem
+        }
+
+        /* Phone mockup */
+        .phone-wrap {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            align-items: flex-end
+        }
+
+        .phone-frame {
+            width: 155px;
+            background: var(--bg-card);
+            border: 2px solid var(--border-md);
+            border-radius: 28px;
+            overflow: hidden;
+            box-shadow: 0 24px 60px rgba(0, 0, 0, .5);
+            flex-shrink: 0
+        }
+
+        .phone-frame.main {
+            width: 185px;
+            margin-bottom: 0
+        }
+
+        .pf-notch {
+            height: 18px;
+            background: rgba(0, 0, 0, .3);
+            display: flex;
+            align-items: center;
+            justify-content: center
+        }
+
+        .pf-notch-bar {
+            width: 60px;
+            height: 5px;
+            background: rgba(255, 255, 255, .12);
+            border-radius: 999px
+        }
+
+        .pf-screen {
+            padding: 1rem
+        }
+
+        .pf-header {
+            font-size: .7rem;
+            font-weight: 700;
+            color: var(--text-2);
+            margin-bottom: .875rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center
+        }
+
+        .pf-time {
+            font-size: .65rem;
+            color: var(--muted)
+        }
+
+        .pf-tables {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: .375rem;
+            margin-bottom: .875rem
+        }
+
+        .pft {
+            padding: .4rem;
+            border-radius: 6px;
+            text-align: center;
+            font-size: .6rem;
+            font-weight: 700;
+            border: 1px solid var(--border)
+        }
+
+        .pft.libre {
+            background: rgba(13, 184, 123, .1);
+            border-color: rgba(13, 184, 123, .25);
+            color: var(--green)
+        }
+
+        .pft.occupee {
+            background: rgba(79, 123, 247, .12);
+            border-color: rgba(79, 123, 247, .28);
+            color: var(--blue)
+        }
+
+        .pft.commande {
+            background: rgba(245, 166, 35, .1);
+            border-color: rgba(245, 166, 35, .25);
+            color: var(--amber)
+        }
+
+        .pf-order {
+            background: rgba(255, 255, 255, .03);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: .75rem;
+            margin-bottom: .75rem
+        }
+
+        .pfo-lbl {
+            font-size: .6rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: .08em;
+            color: var(--muted);
+            margin-bottom: .5rem
+        }
+
+        .pfo-item {
+            display: flex;
+            justify-content: space-between;
+            font-size: .65rem;
+            color: var(--text-2);
+            padding: .25rem 0;
+            border-bottom: 1px solid var(--border)
+        }
+
+        .pfo-item:last-child {
+            border: none;
+            font-weight: 700;
+            color: var(--cyan)
+        }
+
+        .pf-btn {
+            width: 100%;
+            padding: .6rem;
+            border-radius: 8px;
+            background: var(--grad);
+            font-size: .7rem;
+            font-weight: 700;
+            color: #fff;
+            text-align: center;
+            margin-top: .375rem
+        }
+
+        /* Tablet screen */
+        .tablet-frame {
+            width: 220px;
+            background: var(--bg-card);
+            border: 2px solid var(--border-md);
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 20px 48px rgba(0, 0, 0, .45)
+        }
+
+        .tf-bar {
+            padding: .625rem;
+            background: rgba(0, 0, 0, .3);
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: .6rem;
+            color: var(--muted)
+        }
+
+        .tf-body {
+            padding: .875rem;
+            display: flex;
+            flex-direction: column;
+            gap: .625rem
+        }
+
+        .tf-stat {
+            padding: .625rem;
+            background: rgba(255, 255, 255, .03);
+            border: 1px solid var(--border);
+            border-radius: 8px
+        }
+
+        .tfs-lbl {
+            font-size: .55rem;
+            color: var(--muted);
+            text-transform: uppercase;
+            letter-spacing: .06em
+        }
+
+        .tfs-val {
+            font-family: var(--ff-head);
+            font-size: .875rem;
+            font-weight: 700;
+            color: var(--text)
+        }
+
+        .tfs-delta {
+            font-size: .55rem;
+            color: var(--green)
+        }
+
+        /* Feature sections */
+        .feat-two-col {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            padding: 5rem 0
+        }
+
+        .feat-two-col:nth-child(even) {
+            direction: rtl
+        }
+
+        .feat-two-col:nth-child(even)>* {
+            direction: ltr
+        }
+
+        .ftc-visual {
+            border-radius: var(--r-2xl);
+            background: rgba(255, 255, 255, .03);
+            border: 1px solid var(--border);
+            padding: 2rem;
+            min-height: 240px;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem
+        }
+
+        .ftc-label {
+            font-size: .65rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: .1em;
+            color: var(--muted)
+        }
+
+        .ftc-list {
+            display: flex;
+            flex-direction: column;
+            gap: .625rem
+        }
+
+        .ftc-item {
+            display: flex;
+            align-items: flex-start;
+            gap: .75rem;
+            padding: .875rem;
+            background: rgba(255, 255, 255, .03);
+            border: 1px solid var(--border);
+            border-radius: var(--r-md)
+        }
+
+        .ftc-ico {
+            font-size: 1.125rem;
+            flex-shrink: 0
+        }
+
+        .ftc-item strong {
+            display: block;
+            font-size: .83rem;
+            font-weight: 700;
+            color: var(--text);
+            margin-bottom: .25rem
+        }
+
+        .ftc-item span {
+            font-size: .78rem;
+            color: var(--muted)
+        }
+
+        .fc-eyebrow {
+            font-size: .7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: .14em;
+            color: var(--cyan);
+            margin-bottom: .875rem
+        }
+
+        .fc-h3 {
+            font-size: 1.875rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            line-height: 1.2
+        }
+
+        .fc-p {
+            font-size: .9375rem;
+            color: var(--muted);
+            line-height: 1.8;
+            margin-bottom: 1.5rem
+        }
+
+        .fc-ul {
+            display: flex;
+            flex-direction: column;
+            gap: .5rem
+        }
+
+        .fc-ul li {
+            font-size: .875rem;
+            color: var(--muted);
+            display: flex;
+            align-items: flex-start;
+            gap: .625rem
+        }
+
+        .fc-ul li::before {
+            content: '✓';
+            color: var(--cyan);
+            font-weight: 700;
+            flex-shrink: 0
+        }
+
+        /* Stats strip */
+        .stats-strip {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 0;
+            background: var(--bg-card);
+            border: 1px solid var(--border-md);
+            border-radius: var(--r-2xl);
+            overflow: hidden;
+            margin: 3rem 0
+        }
+
+        .ss-item {
+            padding: 2rem;
+            text-align: center;
+            border-right: 1px solid var(--border)
+        }
+
+        .ss-item:last-child {
+            border: none
+        }
+
+        .ss-val {
+            font-family: var(--ff-head);
+            font-size: 2.25rem;
+            font-weight: 700;
+            color: var(--text);
+            margin-bottom: .375rem
+        }
+
+        .ss-lbl {
+            font-size: .8rem;
+            color: var(--muted)
+        }
+
+        /* Reference box */
+        .ref-showcase {
+            padding: 3rem;
+            border-radius: var(--r-2xl);
+            border: 1px solid rgba(34, 211, 238, .22);
+            background: rgba(34, 211, 238, .05);
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 2.5rem;
+            align-items: start
+        }
+
+        .rs-logo {
+            width: 72px;
+            height: 72px;
+            border-radius: 20px;
+            background: linear-gradient(135deg, #22D3EE, #0891B2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--ff-head);
+            font-weight: 700;
+            font-size: 1rem;
+            color: #fff;
+            flex-shrink: 0
+        }
+
+        .rs-h4 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--text);
+            margin-bottom: .375rem
+        }
+
+        .rs-sector {
+            font-size: .8rem;
+            color: var(--muted);
+            margin-bottom: 1.25rem
+        }
+
+        .rs-quote {
+            font-size: .9375rem;
+            color: var(--muted);
+            line-height: 1.8;
+            font-style: italic;
+            border-left: 3px solid var(--cyan);
+            padding-left: 1.25rem;
+            margin-bottom: 1.25rem
+        }
+
+        .rs-modules {
+            display: flex;
+            flex-wrap: wrap;
+            gap: .5rem
+        }
+
+        .cta-box {
+            padding: 4rem;
+            border-radius: var(--r-2xl);
+            border: 1px solid rgba(34, 211, 238, .22);
+            background: rgba(34, 211, 238, .04);
+            text-align: center;
+            margin-top: 2rem
+        }
+
+        .cta-box h2 {
+            font-size: 2.25rem;
+            margin-bottom: 1rem;
+            color: var(--text)
+        }
+
+        .cta-box p {
+            color: var(--muted);
+            font-size: 1rem;
+            max-width: 500px;
+            margin: 0 auto 2.5rem;
+            line-height: 1.75
+        }
+
+        .cta-btns {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap
+        }
+
+        @media(max-width:1000px) {
+            .dh-layout {
+                grid-template-columns: 1fr
+            }
+
+            .phone-wrap {
+                display: none
+            }
+
+            .feat-two-col {
+                grid-template-columns: 1fr;
+                padding: 2.5rem 0
+            }
+
+            .feat-two-col:nth-child(even) {
+                direction: ltr
+            }
+
+            .stats-strip {
+                grid-template-columns: 1fr 1fr
+            }
+
+            .ref-showcase {
+                grid-template-columns: 1fr
+            }
+        }
+
+        @media(max-width:600px) {
+            .stats-strip {
+                grid-template-columns: 1fr
+            }
+
+            .ss-item {
+                border: none;
+                border-bottom: 1px solid var(--border)
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-grid" aria-hidden="true"></div>
+    <div class="bg-mesh" aria-hidden="true"></div>
+    <header class="header" id="header">
+        <div class="container header-inner">
+            <a href="../index.html" class="logo">
+                <div class="logo-mark"><svg width="30" height="30" viewBox="0 0 30 30" fill="none">
+                        <path d="M15 2L28 15L15 28L2 15L15 2Z" stroke="url(#lg)" stroke-width="2" fill="none" />
+                        <path d="M15 9L21 15L15 21L9 15L15 9Z" fill="url(#lg)" />
+                        <defs>
+                            <linearGradient id="lg" x1="2" y1="2" x2="28" y2="28" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#4F7BF7" />
+                                <stop offset="1" stop-color="#9D5CF5" />
+                            </linearGradient>
+                        </defs>
+                    </svg></div><span class="logo-name">Lym<em>ytz</em></span>
+            </a>
+            <nav class="nav-desktop">
+                <a href="../index.html#a-propos" class="nav-link">À Propos</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="produits.html" class="nav-link active">Produits</a>
+                <a href="realisations.html" class="nav-link">Réalisations</a>
+                <a href="../index.html#equipe" class="nav-link">Équipe</a>
+                <a href="../index.html#contact" class="nav-cta">Nous Contacter</a>
+            </nav>
+            <button class="hamburger" id="hamburger" aria-label="Menu"
+                aria-expanded="false"><span></span><span></span><span></span></button>
+        </div>
+        <nav class="mobile-menu" id="mobile-menu">
+            <a href="../index.html#a-propos" class="mob-link">À Propos</a>
+            <a href="services.html" class="mob-link">Services</a>
+            <a href="produits.html" class="mob-link">Produits</a>
+            <a href="realisations.html" class="mob-link">Réalisations</a>
+            <a href="../index.html#equipe" class="mob-link">Équipe</a>
+            <a href="../index.html#contact" class="mob-link mob-cta">Nous Contacter</a>
+        </nav>
+    </header>
+    <main>
+
+        <!-- HERO -->
+        <section class="detail-hero">
+            <div class="container dh-layout">
+                <div class="reveal">
+                    <div class="dh-breadcrumb"><a href="../index.html">Accueil</a><span>/</span><a
+                            href="produits.html">Produits</a><span>/</span><span style="color:var(--text)">App
+                            F&B</span></div>
+                    <div class="dh-eyebrow">📱 Produit — 02</div>
+                    <h1 class="dh-h1"><span class="grad-text">Application Mobile</span><br>Food & Beverage</h1>
+                    <p class="dh-lead">Prise de commande en salle, gestion de la caisse, suivi des tables et pilotage
+                        des stocks bar/cuisine. Une app conçue pour la réalité des établissements F&B africains.</p>
+                    <div style="display:flex;flex-wrap:wrap;gap:.625rem;margin-bottom:2.5rem">
+                        <span class="badge badge-blue">iOS & Android</span>
+                        <span class="badge badge-green">Mode Hors-ligne</span>
+                        <span class="badge badge-purple">Synchronisation ERP</span>
+                        <span class="badge badge-amber">Multi-établissements</span>
+                    </div>
+                    <div style="display:flex;gap:1rem;flex-wrap:wrap">
+                        <a href="../index.html#contact" class="btn btn-primary">Demander une démo</a>
+                        <a href="realisations.html" class="btn btn-secondary">Voir nos réalisations</a>
+                    </div>
+                </div>
+                <div class="reveal delay-1">
+                    <div class="phone-wrap">
+                        <!-- Main phone — plan de salle -->
+                        <div class="phone-frame main">
+                            <div class="pf-notch">
+                                <div class="pf-notch-bar"></div>
+                            </div>
+                            <div class="pf-screen">
+                                <div class="pf-header">
+                                    Plan de salle
+                                    <span class="pf-time">12:34</span>
+                                </div>
+                                <div class="pf-tables">
+                                    <div class="pft occupee">T1<br><span
+                                            style="font-weight:400;font-size:.55rem">Occupée</span></div>
+                                    <div class="pft libre">T2<br><span
+                                            style="font-weight:400;font-size:.55rem">Libre</span></div>
+                                    <div class="pft commande">T3<br><span style="font-weight:400;font-size:.55rem">Cmd.
+                                            envoyée</span></div>
+                                    <div class="pft libre">T4<br><span
+                                            style="font-weight:400;font-size:.55rem">Libre</span></div>
+                                    <div class="pft occupee">T5<br><span
+                                            style="font-weight:400;font-size:.55rem">Occupée</span></div>
+                                    <div class="pft occupee">T6<br><span
+                                            style="font-weight:400;font-size:.55rem">Occupée</span></div>
+                                </div>
+                                <div class="pf-order">
+                                    <div class="pfo-lbl">Table 1 — Commande en cours</div>
+                                    <div class="pfo-item"><span>Poulet DG</span><span>1 500</span></div>
+                                    <div class="pfo-item"><span>Pierrot</span><span>800</span></div>
+                                    <div class="pfo-item"><span>Coca × 2</span><span>600</span></div>
+                                    <div class="pfo-item"><span>Total</span><span>2 900 FCFA</span></div>
+                                </div>
+                                <div class="pf-btn">📤 Envoyer en cuisine</div>
+                            </div>
+                        </div>
+                        <!-- Side phone — stats -->
+                        <div class="phone-frame">
+                            <div class="pf-notch">
+                                <div class="pf-notch-bar"></div>
+                            </div>
+                            <div class="pf-screen">
+                                <div class="pf-header">Tableau de bord</div>
+                                <div class="pf-order" style="margin-bottom:.5rem">
+                                    <div class="pfo-lbl">Aujourd'hui</div>
+                                    <div class="pfo-item"><span>Couverts</span><span>47</span></div>
+                                    <div class="pfo-item"><span>Ticket moy.</span><span>4 200 FCFA</span></div>
+                                    <div class="pfo-item"><span>CA du jour</span><span style="color:var(--cyan)">197 400
+                                            F</span></div>
+                                </div>
+                                <div class="pf-order">
+                                    <div class="pfo-lbl">Commandes cuisine</div>
+                                    <div class="pfo-item"><span>En attente</span><span
+                                            style="color:var(--amber)">3</span></div>
+                                    <div class="pfo-item"><span>En préparation</span><span
+                                            style="color:var(--blue)">5</span></div>
+                                    <div class="pfo-item"><span>Servies</span><span style="color:var(--green)">39</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- STATS -->
+        <section class="section section-alt">
+            <div class="container">
+                <div class="stats-strip reveal">
+                    <div class="ss-item">
+                        <div class="ss-val" style="color:var(--cyan)">
+                            < 30s</div>
+                                <div class="ss-lbl">Prise de commande moyenne</div>
+                        </div>
+                        <div class="ss-item">
+                            <div class="ss-val" style="color:var(--green)">100%</div>
+                            <div class="ss-lbl">Compatible mode hors-ligne</div>
+                        </div>
+                        <div class="ss-item">
+                            <div class="ss-val" style="color:var(--blue)">iOS + Android</div>
+                            <div class="ss-lbl">Plateformes supportées</div>
+                        </div>
+                        <div class="ss-item">
+                            <div class="ss-val" style="color:var(--purple)">Temps réel</div>
+                            <div class="ss-lbl">Sync avec Lymytz ERP</div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <!-- FEATURES DÉTAILLÉES -->
+        <section class="section">
+            <div class="container">
+                <div class="section-eyebrow reveal">Fonctionnalités</div>
+                <h2 class="section-title reveal">Tout ce qu'il faut pour <span class="grad-text">gérer votre
+                        salle</span></h2>
+
+                <!-- Feature 1 -->
+                <div class="feat-two-col">
+                    <div class="reveal">
+                        <div class="fc-eyebrow">Prise de commande</div>
+                        <h3 class="fc-h3">Commandez en <span class="grad-text">quelques secondes</span></h3>
+                        <p class="fc-p">Interface tactile optimisée pour la vitesse. Le serveur sélectionne la table,
+                            choisit les articles dans le menu et envoie la commande directement en cuisine — sans papier
+                            ni terminal fixe.</p>
+                        <ul class="fc-ul">
+                            <li>Menu organisé par catégories et sous-catégories</li>
+                            <li>Modificateurs et notes spéciales par plat</li>
+                            <li>Envoi immédiat vers l'imprimante cuisine</li>
+                            <li>Gestion des commandes multiples par table</li>
+                            <li>Transfert de table en un tap</li>
+                        </ul>
+                    </div>
+                    <div class="ftc-visual reveal delay-1">
+                        <div class="ftc-label">🍽️ Carte — Catégorie : Plats chauds</div>
+                        <div class="ftc-list">
+                            <div class="ftc-item">
+                                <div class="ftc-ico">🍗</div>
+                                <div><strong>Poulet DG</strong><span>1 500 FCFA · Disponible</span></div>
+                            </div>
+                            <div class="ftc-item">
+                                <div class="ftc-ico">🐟</div>
+                                <div><strong>Poisson braisé</strong><span>2 000 FCFA · Disponible</span></div>
+                            </div>
+                            <div class="ftc-item">
+                                <div class="ftc-ico">🥩</div>
+                                <div><strong>Brochettes × 6</strong><span>1 800 FCFA · Disponible</span></div>
+                            </div>
+                            <div class="ftc-item" style="border-color:rgba(239,68,68,.3);opacity:.5">
+                                <div class="ftc-ico">🍲</div>
+                                <div><strong>Eru</strong><span style="color:#EF4444">Rupture de stock</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="feat-two-col">
+                    <div class="reveal">
+                        <div class="fc-eyebrow">Gestion de caisse</div>
+                        <h3 class="fc-h3">Encaissez et <span class="grad-text">clôturez en douceur</span></h3>
+                        <p class="fc-p">Plusieurs modes de paiement, impression du reçu, et clôture de caisse
+                            automatique en fin de service. Les données remontent instantanément dans Lymytz ERP pour la
+                            comptabilité.</p>
+                        <ul class="fc-ul">
+                            <li>Paiement espèces, TPE, Mobile Money</li>
+                            <li>Partage de l'addition entre convives</li>
+                            <li>Impression de reçu Bluetooth</li>
+                            <li>Clôture de caisse quotidienne automatique</li>
+                            <li>Rapport de journée en PDF</li>
+                        </ul>
+                    </div>
+                    <div class="ftc-visual reveal delay-1">
+                        <div class="ftc-label">💳 Encaissement — Table 3</div>
+                        <div class="ftc-list">
+                            <div class="ftc-item">
+                                <div class="ftc-ico">💵</div>
+                                <div><strong>Espèces</strong><span>Rendu monnaie calculé automatiquement</span></div>
+                            </div>
+                            <div class="ftc-item">
+                                <div class="ftc-ico">📱</div>
+                                <div><strong>Mobile Money</strong><span>Orange Money · MTN · Nexttel</span></div>
+                            </div>
+                            <div class="ftc-item">
+                                <div class="ftc-ico">💳</div>
+                                <div><strong>Carte bancaire</strong><span>Visa / Mastercard via TPE</span></div>
+                            </div>
+                            <div class="ftc-item"
+                                style="background:rgba(13,184,123,.06);border-color:rgba(13,184,123,.2)">
+                                <div class="ftc-ico">🧾</div>
+                                <div><strong>Total : 4 600 FCFA</strong><span style="color:var(--green)">✓ Payé — Reçu
+                                        envoyé</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="feat-two-col">
+                    <div class="reveal">
+                        <div class="fc-eyebrow">Stocks & Inventaire bar</div>
+                        <h3 class="fc-h3">Zéro rupture, <span class="grad-text">zéro gaspillage</span></h3>
+                        <p class="fc-p">Chaque commande débit automatiquement le stock des boissons et ingrédients.
+                            Alertes de seuil bas, inventaires rapides et traçabilité des mouvements.</p>
+                        <ul class="fc-ul">
+                            <li>Débit automatique du stock à chaque vente</li>
+                            <li>Alertes de réapprovisionnement bar</li>
+                            <li>Inventaire physique depuis l'app (scan ou manuel)</li>
+                            <li>Historique des mouvements par article</li>
+                            <li>Calcul des pertes et des ratios de consommation</li>
+                        </ul>
+                    </div>
+                    <div class="ftc-visual reveal delay-1">
+                        <div class="ftc-label">📦 Stock bar — Alertes en cours</div>
+                        <div class="ftc-list">
+                            <div class="ftc-item" style="border-color:rgba(239,68,68,.3)">
+                                <div class="ftc-ico">🍺</div>
+                                <div><strong>Castel 65cl</strong><span style="color:#EF4444">⚠ Stock critique : 4
+                                        bouteilles</span></div>
+                            </div>
+                            <div class="ftc-item" style="border-color:rgba(245,166,35,.3)">
+                                <div class="ftc-ico">🥤</div><span><strong>Jus d'orange (L)</strong><span
+                                        style="color:var(--amber)">Seuil bas : 8 bouteilles</span></span>
+                            </div>
+                            <div class="ftc-item">
+                                <div class="ftc-ico">🥛</div>
+                                <div><strong>Eau minérale 1.5L</strong><span style="color:var(--green)">Stock OK : 48
+                                        bouteilles</span></div>
+                            </div>
+                            <div class="ftc-item">
+                                <div class="ftc-ico">🍷</div>
+                                <div><strong>Vin rouge (btl)</strong><span style="color:var(--green)">Stock OK : 12
+                                        bouteilles</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- REFERENCE -->
+        <section class="section section-alt">
+            <div class="container">
+                <div class="section-eyebrow reveal">Référence terrain</div>
+                <h2 class="section-title reveal" style="margin-bottom:2rem">Déployée chez <span class="grad-text">Yatch
+                        Center</span></h2>
+                <div class="ref-showcase reveal">
+                    <div class="rs-logo">YC</div>
+                    <div>
+                        <div class="rs-h4">Yatch Center <span
+                                style="font-size:.7rem;font-weight:500;color:var(--muted);vertical-align:middle;margin-left:.375rem">—
+                                Ancien client</span></div>
+                        <div class="rs-sector">Restauration, Bar & Snack · Cameroun</div>
+                        <p class="rs-quote">"L'application a transformé notre service. Les serveurs prennent les
+                            commandes en 30 secondes, la cuisine reçoit tout directement, et on n'a plus de litiges sur
+                            les additions. Le CA de nos bars est mieux suivi et on a réduit les pertes de 20%."</p>
+                        <div class="rs-modules">
+                            <span class="badge badge-blue">App Mobile F&B</span>
+                            <span class="badge badge-purple">Lymytz ERP</span>
+                            <span class="badge badge-green">Gestion stocks bar</span>
+                            <span class="badge badge-amber">Reporting journalier</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cta-box reveal">
+                    <h2>Modernisez votre <span class="grad-text">service en salle</span></h2>
+                    <p>Demandez une démonstration de l'application dans le contexte de votre établissement.</p>
+                    <div class="cta-btns">
+                        <a href="../index.html#contact" class="btn btn-primary">Planifier une démo</a>
+                        <a href="produit-erp.html" class="btn btn-secondary">Découvrir Lymytz ERP</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand"><a href="../index.html" class="logo">
+                        <div class="logo-mark"><svg width="26" height="26" viewBox="0 0 30 30" fill="none">
+                                <path d="M15 2L28 15L15 28L2 15L15 2Z" stroke="url(#lfb)" stroke-width="2"
+                                    fill="none" />
+                                <path d="M15 9L21 15L15 21L9 15L15 9Z" fill="url(#lfb)" />
+                                <defs>
+                                    <linearGradient id="lfb" x1="2" y1="2" x2="28" y2="28"
+                                        gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#4F7BF7" />
+                                        <stop offset="1" stop-color="#9D5CF5" />
+                                    </linearGradient>
+                                </defs>
+                            </svg></div><span class="logo-name">Lym<em>ytz</em></span>
+                    </a>
+                    <p>Société camerounaise de conception logicielle, implantée en France.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Produits</h4>
+                    <ul>
+                        <li><a href="produit-erp.html">Lymytz ERP</a></li>
+                        <li><a href="produit-app-boulangerie.html">App Boulangerie</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Références</h4>
+                    <ul>
+                        <li><a href="realisations.html">Toutes les réalisations</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:contact@lymytz.com">contact@lymytz.com</a></li>
+                        <li><a href="../index.html#contact">Nous écrire</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Lymytz · Cameroun & France</p>
+                <div class="footer-legal"><a href="mentions-legales.html">Mentions légales</a></div>
+            </div>
+        </div>
+    </footer>
+    <a href="https://wa.me/237600000000" target="_blank" rel="noopener" aria-label="WhatsApp"
+        style="position:fixed;bottom:1.75rem;right:1.75rem;z-index:9999;width:56px;height:56px;border-radius:50%;background:#25D366;box-shadow:0 4px 20px rgba(37,211,102,.45);display:flex;align-items:center;justify-content:center;transition:transform .2s;text-decoration:none"
+        onmouseenter="this.style.transform='scale(1.1)'" onmouseleave="this.style.transform=''">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

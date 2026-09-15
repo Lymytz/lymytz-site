@@ -1,659 +1,966 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="fr">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lymytz ERP – Abonnez votre entreprise</title>
-  <meta name="description" content="Démarrez avec Lymytz ERP : une solution modulaire tout-en-un pour gérer la comptabilité, les ventes, la GRH, la production et plus encore. Inscription en ligne en quelques minutes." />
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lymytz | Société Informatique — Cameroun & France</title>
+    <meta name="description"
+        content="Lymytz est une société camerounaise de conception logicielle, implantée en France. Développement sur mesure, ERP, sites web, conseil IT.">
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="apple-touch-icon" href="assets/favicon.svg">
+    <!-- SEO -->
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.lymytz.com/">
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.lymytz.com/">
+    <meta property="og:title" content="Lymytz | Société Informatique — Cameroun &amp; France">
+    <meta property="og:description"
+        content="Lymytz est une société camerounaise de conception logicielle, implantée en France. Développement sur mesure, ERP, sites web, conseil IT.">
+    <meta property="og:image" content="https://www.lymytz.com/assets/og-lymytz.png">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:site_name" content="Lymytz">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Lymytz | Société Informatique — Cameroun &amp; France">
+    <meta name="twitter:description"
+        content="Lymytz est une société camerounaise de conception logicielle, implantée en France. Développement sur mesure, ERP, sites web, conseil IT.">
+    <meta name="twitter:image" content="https://www.lymytz.com/assets/og-lymytz.png">
+    <!-- Schema.org Organization -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Lymytz",
+      "url": "https://www.lymytz.com",
+      "logo": "https://www.lymytz.com/assets/logo-lymytz.png",
+      "email": "contact@lymytz.com",
+      "telephone": "+237600000000",
+      "foundingDate": "2019",
+      "description": "Société camerounaise de conception logicielle spécialisée en développement sur mesure, ERP, sites web et conseil IT.",
+      "areaServed": ["CM", "FR"],
+      "address": [
+        {"@type": "PostalAddress", "addressCountry": "CM", "addressLocality": "Yaoundé"},
+        {"@type": "PostalAddress", "addressCountry": "FR"}
+      ],
+      "sameAs": [
+        "https://www.linkedin.com/company/lymytz"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer service",
+        "email": "contact@lymytz.com",
+        "availableLanguage": "French",
+        "contactOption": "TollFree"
+      }
+    }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
+    <div class="bg-grid" aria-hidden="true"></div>
+    <div class="bg-mesh" aria-hidden="true"></div>
 
-<!-- ═══════════════════════════════════════════ NAVBAR ═════════════════════════════ -->
-<nav class="navbar" id="navbar">
-  <div class="container">
-    <div class="navbar-inner">
-      <a href="#" class="logo">
-        <div class="logo-icon">L</div>
-        <span class="logo-text">Lymytz<span>ERP</span></span>
-      </a>
-      <ul class="nav-links" id="nav-links">
-        <li><a href="#modules">Modules</a></li>
-        <li><a href="#pricing">Tarifs</a></li>
-        <li><a href="#how-it-works">Comment ça marche</a></li>
-        <li><a href="#faq">FAQ</a></li>
-      </ul>
-      <div class="nav-cta">
-        <a href="#register" class="btn btn-primary" style="padding:10px 22px;font-size:0.85rem;">
-          Commencer gratuit
-        </a>
-      </div>
-      <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Menu">☰</button>
-    </div>
-  </div>
-</nav>
+    <!-- HEADER -->
+    <header class="header" id="header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo">
+                <div class="logo-mark">
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none">
+                        <path d="M15 2L28 15L15 28L2 15L15 2Z" stroke="url(#lg1)" stroke-width="2" fill="none" />
+                        <path d="M15 9L21 15L15 21L9 15L15 9Z" fill="url(#lg1)" />
+                        <defs>
+                            <linearGradient id="lg1" x1="2" y1="2" x2="28" y2="28" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#4F7BF7" />
+                                <stop offset="1" stop-color="#9D5CF5" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <span class="logo-name">Lym<em>ytz</em></span>
+            </a>
+            <nav class="nav-desktop">
+                <a href="#a-propos" class="nav-link">À Propos</a>
+                <a href="pages/services.html" class="nav-link">Services</a>
+                <a href="pages/produits.html" class="nav-link">Produits</a>
+                <a href="pages/realisations.html" class="nav-link">Réalisations</a>
+                <a href="#equipe" class="nav-link">Équipe</a>
+                <a href="#contact" class="nav-cta">Nous Contacter</a>
+            </nav>
+            <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+        <nav class="mobile-menu" id="mobile-menu" aria-hidden="true">
+            <a href="#a-propos" class="mob-link">À Propos</a>
+            <a href="pages/services.html" class="mob-link">Services</a>
+            <a href="pages/produits.html" class="mob-link">Produits</a>
+            <a href="pages/realisations.html" class="mob-link">Réalisations</a>
+            <a href="#equipe" class="mob-link">Équipe</a>
+            <a href="#contact" class="mob-link mob-cta">Nous Contacter</a>
+        </nav>
+    </header>
 
-<!-- ═══════════════════════════════════════════ HERO ══════════════════════════════ -->
-<section id="hero">
-  <div class="hero-bg"></div>
-  <div class="hero-mesh"></div>
-  <div class="hero-grid"></div>
-  <div class="container">
-    <div class="hero-content">
-      <!-- Left -->
-      <div class="hero-left">
-        <div class="hero-badge">
-          <span class="hero-badge-dot"></span>
-          ERP SaaS Multi-entreprises · Version 7.4
-        </div>
-        <h1 class="hero-title">
-          Gérez votre entreprise avec<br/>
-          <em class="text-gradient">l'intelligence de Lymytz</em>
-        </h1>
-        <p class="hero-desc">
-          Lymytz ERP regroupe tous vos processus métier dans une seule plateforme :
-          achats, ventes, comptabilité, paie, production et projets.
-          Activez uniquement les modules dont vous avez besoin.
-        </p>
-        <div class="hero-cta">
-          <a href="#register" class="btn btn-primary" id="hero-cta-btn">
-            🚀 Démarrer gratuitement
-          </a>
-          <a href="#modules" class="btn btn-secondary">Découvrir les modules</a>
-        </div>
-        <div class="hero-stats">
-          <div class="hero-stat">
-            <div class="hero-stat-num">6</div>
-            <div class="hero-stat-label">Modules</div>
-          </div>
-          <div class="hero-stat">
-            <div class="hero-stat-num">100%</div>
-            <div class="hero-stat-label">Personnalisable</div>
-          </div>
-          <div class="hero-stat">
-            <div class="hero-stat-num">∞</div>
-            <div class="hero-stat-label">Agences</div>
-          </div>
-        </div>
-      </div>
+    <main>
 
-      <!-- Right – visual card stack -->
-      <div class="hero-visual">
-        <div class="hero-card-stack">
-          <!-- Back cards -->
-          <div class="hero-card hero-card-back2"></div>
-          <div class="hero-card hero-card-back1"></div>
-          <!-- Main card -->
-          <div class="hero-card hero-card-main">
-            <div class="hero-card-title">✦ Nouveau tenant</div>
-            <div class="hero-card-company">Entreprise ACME SARL</div>
-            <div class="hero-card-sub">Cameroun · Activé le 03/09/2026</div>
-            <div class="hero-card-modules">
-              <div class="hero-card-module"><span class="dot"></span>Commercial</div>
-              <div class="hero-card-module"><span class="dot"></span>Comptabilité</div>
-              <div class="hero-card-module"><span class="dot"></span>GRH</div>
-              <div class="hero-card-module"><span class="dot"></span>Production</div>
-              <div class="hero-card-module"><span class="dot"></span>Mutuelle</div>
-              <div class="hero-card-module"><span class="dot"></span>Projets</div>
+        <!-- ========================================
+     HERO
+======================================== -->
+        <section class="hero" id="hero">
+            <div class="container hero-layout">
+                <div class="hero-text reveal">
+                    <div class="hero-eyebrow">
+                        <div class="eyebrow-live">
+                            <span class="live-dot"></span>
+                            <span>Cameroun · France</span>
+                        </div>
+                        &nbsp;— Société Informatique
+                    </div>
+                    <h1 class="hero-h1">
+                        Nous construisons<br>
+                        <span class="grad-text">le numérique</span><br>
+                        de vos ambitions
+                    </h1>
+                    <p class="hero-p">
+                        Lymytz est une société camerounaise de conception logicielle, désormais implantée en France.
+                        Nous créons des logiciels sur mesure, des sites web et des solutions ERP pour les entreprises
+                        qui veulent grandir.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#a-propos" class="btn btn-primary">Découvrir Lymytz</a>
+                        <a href="pages/realisations.html" class="btn btn-secondary">Nos réalisations</a>
+                    </div>
+                    <div class="hero-metrics">
+                        <div class="hm-item">
+                            <span class="hm-num" data-count="6">6+</span>
+                            <span class="hm-label">Clients actifs</span>
+                        </div>
+                        <div class="hero-split-line"></div>
+                        <div class="hm-item">
+                            <span class="hm-num">100%</span>
+                            <span class="hm-label">Satisfaction client</span>
+                        </div>
+                        <div class="hero-split-line"></div>
+                        <div class="hm-item">
+                            <span class="hm-num">🌍</span>
+                            <span class="hm-label">2 pays d'implantation</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-cards reveal delay-2" aria-hidden="true">
+                    <div class="hc hc-main">
+                        <div class="hc-main-top">
+                            <div class="hc-logo"></div>
+                            <span>Lymytz</span>
+                        </div>
+                        <p class="hc-quote">"Chaque ligne de code est une brique de votre croissance."</p>
+                        <div class="hc-tags">
+                            <span class="tag">Logiciel Sur Mesure</span>
+                            <span class="tag">ERP</span>
+                            <span class="tag">Sites Web</span>
+                        </div>
+                    </div>
+                    <div class="hc hc-stat a">
+                        <div class="hc-big c1">CMR</div>
+                        <div class="hc-small">Cameroun 🇨🇲</div>
+                    </div>
+                    <div class="hc hc-stat b">
+                        <div class="hc-big c2">FR</div>
+                        <div class="hc-small">France 🇫🇷</div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <!-- Floating badges -->
-          <div class="floating-badge floating-badge-1">✅ Compte créé</div>
-          <div class="floating-badge floating-badge-2">⚡ Accès immédiat</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+        </section>
 
-<!-- ═══════════════════════════════════════════ MODULES ══════════════════════════ -->
-<section id="modules" class="section">
-  <div class="container">
-    <div class="section-header fade-up">
-      <span class="section-tag">Modules</span>
-      <h2>Tout ce dont votre entreprise a besoin</h2>
-      <p>Choisissez les modules adaptés à votre activité. Chaque module est indépendant et peut être activé ou désactivé à tout moment.</p>
-    </div>
-    <div class="modules-grid">
-
-      <div class="module-card mod-commercial fade-up" style="transition-delay:0.0s">
-        <div class="module-icon">🛒</div>
-        <h3>Commercial</h3>
-        <p>Gestion complète du cycle commercial : achats, ventes, inventaires et facturation clients/fournisseurs.</p>
-        <ul class="module-features">
-          <li>Bons de commande &amp; réception</li>
-          <li>Facturation &amp; devis</li>
-          <li>Gestion des stocks multi-dépôts</li>
-          <li>Vente en ligne intégrée</li>
-        </ul>
-      </div>
-
-      <div class="module-card mod-compta fade-up" style="transition-delay:0.1s">
-        <div class="module-icon">📊</div>
-        <h3>Comptabilité</h3>
-        <p>Plan comptable OHADA, grand livre, journaux, bilans et tableaux de bord financiers en temps réel.</p>
-        <ul class="module-features">
-          <li>Plan comptable personnalisable</li>
-          <li>Journaux &amp; grand livre</li>
-          <li>Bilan &amp; compte de résultat</li>
-          <li>États financiers (PDF)</li>
-        </ul>
-      </div>
-
-      <div class="module-card mod-grh fade-up" style="transition-delay:0.2s">
-        <div class="module-icon">👥</div>
-        <h3>GRH</h3>
-        <p>Gestion des ressources humaines : fiches employés, paie, congés, formations et évaluations.</p>
-        <ul class="module-features">
-          <li>Dossiers &amp; contrats employés</li>
-          <li>Calcul de la paie (CNPS)</li>
-          <li>Gestion des congés</li>
-          <li>Plans de formation</li>
-        </ul>
-      </div>
-
-      <div class="module-card mod-production fade-up" style="transition-delay:0.3s">
-        <div class="module-icon">🏭</div>
-        <h3>Production</h3>
-        <p>Planification et suivi des ordres de fabrication, nomenclatures et traçabilité de la chaîne de production.</p>
-        <ul class="module-features">
-          <li>Ordres de fabrication</li>
-          <li>Nomenclatures BOM</li>
-          <li>Suivi des OF en temps réel</li>
-          <li>Coûts de revient</li>
-        </ul>
-      </div>
-
-      <div class="module-card mod-mutuelle fade-up" style="transition-delay:0.4s">
-        <div class="module-icon">🏥</div>
-        <h3>Mutuelle</h3>
-        <p>Gestion des cotisations sociales, prestations membres, remboursements et tableau de bord mutuelle.</p>
-        <ul class="module-features">
-          <li>Adhérents &amp; cotisations</li>
-          <li>Prestations &amp; remboursements</li>
-          <li>Dépenses &amp; budgets</li>
-          <li>Rapports statistiques</li>
-        </ul>
-      </div>
-
-      <div class="module-card mod-projets fade-up" style="transition-delay:0.5s">
-        <div class="module-icon">📋</div>
-        <h3>Projets</h3>
-        <p>Suivi de projets, allocation des ressources, gestion des budgets et reporting d'avancement.</p>
-        <ul class="module-features">
-          <li>Création &amp; planification</li>
-          <li>Allocation de ressources</li>
-          <li>Suivi budgétaire</li>
-          <li>Rapports d'avancement</li>
-        </ul>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════════════════════════════════════ PRICING ══════════════════════════ -->
-<section id="pricing" class="section">
-  <div class="container">
-    <div class="section-header fade-up">
-      <span class="section-tag">Tarifs</span>
-      <h2>Des plans adaptés à toute taille d'entreprise</h2>
-      <p>Commencez gratuitement, évoluez à votre rythme. Pas de frais cachés, pas d'engagement.</p>
-    </div>
-    <div class="pricing-grid">
-
-      <!-- STARTER -->
-      <div class="pricing-card fade-up" style="transition-delay:0s">
-        <div class="pricing-plan">Starter</div>
-        <div class="pricing-price">
-          <span class="pricing-amount">Gratuit</span>
-        </div>
-        <div class="pricing-period">Pendant 3 mois · Puis sur devis</div>
-        <div class="pricing-tagline">Idéal pour découvrir Lymytz ERP et tester vos processus.</div>
-        <div class="pricing-separator"></div>
-        <ul class="pricing-features">
-          <li><span class="check">✓</span> Jusqu'à 3 modules</li>
-          <li><span class="check">✓</span> 1 agence / 5 utilisateurs</li>
-          <li><span class="check">✓</span> Facturation de base</li>
-          <li><span class="check">✓</span> Rapports standards</li>
-          <li class="disabled"><span class="cross">✗</span> Modules avancés</li>
-          <li class="disabled"><span class="cross">✗</span> Support prioritaire</li>
-          <li class="disabled"><span class="cross">✗</span> API &amp; intégrations</li>
-        </ul>
-        <button class="btn btn-outline" data-plan-cta="starter">Démarrer gratuitement</button>
-      </div>
-
-      <!-- PRO (Featured) -->
-      <div class="pricing-card featured fade-up" style="transition-delay:0.1s">
-        <div class="pricing-badge">Populaire</div>
-        <div class="pricing-plan">Pro</div>
-        <div class="pricing-price">
-          <span class="pricing-currency">CFA</span>
-          <span class="pricing-amount">49 000</span>
-        </div>
-        <div class="pricing-period">par mois · facturation annuelle possible</div>
-        <div class="pricing-tagline">La solution complète pour les PME en croissance rapide.</div>
-        <div class="pricing-separator"></div>
-        <ul class="pricing-features">
-          <li><span class="check">✓</span> 6 modules inclus</li>
-          <li><span class="check">✓</span> Agences illimitées</li>
-          <li><span class="check">✓</span> Utilisateurs illimités</li>
-          <li><span class="check">✓</span> Rapports avancés &amp; JasperReports</li>
-          <li><span class="check">✓</span> Support prioritaire (48h)</li>
-          <li><span class="check">✓</span> Mises à jour incluses</li>
-          <li><span class="check">✓</span> Export Excel &amp; PDF</li>
-        </ul>
-        <button class="btn btn-primary" data-plan-cta="pro">Choisir Pro</button>
-      </div>
-
-      <!-- ENTERPRISE -->
-      <div class="pricing-card fade-up" style="transition-delay:0.2s">
-        <div class="pricing-plan">Enterprise</div>
-        <div class="pricing-price">
-          <span class="pricing-amount" style="font-size:2rem;">Sur devis</span>
-        </div>
-        <div class="pricing-period">Personnalisé selon vos besoins</div>
-        <div class="pricing-tagline">Pour les grandes entreprises avec des besoins spécifiques.</div>
-        <div class="pricing-separator"></div>
-        <ul class="pricing-features">
-          <li><span class="check">✓</span> Tout le plan Pro</li>
-          <li><span class="check">✓</span> Déploiement on-premise</li>
-          <li><span class="check">✓</span> Personnalisation avancée</li>
-          <li><span class="check">✓</span> Intégration SOAP / REST</li>
-          <li><span class="check">✓</span> SLA garanti</li>
-          <li><span class="check">✓</span> Formation &amp; accompagnement</li>
-          <li><span class="check">✓</span> Support dédié</li>
-        </ul>
-        <button class="btn btn-secondary" data-plan-cta="enterprise">Nous contacter</button>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════════════════════════════════════ HOW IT WORKS ══════════════════════ -->
-<section id="how-it-works" class="section">
-  <div class="container">
-    <div class="section-header fade-up">
-      <span class="section-tag">Processus</span>
-      <h2>Opérationnel en quelques minutes</h2>
-      <p>Quatre étapes simples pour onboarder votre entreprise sur Lymytz ERP.</p>
-    </div>
-    <div class="steps-grid">
-      <div class="step-card fade-up" data-step="1" style="transition-delay:0s">
-        <div class="step-number">1</div>
-        <h3>Créez votre compte société</h3>
-        <p>Renseignez les informations de votre entreprise : nom, forme juridique, coordonnées et localisation.</p>
-      </div>
-      <div class="step-card fade-up" data-step="2" style="transition-delay:0.1s">
-        <div class="step-number">2</div>
-        <h3>Choisissez vos modules</h3>
-        <p>Sélectionnez uniquement les modules dont vous avez besoin parmi les 6 disponibles.</p>
-      </div>
-      <div class="step-card fade-up" data-step="3" style="transition-delay:0.2s">
-        <div class="step-number">3</div>
-        <h3>Sélectionnez votre plan</h3>
-        <p>Starter gratuit, Pro ou Enterprise. Changez de plan à tout moment selon votre croissance.</p>
-      </div>
-      <div class="step-card fade-up" data-step="4" style="transition-delay:0.3s">
-        <div class="step-number">4</div>
-        <h3>Accès immédiat</h3>
-        <p>Notre équipe configure votre espace en moins de 24h. Vous recevez vos identifiants par email.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════════════════════════════════════ REGISTER FORM ═════════════════════ -->
-<section id="register" class="section">
-  <div class="container">
-    <div class="section-header fade-up">
-      <span class="section-tag">Inscription</span>
-      <h2>Créez votre compte entreprise</h2>
-      <p>Abonnez votre société à Lymytz ERP en quelques étapes simples.</p>
-    </div>
-
-    <div class="form-wrapper fade-up">
-      <!-- Progress -->
-      <div class="form-progress" id="form-progress">
-        <div class="progress-fill" id="progress-fill" style="position:absolute;top:20px;left:0;height:2px;background:linear-gradient(90deg,#6366f1,#8b5cf6,#06b6d4);transition:width 0.4s ease;z-index:1;width:0%"></div>
-        <div class="progress-step active" data-step="1">
-          <div class="progress-dot">1</div>
-          <span class="progress-label">Société</span>
-        </div>
-        <div class="progress-step" data-step="2">
-          <div class="progress-dot">2</div>
-          <span class="progress-label">Modules</span>
-        </div>
-        <div class="progress-step" data-step="3">
-          <div class="progress-dot">3</div>
-          <span class="progress-label">Plan</span>
-        </div>
-        <div class="progress-step" data-step="4">
-          <div class="progress-dot">4</div>
-          <span class="progress-label">Confirmation</span>
-        </div>
-      </div>
-
-      <!-- Form Card -->
-      <div class="form-card">
-
-        <!-- ── STEP 1 : Infos Société ── -->
-        <div class="form-step active" data-step="1">
-          <div class="form-step-title">Informations de votre société</div>
-          <div class="form-step-subtitle">Ces informations correspondent à votre tenant dans le système.</div>
-
-          <div class="form-grid">
-            <div class="form-group full">
-              <label class="form-label" for="societe_nom">Raison sociale <span>*</span></label>
-              <input class="form-input" id="societe_nom" type="text" placeholder="Ex : ACME Sarl, Tech Solutions SA..." />
-              <span class="form-error" id="err-nom">Veuillez saisir un nom d'au moins 2 caractères.</span>
+        <!-- ========================================
+     À PROPOS
+======================================== -->
+        <section id="a-propos" class="section section-alt">
+            <div class="container about-layout">
+                <div class="reveal">
+                    <div class="section-eyebrow">À Propos</div>
+                    <h2 class="section-title">Qui sommes-<span class="grad-text">nous</span> ?</h2>
+                    <p class="about-p">
+                        Fondée au Cameroun, Lymytz est une société de conception logicielle qui a grandi en développant
+                        des solutions numériques taillées sur mesure pour les entreprises africaines, puis en
+                        s'implantant en France pour servir une clientèle plus large.
+                    </p>
+                    <p class="about-p">
+                        Nous maîtrisons toute la chaîne de valeur du logiciel : de la conception au déploiement, en
+                        passant par l'intégration et la formation. Notre équipe pluridisciplinaire construit des outils
+                        fiables, évolutifs et pensés pour le long terme.
+                    </p>
+                    <div class="about-pillars">
+                        <div class="pillar">
+                            <div class="pillar-icon">🎯</div>
+                            <div>
+                                <strong>Notre Mission</strong>
+                                <p>Rendre les outils numériques de haute qualité accessibles aux entreprises d'Afrique
+                                    et d'Europe.</p>
+                            </div>
+                        </div>
+                        <div class="pillar">
+                            <div class="pillar-icon">🔭</div>
+                            <div>
+                                <strong>Notre Vision</strong>
+                                <p>Devenir le partenaire technologique de référence pour les entreprises africaines à
+                                    l'échelle internationale.</p>
+                            </div>
+                        </div>
+                        <div class="pillar">
+                            <div class="pillar-icon">💡</div>
+                            <div>
+                                <strong>Nos Valeurs</strong>
+                                <p>Excellence technique, écoute client, intégrité et engagement envers la durabilité des
+                                    solutions.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reveal delay-1">
+                    <div class="stat-box card">
+                        <div class="stat-box-head">
+                            <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                stroke-width="2" style="color:var(--blue)">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z" />
+                            </svg>
+                            <span class="stat-box-label">Lymytz en chiffres</span>
+                        </div>
+                        <div class="stat-grid">
+                            <div class="stat-cell">
+                                <div><span class="stat-num" data-target="6">0</span><span class="stat-suf">+</span>
+                                </div>
+                                <div class="stat-lbl">Clients actifs</div>
+                            </div>
+                            <div class="stat-cell">
+                                <div><span class="stat-num" data-target="2">0</span></div>
+                                <div class="stat-lbl">Produits édités</div>
+                            </div>
+                            <div class="stat-cell">
+                                <div><span class="stat-num" data-target="100">0</span><span class="stat-suf">%</span>
+                                </div>
+                                <div class="stat-lbl">Satisfaction</div>
+                            </div>
+                            <div class="stat-cell">
+                                <div><span class="stat-num" data-target="2">0</span></div>
+                                <div class="stat-lbl">Pays d'implantation</div>
+                            </div>
+                        </div>
+                        <div class="stat-box-foot">
+                            <div class="val-row"><span class="val-dot vd-blue"></span> Rigueur & Qualité</div>
+                            <div class="val-row"><span class="val-dot vd-purple"></span> Innovation Continue</div>
+                            <div class="val-row"><span class="val-dot vd-green"></span> Engagement Client</div>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </section>
 
-            <div class="form-group">
-              <label class="form-label" for="societe_forme">Forme juridique <span>*</span></label>
-              <select class="form-select" id="societe_forme">
-                <option value="">— Sélectionner —</option>
-                <option value="SARL">SARL</option>
-                <option value="SA">SA</option>
-                <option value="SAS">SAS</option>
-                <option value="SNC">SNC</option>
-                <option value="EURL">EURL</option>
-                <option value="GIE">GIE</option>
-                <option value="Association">Association</option>
-                <option value="Autre">Autre</option>
-              </select>
-              <span class="form-error" id="err-forme">Veuillez sélectionner une forme juridique.</span>
+        <!-- ========================================
+     PARCOURS
+======================================== -->
+        <section id="parcours" class="section">
+            <div class="container">
+                <div class="section-eyebrow reveal">Histoire</div>
+                <h2 class="section-title reveal">Notre <span class="grad-text">parcours</span></h2>
+                <p class="section-lead reveal">Les étapes qui ont forgé l'identité de Lymytz — d'une idée camerounaise à
+                    une présence internationale.</p>
+                <div class="timeline">
+
+                    <div class="tl-row reveal">
+                        <div class="tl-spine">
+                            <div class="tl-dot"></div>
+                            <div class="tl-line"></div>
+                        </div>
+                        <div class="tl-card card">
+                            <div class="tl-era">Fondation</div>
+                            <h3>Création de Lymytz</h3>
+                            <p>Lymytz est fondée au Cameroun par une équipe de passionnés du logiciel avec une
+                                conviction forte : les entreprises africaines méritent des outils numériques de class
+                                mondiale, conçus localement. Les premiers jalons sont posés avec les services de conseil
+                                IT et de développement sur mesure.</p>
+                        </div>
+                    </div>
+
+                    <div class="tl-row reveal delay-1">
+                        <div class="tl-spine">
+                            <div class="tl-dot d-blue"></div>
+                            <div class="tl-line"></div>
+                        </div>
+                        <div class="tl-card card c-blue">
+                            <div class="tl-era">1er Grand Projet</div>
+                            <h3>GLP-Entreprise — Logiciel de gestion de boulangerie</h3>
+                            <p>Lymytz réalise son premier grand projet pour <strong>GLP-Entreprise</strong> (Groupe La
+                                Paix) : un logiciel de gestion de boulangerie couvrant l'intégralité de la chaîne
+                                opérationnelle — <strong>commercial</strong> (commandes, clients, tarification),
+                                <strong>production</strong> (recettes, planification, matières premières) et
+                                <strong>comptabilité</strong> (facturation, caisse, reporting). Ce projet fondateur
+                                démontre la capacité de Lymytz à livrer des solutions métier complexes.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="tl-row reveal delay-2">
+                        <div class="tl-spine">
+                            <div class="tl-dot d-purple"></div>
+                            <div class="tl-line"></div>
+                        </div>
+                        <div class="tl-card card c-purple">
+                            <div class="tl-era">Lancement Produit</div>
+                            <h3>Naissance de Lymytz ERP</h3>
+                            <p>Fort de l'expérience terrain accumulée, Lymytz structure et capitalise ses expertises
+                                dans un produit SaaS multi-tenant : <strong>Lymytz ERP</strong>. La plateforme intègre
+                                les modules Ventes & CRM, Stocks, Comptabilité et RH dans une interface unifiée. Les
+                                premières entreprises rejoignent la plateforme.</p>
+                        </div>
+                    </div>
+
+                    <div class="tl-row reveal delay-3">
+                        <div class="tl-spine">
+                            <div class="tl-dot d-now"></div>
+                        </div>
+                        <div class="tl-card card c-now">
+                            <div class="tl-now-badge">
+                                <span class="live-dot"></span> Aujourd'hui
+                            </div>
+                            <h3>Croissance & Expansion</h3>
+                            <p>Lymytz s'implante en <strong>France</strong> tout en maintenant son ancrage camerounais.
+                                L'équipe grandit, le portefeuille clients se diversifie, de nouvelles applications
+                                mobiles voient le jour et le produit ERP continue d'évoluer. L'ambition : devenir le
+                                partenaire tech de référence pour les entreprises africaines et leur diaspora en Europe.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
             </div>
+        </section>
 
-            <div class="form-group">
-              <label class="form-label" for="societe_capital">Capital social (FCFA)</label>
-              <input class="form-input" id="societe_capital" type="number" placeholder="Ex : 1000000" min="0" />
+        <!-- ========================================
+     SERVICES (aperçu)
+======================================== -->
+        <section id="services" class="section section-alt">
+            <div class="container">
+                <div class="section-eyebrow reveal">Expertise</div>
+                <h2 class="section-title reveal">Nos <span class="grad-text">services</span></h2>
+                <p class="section-lead reveal">Une palette complète de compétences pour couvrir tous vos besoins
+                    numériques.</p>
+                <div class="svc-grid">
+                    <article class="svc-card svc-wide reveal" id="svc-custom">
+                        <div class="svc-num">01</div>
+                        <div class="svc-icon">
+                            <svg width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                stroke-width="1.75">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5" />
+                            </svg>
+                        </div>
+                        <h3>Développement Logiciel Sur Mesure</h3>
+                        <p>Applications web, mobiles et desktop entièrement conçues selon vos processus métier —
+                            architecturées pour la performance, la sécurité et l'évolutivité.</p>
+                        <ul class="svc-list">
+                            <li>Applications web & SaaS multi-tenant</li>
+                            <li>Applications mobiles iOS & Android</li>
+                            <li>APIs REST & micro-services</li>
+                            <li>Automatisation de processus métier</li>
+                        </ul>
+                    </article>
+                    <article class="svc-card reveal delay-1" id="svc-web">
+                        <div class="svc-num">02</div>
+                        <div class="svc-icon">
+                            <svg width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                stroke-width="1.75">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253" />
+                            </svg>
+                        </div>
+                        <h3>Développement de Sites Web</h3>
+                        <p>Sites vitrines, e-commerce et portails web modernes, rapides, référencés et adaptés à tous
+                            les écrans.</p>
+                        <div class="svc-tags">
+                            <span class="tag">Vitrine</span><span class="tag">E-commerce</span><span
+                                class="tag">SEO</span>
+                        </div>
+                    </article>
+                    <article class="svc-card reveal delay-2" id="svc-erp">
+                        <div class="svc-num">03</div>
+                        <div class="svc-icon">
+                            <svg width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                stroke-width="1.75">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3" />
+                            </svg>
+                        </div>
+                        <h3>Intégration ERP & Systèmes d'Information</h3>
+                        <p>Déploiement de Lymytz ERP ou intégration d'outils dans votre ecosystème existant pour un flux
+                            d'informations unifié.</p>
+                        <div class="svc-tags">
+                            <span class="tag">ERP</span><span class="tag">SI</span><span class="tag">Migration</span>
+                        </div>
+                    </article>
+                    <article class="svc-card reveal" id="svc-consulting">
+                        <div class="svc-num">04</div>
+                        <div class="svc-icon">
+                            <svg width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                stroke-width="1.75">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 003.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.153a11.96 11.96 0 00-2.693.749L12 6.013l-.058.048-.049-.048z" />
+                            </svg>
+                        </div>
+                        <h3>Audit & Conseil IT</h3>
+                        <p>Évaluation de votre infrastructure, recommandations strategiques et feuilles de route de
+                            transformation numérique.</p>
+                        <div class="svc-tags">
+                            <span class="tag">Audit</span><span class="tag">Stratégie</span>
+                        </div>
+                    </article>
+                    <article class="svc-card reveal delay-1" id="svc-cloud">
+                        <div class="svc-num">05</div>
+                        <div class="svc-icon">
+                            <svg width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                stroke-width="1.75">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M2.25 15a4.5 4.5 0 004.5 4.5H18a3.75 3.75 0 001.332-7.257 3 3 0 00-3.758-3.848 5.25 5.25 0 00-10.233 2.33A4.502 4.502 0 002.25 15z" />
+                            </svg>
+                        </div>
+                        <h3>Cloud & Hébergement</h3>
+                        <p>Mise en production, monitoring et maintien en conditions opérationnelles de vos applications
+                            cloud.</p>
+                        <div class="svc-tags">
+                            <span class="tag">Cloud</span><span class="tag">DevOps</span><span class="tag">99.9%
+                                SLA</span>
+                        </div>
+                    </article>
+                    <article class="svc-card reveal delay-2" id="svc-training">
+                        <div class="svc-num">06</div>
+                        <div class="svc-icon">
+                            <svg width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                stroke-width="1.75">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5z" />
+                            </svg>
+                        </div>
+                        <h3>Formation & Accompagnement</h3>
+                        <p>Formation de vos équipes aux outils déployés, accompagnement au changement et support réactif
+                            sur le long terme.</p>
+                        <div class="svc-tags">
+                            <span class="tag">Formation</span><span class="tag">Support</span>
+                        </div>
+                    </article>
+                </div>
+                <div style="margin-top:2.5rem;text-align:center">
+                    <a href="pages/services.html" class="btn btn-secondary">Voir tous nos services en détail →</a>
+                </div>
             </div>
+        </section>
 
-            <div class="form-group">
-              <label class="form-label" for="societe_email">Email professionnel <span>*</span></label>
-              <input class="form-input" id="societe_email" type="email" placeholder="contact@masociete.com" />
-              <span class="form-error" id="err-email">Veuillez saisir un email valide.</span>
+        <!-- ========================================
+     RÉALISATIONS (aperçu)
+======================================== -->
+        <section id="realisations" class="section">
+            <div class="container">
+                <div class="section-eyebrow reveal">Portfolio</div>
+                <h2 class="section-title reveal">Ce que nous avons <span class="grad-text">construit</span></h2>
+                <p class="section-lead reveal">Produits édités et projets livrés pour des clients de secteurs variés.
+                </p>
+
+                <!-- Featured product -->
+                <div class="product-hero-card card-grad reveal" style="margin-bottom:2rem">
+                    <div>
+                        <div class="phc-label">Produit phare — Lymytz ERP</div>
+                        <h3 class="phc-title">La plateforme de gestion pensée pour l'Afrique</h3>
+                        <p class="phc-desc">Solution SaaS multi-tenant couvrant ventes, stocks, comptabilité et RH. Née
+                            d'une expertise terrain réelle, conçue pour les réalités des entreprises africaines.</p>
+                        <div class="phc-modules">
+                            <span class="badge badge-blue">Ventes & CRM</span>
+                            <span class="badge badge-purple">Stocks & Achats</span>
+                            <span class="badge badge-green">Comptabilité</span>
+                            <span class="badge badge-amber">RH & Paie</span>
+                        </div>
+                        <div class="phc-clients">
+                            <span>Utilisé par :</span>
+                            <strong>GLP · CCO · TEEKA</strong>
+                        </div>
+                        <div style="margin-top:1.75rem;display:flex;gap:1rem;flex-wrap:wrap">
+                            <a href="pages/produits.html" class="btn btn-primary btn-sm">Découvrir le produit</a>
+                            <a href="https://erp.lymytz.com/" class="btn btn-secondary btn-sm"
+                                style="padding:.55rem 1.1rem;font-size:.875rem">Accéder à l'ERP →</a>
+                        </div>
+                    </div>
+                    <div class="phc-mockup">
+                        <div class="mock-bar">
+                            <div class="mock-dots">
+                                <div class="mock-dot r"></div>
+                                <div class="mock-dot y"></div>
+                                <div class="mock-dot g"></div>
+                            </div>
+                        </div>
+                        <div class="mock-body">
+                            <div class="mock-row">
+                                <div class="mock-kpi"><span>Ventes du jour</span><strong style="color:var(--blue)">1 240
+                                        €</strong></div>
+                                <div class="mock-kpi"><span>Commandes</span><strong
+                                        style="color:var(--purple)">38</strong></div>
+                                <div class="mock-kpi"><span>Stock alerte</span><strong
+                                        style="color:var(--amber)">3</strong></div>
+                            </div>
+                            <div class="mock-chart">
+                                <div class="mc-bar" style="height:40%"></div>
+                                <div class="mc-bar" style="height:65%"></div>
+                                <div class="mc-bar" style="height:50%"></div>
+                                <div class="mc-bar" style="height:85%"></div>
+                                <div class="mc-bar" style="height:72%"></div>
+                                <div class="mc-bar" style="height:90%;background:rgba(157,92,245,.45)"></div>
+                                <div class="mc-bar" style="height:78%;background:rgba(157,92,245,.45)"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projects grid -->
+                <div class="projects-grid">
+                    <div class="project-card card reveal" id="proj-yatch">
+                        <div class="proj-head">
+                            <div class="proj-av" style="background:linear-gradient(135deg,#F59E0B,#D97706)">YC</div>
+                            <div>
+                                <h4>Yatch Center</h4>
+                                <div class="proj-sector">Centre Commercial</div>
+                            </div>
+                        </div>
+                        <p>Lymytz ERP déployé pour la gestion complète du centre commercial, et développement d'une
+                            <strong style="color:var(--text-2)">application mobile de gestion de snack / bar /
+                                restaurant</strong> intégrée à l'écosystème.
+                        </p>
+                        <div class="proj-tags">
+                            <span class="tag">Lymytz ERP</span><span class="tag">App Mobile</span><span
+                                class="tag">F&B</span>
+                        </div>
+                    </div>
+                    <div class="project-card card reveal delay-1" id="proj-blanco">
+                        <div class="proj-head">
+                            <div class="proj-av" style="background:linear-gradient(135deg,#EF4444,#B91C1C)">EB</div>
+                            <div>
+                                <h4>El Blanco</h4>
+                                <div class="proj-sector">Commerce Cosmétique</div>
+                            </div>
+                        </div>
+                        <p>Ancien client Lymytz ERP. El Blanco, spécialisé dans le commerce de produits cosmétiques, a
+                            utilisé notre plateforme ERP pour piloter ses opérations commerciales et sa gestion des
+                            stocks.</p>
+                        <div class="proj-tags">
+                            <span class="tag">Lymytz ERP</span><span class="badge badge-amber"
+                                style="font-size:.65rem;padding:.175rem .65rem">Ancien client</span>
+                        </div>
+                    </div>
+                    <div class="project-card card reveal delay-2" id="proj-tne">
+                        <div class="proj-head">
+                            <div class="proj-av" style="background:linear-gradient(135deg,#22D3EE,#0891B2)">TNE</div>
+                            <div>
+                                <h4>Telecom & Network Eng.</h4>
+                                <div class="proj-sector">Télécommunications</div>
+                            </div>
+                        </div>
+                        <p>Mission de <strong style="color:var(--text-2)">consulting IT</strong> pour cette société
+                            spécialisée en infrastructures télécom et réseaux : audit, recommandations stratégiques et
+                            accompagnement technique.</p>
+                        <div class="proj-tags">
+                            <span class="tag">Consulting</span><span class="tag">Audit IT</span><span
+                                class="tag">Stratégie</span>
+                        </div>
+                    </div>
+                </div>
+                <div style="margin-top:2.5rem;text-align:center">
+                    <a href="pages/realisations.html" class="btn btn-secondary">Voir toutes nos réalisations →</a>
+                </div>
             </div>
+        </section>
 
-            <div class="form-group">
-              <label class="form-label" for="societe_tel">Téléphone <span>*</span></label>
-              <input class="form-input" id="societe_tel" type="tel" placeholder="+237 6XX XXX XXX" />
-              <span class="form-error" id="err-tel">Veuillez saisir un numéro valide.</span>
+        <!-- ========================================
+     VISION
+======================================== -->
+        <section id="vision" class="section section-alt">
+            <div class="container vision-layout">
+                <div class="reveal">
+                    <div class="section-eyebrow">Cap sur l'avenir</div>
+                    <h2 class="section-title">Notre <span class="grad-text">vision</span></h2>
+                    <p class="vision-p">
+                        Nous croyons que la transformation numérique n'est pas un luxe. Elle est accessible, nécessaire,
+                        et doit être portée par des équipes qui comprennent profondément les réalités économiques et
+                        culturelles de leurs marchés.
+                    </p>
+                    <p class="vision-p">
+                        Desde le Cameroun jusqu'à l'Europe, Lymytz construit des ponts technologiques entre les
+                        continents. Notre ambition est claire : accompagner les entrepreneurs africains dans leur
+                        croissance numérique, qu'ils soient sur le continent ou en diaspora.
+                    </p>
+                </div>
+                <div class="vision-cards reveal delay-1" style="margin-top:3.5rem">
+                    <div class="vc">
+                        <div class="vc-icon">🌍</div>
+                        <div>
+                            <h4>Expansion africaine & européenne</h4>
+                            <p>Renforcer notre présence au Cameroun, en France et nous ouvrir à d'autres marchés
+                                africains.</p>
+                        </div>
+                    </div>
+                    <div class="vc">
+                        <div class="vc-icon">🎓</div>
+                        <div>
+                            <h4>Formation de talents locaux</h4>
+                            <p>Contribuer à l'émergence d'une nouvelle génération d'ingénieurs logiciels africains de
+                                haut niveau.</p>
+                        </div>
+                    </div>
+                    <div class="vc">
+                        <div class="vc-icon">🚀</div>
+                        <div>
+                            <h4>Innovation produit permanente</h4>
+                            <p>Faire évoluer Lymytz ERP et lancer de nouveaux outils SaaS verticaux pour des secteurs
+                                ciblés.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </section>
 
-            <div class="form-group">
-              <label class="form-label" for="societe_pays">Pays</label>
-              <select class="form-select" id="societe_pays">
-                <option value="">— Sélectionner —</option>
-                <option value="Cameroun" selected>Cameroun</option>
-                <option value="Côte d'Ivoire">Côte d'Ivoire</option>
-                <option value="Sénégal">Sénégal</option>
-                <option value="Gabon">Gabon</option>
-                <option value="Congo">Congo</option>
-                <option value="Tchad">Tchad</option>
-                <option value="RDC">RDC</option>
-                <option value="Mali">Mali</option>
-                <option value="Burkina Faso">Burkina Faso</option>
-                <option value="Autre">Autre</option>
-              </select>
+        <!-- ========================================
+     ÉQUIPE
+======================================== -->
+        <section id="equipe" class="section">
+            <div class="container">
+                <div class="section-eyebrow reveal">Les personnes</div>
+                <h2 class="section-title reveal">Notre <span class="grad-text">équipe</span></h2>
+                <p class="section-lead reveal">Des talents engagés à construire des solutions qui changent la façon de
+                    travailler.</p>
+                <div class="team-grid">
+                    <div class="team-card card reveal" id="tm-1">
+                        <div class="team-av" style="background:linear-gradient(135deg,#4F7BF7,#9D5CF5)">DG</div>
+                        <div class="team-info">
+                            <h4>Directeur Général</h4>
+                            <span class="team-role">Fondateur & CEO</span>
+                            <p>Vision stratégique, direction de l'entreprise et pilotage des grands comptes clients.</p>
+                        </div>
+                    </div>
+                    <div class="team-card card reveal delay-1" id="tm-2">
+                        <div class="team-av" style="background:linear-gradient(135deg,#0DB87B,#22D3EE)">LA</div>
+                        <div class="team-info">
+                            <h4>Architecte Logiciel</h4>
+                            <span class="team-role">Lead Developer</span>
+                            <p>Conception des architectures techniques, supervision du code et montée en compétences de
+                                l'équipe.</p>
+                        </div>
+                    </div>
+                    <div class="team-card card reveal delay-2" id="tm-3">
+                        <div class="team-av" style="background:linear-gradient(135deg,#F59E0B,#EF4444)">DF</div>
+                        <div class="team-info">
+                            <h4>Développeur Full-Stack</h4>
+                            <span class="team-role">Backend & Intégrations</span>
+                            <p>Développement des fonctionnalités métier et intégrations systèmes complexes chez les
+                                clients.</p>
+                        </div>
+                    </div>
+                    <div class="team-card card reveal delay-3" id="tm-4">
+                        <div class="team-av" style="background:linear-gradient(135deg,#9D5CF5,#EF4444)">DP</div>
+                        <div class="team-info">
+                            <h4>Designer UI/UX</h4>
+                            <span class="team-role">Expérience & Interface</span>
+                            <p>Conception des interfaces utilisateurs et de l'expérience produit sur tous les projets
+                                Lymytz.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-cta reveal">
+                    <div class="team-cta-txt">
+                        <h3>Rejoignez Lymytz</h3>
+                        <p>Vous êtes développeur, designer ou consultant passionné ? Nous construisons quelque chose de
+                            grand et cherchons des talents qui partagent notre vision.</p>
+                    </div>
+                    <a href="#contact" class="btn btn-secondary">Postuler</a>
+                </div>
             </div>
+        </section>
 
-            <div class="form-group">
-              <label class="form-label" for="societe_ville">Ville / Siège social</label>
-              <input class="form-input" id="societe_ville" type="text" placeholder="Ex : Douala, Yaoundé..." />
+        <!-- ========================================
+     CLIENTS
+======================================== -->
+        <section id="clients" class="section section-alt">
+            <div class="container">
+                <div class="section-eyebrow reveal">Confiance</div>
+                <h2 class="section-title reveal">Ils ont choisi <span class="grad-text">Lymytz</span></h2>
+                <p class="section-lead reveal">Ces entreprises nous ont fait confiance pour bâtir ou moderniser leur
+                    infrastructure numérique.</p>
+
+                <div class="clients-grid">
+                    <div class="reveal">
+                        <div class="cg-head">
+                            <div class="badge badge-blue cg-label">Utilisateurs Lymytz ERP</div>
+                            <p class="cg-sub">Utilisent notre plateforme ERP en production</p>
+                        </div>
+                        <div class="client-list-col">
+                            <div class="cli card" id="c-glp">
+                                <div class="cli-av">GLP</div>
+                                <div class="cli-info">
+                                    <strong>GLP-Entreprise (Groupe La Paix)</strong>
+                                    <span>Boulangerie & Commerce</span>
+                                </div>
+                                <span class="badge badge-blue" style="font-size:.65rem">ERP actif</span>
+                            </div>
+                            <div class="cli card" id="c-cco">
+                                <div class="cli-av">CCO</div>
+                                <div class="cli-info">
+                                    <strong>CCO</strong>
+                                    <span>Industrie</span>
+                                </div>
+                                <span class="badge badge-blue" style="font-size:.65rem">ERP actif</span>
+                            </div>
+                            <div class="cli card" id="c-teeka">
+                                <div class="cli-av">TKA</div>
+                                <div class="cli-info">
+                                    <strong>TEEKA</strong>
+                                    <span>Services</span>
+                                </div>
+                                <span class="badge badge-blue" style="font-size:.65rem">ERP actif</span>
+                            </div>
+                            <div class="cli card" id="c-yatch" style="opacity:.65">
+                                <div class="cli-av" style="background:linear-gradient(135deg,#64748b,#94a3b8)">YC</div>
+                                <div class="cli-info">
+                                    <strong>Yatch Center</strong>
+                                    <span>Centre Commercial</span>
+                                </div>
+                                <span class="badge badge-amber" style="font-size:.65rem">Ancien client</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="reveal delay-1">
+                        <div class="cg-head">
+                            <div class="badge badge-amber cg-label">Projets & Consulting</div>
+                            <p class="cg-sub">Ont bénéficié de solutions ou missions sur mesure</p>
+                        </div>
+                        <div class="client-list-col">
+                            <div class="cli card" id="c-blanco">
+                                <div class="cli-av">EB</div>
+                                <div class="cli-info">
+                                    <strong>El Blanco</strong>
+                                    <span>Commerce Cosmétique</span>
+                                </div>
+                                <span class="badge badge-amber" style="font-size:.65rem">Ancien client ERP</span>
+                            </div>
+                            <div class="cli card" id="c-tne">
+                                <div class="cli-av">TNE</div>
+                                <div class="cli-info">
+                                    <strong>Telecom & Network Engineering</strong>
+                                    <span>Télécommunications</span>
+                                </div>
+                                <span class="badge badge-green" style="font-size:.65rem">Consulting IT</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testi reveal">
+                    <div class="testi-card card">
+                        <span class="testi-q">"</span>
+                        <p class="testi-body">Lymytz a su comprendre nos besoins métier spécifiques et livrer une
+                            solution robuste qui nous accompagne au quotidien. Une équipe sérieuse, réactive et
+                            véritablement engagée dans la réussite de ses clients.</p>
+                        <div class="testi-author">
+                            <div class="testi-av">GLP</div>
+                            <div>
+                                <strong>GLP-Entreprise</strong>
+                                <span>1er client Lymytz — Logiciel de boulangerie</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </section>
 
-            <div class="form-group full">
-              <label class="form-label" for="societe_adresse">Adresse du siège</label>
-              <input class="form-input" id="societe_adresse" type="text" placeholder="Rue, quartier, BP..." />
+        <!-- ========================================
+     CONTACT
+======================================== -->
+        <section id="contact" class="section">
+            <div class="container contact-layout">
+                <div class="reveal">
+                    <div class="section-eyebrow">Parlons-en</div>
+                    <h2 class="section-title">Démarrons votre<br><span class="grad-text">projet ensemble</span></h2>
+                    <p class="contact-lead">Que vous ayez un projet précis ou simplement des questions, notre équipe
+                        répond sous 24h ouvrables avec une analyse initiale sans engagement.</p>
+                    <div class="contact-items">
+                        <div class="ci">
+                            <div class="ci-ico">
+                                <svg width="17" height="17" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                                </svg>
+                            </div>
+                            <a href="mailto:contact@lymytz.com"
+                                style="color:inherit;text-decoration:none">contact@lymytz.com</a>
+                        </div>
+                        <div class="ci">
+                            <div class="ci-ico">
+                                <!-- WhatsApp icon -->
+                                <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"
+                                    style="color:#25D366">
+                                    <path
+                                        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                                </svg>
+                            </div>
+                            <a href="https://wa.me/237600000000" target="_blank" rel="noopener"
+                                style="color:inherit;text-decoration:none">WhatsApp Cameroun</a>
+                        </div>
+                        <div class="ci">
+                            <div class="ci-ico">
+                                <svg width="17" height="17" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                                </svg>
+                            </div>
+                            Cameroun (Yaoundé) & France
+                        </div>
+                    </div>
+                </div>
+                <div class="reveal delay-1">
+                    <form class="contact-form" id="contact-form" novalidate>
+                        <div class="form-row">
+                            <div class="fg">
+                                <label for="f-name">Nom complet <span class="req">*</span></label>
+                                <input type="text" id="f-name" name="name" placeholder="Jean-Paul Mbog" required
+                                    autocomplete="name">
+                            </div>
+                            <div class="fg">
+                                <label for="f-company">Entreprise</label>
+                                <input type="text" id="f-company" name="company" placeholder="Votre société"
+                                    autocomplete="organization">
+                            </div>
+                        </div>
+                        <div class="fg">
+                            <label for="f-email">Email <span class="req">*</span></label>
+                            <input type="email" id="f-email" name="email" placeholder="vous@entreprise.cm" required
+                                autocomplete="email">
+                        </div>
+                        <div class="fg">
+                            <label for="f-service">Type de demande</label>
+                            <select id="f-service" name="service">
+                                <option value="" disabled selected>Sélectionnez...</option>
+                                <option>Développement logiciel sur mesure</option>
+                                <option>Création de site web</option>
+                                <option>Lymytz ERP — Démo & Souscription</option>
+                                <option>Audit & Conseil IT</option>
+                                <option>Hébergement & Cloud</option>
+                                <option>Candidature — Rejoindre l'équipe</option>
+                                <option>Autre</option>
+                            </select>
+                        </div>
+                        <div class="fg">
+                            <label for="f-msg">Votre message <span class="req">*</span></label>
+                            <textarea id="f-msg" name="message" rows="4"
+                                placeholder="Décrivez votre projet, votre besoin ou votre question..."
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full" id="submit-btn">
+                            <span id="btn-text">Envoyer ma demande</span>
+                            <svg id="btn-icon" width="16" height="16" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" stroke-width="2.5">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5" />
+                            </svg>
+                        </button>
+                        <p class="form-note">Réponse garantie sous 24h ouvrables. Sans engagement.</p>
+                    </form>
+                </div>
             </div>
-          </div>
+        </section>
 
-          <div class="form-nav">
-            <span class="hint">Étape 1 sur 4</span>
-            <button class="btn btn-primary" data-action="next">Suivant →</button>
-          </div>
-        </div>
+    </main>
 
-        <!-- ── STEP 2 : Modules ── -->
-        <div class="form-step" data-step="2">
-          <div class="form-step-title">Sélectionnez vos modules ERP</div>
-          <div class="form-step-subtitle">Activez les modules correspondant à votre activité. Vous pourrez en ajouter ou retirer à tout moment.</div>
-
-          <div class="modules-select-grid" id="module-select-grid">
-            <!-- Filled by JS -->
-          </div>
-          <div id="module-count" style="text-align:center;font-size:0.85rem;color:var(--text-muted);margin-bottom:8px;">0 module(s) sélectionné(s)</div>
-          <div id="modules-warning" style="display:none;text-align:center;color:#ef4444;font-size:0.83rem;margin-bottom:8px;">Veuillez sélectionner au moins un module.</div>
-
-          <div class="form-nav">
-            <button class="btn btn-secondary" data-action="prev">← Retour</button>
-            <span class="hint">Étape 2 sur 4</span>
-            <button class="btn btn-primary" data-action="next">Suivant →</button>
-          </div>
-        </div>
-
-        <!-- ── STEP 3 : Plan ── -->
-        <div class="form-step" data-step="3">
-          <div class="form-step-title">Choisissez votre plan</div>
-          <div class="form-step-subtitle">Vous pourrez changer de plan à tout moment depuis votre espace administrateur.</div>
-
-          <div class="plans-select-grid" id="plan-select-grid">
-            <!-- Filled by JS -->
-          </div>
-          <div id="plan-warning" style="display:none;text-align:center;color:#ef4444;font-size:0.83rem;margin-bottom:8px;">Veuillez sélectionner un plan.</div>
-
-          <div class="form-nav">
-            <button class="btn btn-secondary" data-action="prev">← Retour</button>
-            <span class="hint">Étape 3 sur 4</span>
-            <button class="btn btn-primary" data-action="next">Suivant →</button>
-          </div>
-        </div>
-
-        <!-- ── STEP 4 : Confirmation ── -->
-        <div class="form-step" data-step="4">
-          <div class="form-step-title">Récapitulatif &amp; confirmation</div>
-          <div class="form-step-subtitle">Vérifiez vos informations avant de valider votre inscription.</div>
-
-          <!-- Recap content -->
-          <div id="form-recap-content">
-            <div class="recap-grid">
-              <div class="recap-item">
-                <div class="recap-label">Raison sociale</div>
-                <div class="recap-value" id="recap-name">—</div>
-              </div>
-              <div class="recap-item">
-                <div class="recap-label">Forme juridique</div>
-                <div class="recap-value" id="recap-forme">—</div>
-              </div>
-              <div class="recap-item">
-                <div class="recap-label">Email</div>
-                <div class="recap-value" id="recap-email">—</div>
-              </div>
-              <div class="recap-item">
-                <div class="recap-label">Téléphone</div>
-                <div class="recap-value" id="recap-tel">—</div>
-              </div>
-              <div class="recap-item">
-                <div class="recap-label">Pays</div>
-                <div class="recap-value" id="recap-pays">—</div>
-              </div>
-              <div class="recap-item">
-                <div class="recap-label">Ville</div>
-                <div class="recap-value" id="recap-ville">—</div>
-              </div>
-              <div class="recap-item" style="grid-column:1/-1">
-                <div class="recap-label">Modules sélectionnés</div>
-                <div class="recap-modules-list" id="recap-modules">—</div>
-              </div>
-              <div class="recap-item">
-                <div class="recap-label">Plan choisi</div>
-                <div class="recap-value" id="recap-plan">—</div>
-              </div>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <div class="logo-mark">
+                            <svg width="26" height="26" viewBox="0 0 30 30" fill="none">
+                                <path d="M15 2L28 15L15 28L2 15L15 2Z" stroke="url(#lf)" stroke-width="2" fill="none" />
+                                <path d="M15 9L21 15L15 21L9 15L15 9Z" fill="url(#lf)" />
+                                <defs>
+                                    <linearGradient id="lf" x1="2" y1="2" x2="28" y2="28"
+                                        gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#4F7BF7" />
+                                        <stop offset="1" stop-color="#9D5CF5" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <span class="logo-name">Lym<em>ytz</em></span>
+                    </a>
+                    <p>Société camerounaise de conception logicielle, implantée en France. Nous créons le numérique qui
+                        fait avancer les entreprises.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>La Société</h4>
+                    <ul>
+                        <li><a href="#a-propos">À Propos</a></li>
+                        <li><a href="#parcours">Notre Parcours</a></li>
+                        <li><a href="#vision">Notre Vision</a></li>
+                        <li><a href="#equipe">Notre Équipe</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Services & Produits</h4>
+                    <ul>
+                        <li><a href="services.html">Nos Services</a></li>
+                        <li><a href="produits.html">Nos Produits</a></li>
+                        <li><a href="realisations.html">Nos Réalisations</a></li>
+                        <li><a href="https://erp.lymytz.com/">Lymytz ERP</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:contact@lymytz.com">contact@lymytz.com</a></li>
+                        <li><a href="#contact">Nous écrire</a></li>
+                        <li><a href="#contact">Postuler</a></li>
+                    </ul>
+                </div>
             </div>
-
-            <div class="recap-total">
-              <div class="recap-total-label">💳 Montant mensuel estimé</div>
-              <div class="recap-total-price" id="recap-total-price">—</div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Lymytz · Cameroun & France · Tous droits réservés</p>
+                <div class="footer-legal">
+                    <a href="pages/mentions-legales.html">Mentions légales</a>
+                    <a href="pages/confidentialite.html">Confidentialité</a>
+                </div>
             </div>
-
-            <p style="font-size:0.82rem;color:var(--text-muted);margin-bottom:8px;text-align:center;">
-              En cliquant sur "Confirmer l'inscription", vous acceptez nos
-              <a href="#" style="color:var(--accent-primary)">Conditions Générales d'Utilisation</a>.
-              Votre accès sera activé sous 24h.
-            </p>
-          </div>
-
-          <!-- Success state -->
-          <div class="form-success" id="form-success">
-            <div class="success-icon">✅</div>
-            <h3 style="margin-bottom:12px">Inscription envoyée avec succès !</h3>
-            <p style="margin-bottom:8px">Merci ! Notre équipe traitera votre demande et vous contactera à l'adresse email fournie dans les <strong>24 heures</strong>.</p>
-            <p style="margin-bottom:28px;color:var(--text-muted);font-size:0.85rem;">Vérifiez votre boîte mail et vos spams.</p>
-            <button class="btn btn-secondary" id="restart-btn">Inscrire une autre société</button>
-          </div>
-
-          <div class="form-nav" id="form-nav-step4">
-            <button class="btn btn-secondary" data-action="prev">← Retour</button>
-            <span class="hint">Étape 4 sur 4</span>
-            <button class="btn btn-primary" id="submit-btn">Confirmer l'inscription</button>
-          </div>
         </div>
+    </footer>
 
-      </div><!-- /form-card -->
-    </div><!-- /form-wrapper -->
-  </div>
-</section>
-
-<!-- ═══════════════════════════════════════════ FAQ ══════════════════════════════ -->
-<section id="faq" class="section">
-  <div class="container">
-    <div class="section-header fade-up">
-      <span class="section-tag">FAQ</span>
-      <h2>Questions fréquentes</h2>
-    </div>
-
-    <div class="faq-list">
-
-      <div class="faq-item fade-up">
-        <div class="faq-question">
-          Qu'est-ce qu'un "tenant" dans Lymytz ERP ?
-          <span class="faq-icon">+</span>
-        </div>
-        <div class="faq-answer">
-          Un tenant représente votre entreprise (société) dans le système. Chaque société dispose de son propre espace isolé avec ses données, ses utilisateurs, ses agences et ses modules activés. Plusieurs sociétés peuvent coexister dans la même installation.
-        </div>
-      </div>
-
-      <div class="faq-item fade-up">
-        <div class="faq-question">
-          Puis-je changer de modules après l'inscription ?
-          <span class="faq-icon">+</span>
-        </div>
-        <div class="faq-answer">
-          Oui, absolument. Depuis votre espace administrateur, vous pouvez activer ou désactiver des modules à tout moment. Les données existantes ne sont jamais supprimées lors d'une désactivation de module.
-        </div>
-      </div>
-
-      <div class="faq-item fade-up">
-        <div class="faq-question">
-          Le plan Starter est-il vraiment gratuit ?
-          <span class="faq-icon">+</span>
-        </div>
-        <div class="faq-answer">
-          Oui, le plan Starter est gratuit pendant 3 mois sans carte bancaire requise. Il vous permet de tester jusqu'à 3 modules avec 1 agence et 5 utilisateurs. À l'issue de la période d'essai, un devis vous sera proposé pour continuer.
-        </div>
-      </div>
-
-      <div class="faq-item fade-up">
-        <div class="faq-question">
-          Mes données sont-elles sécurisées ?
-          <span class="faq-icon">+</span>
-        </div>
-        <div class="faq-answer">
-          Oui. Chaque tenant possède une base de données PostgreSQL isolée. Les accès sont protégés par des mécanismes d'authentification et les données sont sauvegardées quotidiennement. L'option Enterprise inclut un déploiement on-premise pour une maîtrise totale de vos données.
-        </div>
-      </div>
-
-      <div class="faq-item fade-up">
-        <div class="faq-question">
-          Combien d'utilisateurs puis-je créer ?
-          <span class="faq-icon">+</span>
-        </div>
-        <div class="faq-answer">
-          Le plan Starter est limité à 5 utilisateurs. Le plan Pro et Enterprise permettent un nombre illimité d'utilisateurs et d'agences. Chaque utilisateur dispose de droits d'accès granulaires configurables par module et par page.
-        </div>
-      </div>
-
-      <div class="faq-item fade-up">
-        <div class="faq-question">
-          Quel est le délai d'activation après inscription ?
-          <span class="faq-icon">+</span>
-        </div>
-        <div class="faq-answer">
-          Notre équipe traite les demandes en moins de 24 heures ouvrables. Vous recevrez vos identifiants d'accès par email ainsi qu'un guide de démarrage rapide pour configurer votre espace.
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════════════════════════════════════ FOOTER ═══════════════════════════ -->
-<footer>
-  <div class="container">
-    <div class="footer-top">
-      <div class="footer-brand">
-        <a href="#" class="logo">
-          <div class="logo-icon">L</div>
-          <span class="logo-text">Lymytz<span>ERP</span></span>
-        </a>
-        <p>Solution ERP modulaire pour entreprises africaines. Gérez l'ensemble de vos processus métier dans une seule plateforme sécurisée.</p>
-      </div>
-      <div class="footer-col">
-        <h4>Produit</h4>
-        <ul>
-          <li><a href="#modules">Modules</a></li>
-          <li><a href="#pricing">Tarifs</a></li>
-          <li><a href="#how-it-works">Comment ça marche</a></li>
-          <li><a href="#register">Inscription</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Modules</h4>
-        <ul>
-          <li><a href="#modules">Commercial</a></li>
-          <li><a href="#modules">Comptabilité</a></li>
-          <li><a href="#modules">GRH</a></li>
-          <li><a href="#modules">Production</a></li>
-          <li><a href="#modules">Mutuelle</a></li>
-          <li><a href="#modules">Projets</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Contact</h4>
-        <ul>
-          <li><a href="mailto:contact@lymytz.com">contact@lymytz.com</a></li>
-          <li><a href="tel:+237000000000">+237 000 000 000</a></li>
-          <li><a href="#faq">Support &amp; FAQ</a></li>
-          <li><a href="#">Documentation</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="footer-bottom">
-      <p>© 2026 Lymytz ERP · Tous droits réservés</p>
-      <p>
-        <a href="#">Politique de confidentialité</a> ·
-        <a href="#">CGU</a> ·
-        <a href="#">Mentions légales</a>
-      </p>
-    </div>
-  </div>
-</footer>
-
-<script src="app.js"></script>
+    <!-- Web3Forms : aucun SDK requis, envoi via fetch natif dans js/script.js -->
+    <!-- WhatsApp floating button -->
+    <a href="https://wa.me/237600000000" target="_blank" rel="noopener" id="whatsapp-fab"
+        aria-label="Contacter sur WhatsApp"
+        style="position:fixed;bottom:1.75rem;right:1.75rem;z-index:9999;width:56px;height:56px;border-radius:50%;background:#25D366;box-shadow:0 4px 20px rgba(37,211,102,.45);display:flex;align-items:center;justify-content:center;transition:transform .2s,box-shadow .2s;text-decoration:none"
+        onmouseenter="this.style.transform='scale(1.1)';this.style.boxShadow='0 6px 28px rgba(37,211,102,.6)'"
+        onmouseleave="this.style.transform='';this.style.boxShadow='0 4px 20px rgba(37,211,102,.45)'">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="white">
+            <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+        </svg>
+    </a>
+    <script src="js/script.js"></script>
 </body>
+
 </html>

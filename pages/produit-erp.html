@@ -1,0 +1,945 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lymytz ERP — La Gestion Complète pour les Entreprises Africaines</title>
+    <meta name="description"
+        content="Lymytz ERP est une solution SaaS multi-tenant conçue pour les entreprises africaines : ventes, stocks, comptabilité OHADA, RH, facturation et tableaux de bord en temps réel.">
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+    <link rel="apple-touch-icon" href="../assets/favicon.svg">
+    <!-- SEO -->
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.lymytz.com/produit-erp.html">
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.lymytz.com/produit-erp.html">
+    <meta property="og:title" content="Lymytz ERP — Gestion Complète pour Entreprises Africaines">
+    <meta property="og:description"
+        content="ERP SaaS multi-tenant : ventes, stocks, comptabilité OHADA, RH. Conçu pour les entreprises d'Afrique subsaharienne.">
+    <meta property="og:image" content="https://www.lymytz.com/assets/og-lymytz.png">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:site_name" content="Lymytz">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Lymytz ERP — Gestion Complète pour Entreprises Africaines">
+    <meta name="twitter:description"
+        content="ERP SaaS multi-tenant : ventes, stocks, comptabilité OHADA, RH. Conçu pour les entreprises d'Afrique subsaharienne.">
+    <meta name="twitter:image" content="https://www.lymytz.com/assets/og-lymytz.png">
+    <!-- Schema.org SoftwareApplication -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Lymytz ERP",
+      "url": "https://www.lymytz.com/produit-erp.html",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web, Android, iOS",
+      "description": "Solution ERP SaaS multi-tenant pour entreprises africaines : ventes, stocks, comptabilité OHADA, RH.",
+      "offers": {"@type": "Offer", "priceCurrency": "XAF"},
+      "author": {"@type": "Organization", "name": "Lymytz", "url": "https://www.lymytz.com"},
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://www.lymytz.com/"},
+          {"@type": "ListItem", "position": 2, "name": "Produits", "item": "https://www.lymytz.com/produits.html"},
+          {"@type": "ListItem", "position": 3, "name": "Lymytz ERP", "item": "https://www.lymytz.com/produit-erp.html"}
+        ]
+      }
+    }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        .detail-hero {
+            padding: 9rem 0 6rem;
+            position: relative;
+            overflow: hidden
+        }
+
+        .detail-hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(ellipse 60% 60% at 10% 60%, rgba(79, 123, 247, .18) 0%, transparent 65%), radial-gradient(ellipse 50% 40% at 85% 25%, rgba(157, 92, 245, .13) 0%, transparent 65%);
+            pointer-events: none
+        }
+
+        .dh-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5rem;
+            align-items: center
+        }
+
+        .dh-breadcrumb {
+            font-size: .78rem;
+            color: var(--muted);
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: .5rem
+        }
+
+        .dh-breadcrumb a {
+            color: var(--muted)
+        }
+
+        .dh-breadcrumb span {
+            color: var(--subtle)
+        }
+
+        .dh-eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: .5rem;
+            margin-bottom: 1.25rem;
+            font-size: .7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: .14em;
+            color: var(--blue)
+        }
+
+        .dh-h1 {
+            font-size: clamp(2.25rem, 5vw, 3.75rem);
+            margin-bottom: 1.25rem;
+            line-height: 1.1
+        }
+
+        .dh-lead {
+            color: var(--muted);
+            font-size: 1.05rem;
+            line-height: 1.8;
+            margin-bottom: 2rem
+        }
+
+        .kpi-row {
+            display: flex;
+            gap: 2.5rem;
+            margin-bottom: 2.5rem;
+            flex-wrap: wrap
+        }
+
+        .kpi {
+            text-align: center
+        }
+
+        .kpi-val {
+            font-family: var(--ff-head);
+            font-size: 1.875rem;
+            font-weight: 700;
+            color: var(--text);
+            display: block
+        }
+
+        .kpi-lbl {
+            font-size: .72rem;
+            color: var(--muted);
+            text-transform: uppercase;
+            letter-spacing: .08em
+        }
+
+        /* ERP Dashboard mock */
+        .erp-dash {
+            background: var(--bg-card);
+            border: 1px solid var(--border-md);
+            border-radius: var(--r-2xl);
+            overflow: hidden;
+            box-shadow: 0 28px 72px rgba(0, 0, 0, .5)
+        }
+
+        .ed-topbar {
+            padding: .875rem 1.25rem;
+            background: rgba(0, 0, 0, .3);
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            justify-content: space-between
+        }
+
+        .ed-logo {
+            font-family: var(--ff-head);
+            font-size: .875rem;
+            font-weight: 700;
+            color: var(--blue)
+        }
+
+        .ed-user {
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+            font-size: .75rem;
+            color: var(--muted)
+        }
+
+        .ed-avatar {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background: var(--grad);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: .6rem;
+            font-weight: 700;
+            color: #fff
+        }
+
+        .ed-body {
+            display: grid;
+            grid-template-columns: 160px 1fr
+        }
+
+        .ed-sidebar {
+            padding: 1rem .75rem;
+            border-right: 1px solid var(--border);
+            background: rgba(0, 0, 0, .18);
+            display: flex;
+            flex-direction: column;
+            gap: .25rem
+        }
+
+        .ed-nav-item {
+            display: flex;
+            align-items: center;
+            gap: .625rem;
+            padding: .5rem .625rem;
+            border-radius: 6px;
+            font-size: .725rem;
+            color: var(--muted);
+            cursor: pointer;
+            transition: all var(--t2)
+        }
+
+        .ed-nav-item.active {
+            background: rgba(79, 123, 247, .15);
+            color: var(--blue);
+            font-weight: 600
+        }
+
+        .ed-main {
+            padding: 1.25rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem
+        }
+
+        .ed-stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: .625rem
+        }
+
+        .eds {
+            padding: .875rem;
+            background: rgba(255, 255, 255, .03);
+            border: 1px solid var(--border);
+            border-radius: .5rem
+        }
+
+        .eds-lbl {
+            font-size: .6rem;
+            color: var(--muted);
+            text-transform: uppercase;
+            letter-spacing: .08em;
+            margin-bottom: .375rem
+        }
+
+        .eds-val {
+            font-family: var(--ff-head);
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--text)
+        }
+
+        .eds-delta {
+            font-size: .6rem;
+            color: var(--green);
+            margin-top: .2rem
+        }
+
+        .ed-chart {
+            background: rgba(255, 255, 255, .02);
+            border: 1px solid var(--border);
+            border-radius: .5rem;
+            padding: .875rem
+        }
+
+        .edc-lbl {
+            font-size: .65rem;
+            color: var(--muted);
+            margin-bottom: .625rem
+        }
+
+        .edc-bars {
+            display: flex;
+            align-items: flex-end;
+            gap: .375rem;
+            height: 60px
+        }
+
+        .ecb {
+            flex: 1;
+            background: rgba(79, 123, 247, .2);
+            border-radius: 3px 3px 0 0;
+            border: 1px solid rgba(79, 123, 247, .3)
+        }
+
+        /* Modules grid */
+        .modules-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem
+        }
+
+        .mod-detail {
+            padding: 2rem;
+            border-radius: var(--r-2xl);
+            border: 1px solid var(--border);
+            background: rgba(255, 255, 255, .02);
+            position: relative;
+            overflow: hidden;
+            transition: all var(--t2)
+        }
+
+        .mod-detail::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: inherit;
+            opacity: 0;
+            transition: opacity var(--t2)
+        }
+
+        .mod-detail:hover::after {
+            opacity: 1
+        }
+
+        .mod-detail:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 36px rgba(0, 0, 0, .3)
+        }
+
+        .mod-detail.m-ventes {
+            --mc: #4F7BF7
+        }
+
+        .mod-detail.m-stocks {
+            --mc: #9D5CF5
+        }
+
+        .mod-detail.m-compta {
+            --mc: #0DB87B
+        }
+
+        .mod-detail.m-rh {
+            --mc: #F5A623
+        }
+
+        .mod-detail:hover {
+            border-color: var(--mc)
+        }
+
+        .md-ico {
+            width: 52px;
+            height: 52px;
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.375rem;
+            margin-bottom: 1.25rem;
+            background: rgba(255, 255, 255, .06);
+            border: 1px solid var(--border-md)
+        }
+
+        .md-name {
+            font-size: 1.125rem;
+            font-weight: 700;
+            margin-bottom: .625rem;
+            color: var(--text)
+        }
+
+        .md-desc {
+            font-size: .875rem;
+            color: var(--muted);
+            line-height: 1.75;
+            margin-bottom: 1.25rem
+        }
+
+        .md-features {
+            display: flex;
+            flex-direction: column;
+            gap: .4rem
+        }
+
+        .md-features li {
+            font-size: .8rem;
+            color: var(--muted);
+            display: flex;
+            align-items: flex-start;
+            gap: .5rem
+        }
+
+        .md-features li::before {
+            content: '›';
+            color: var(--mc, var(--blue));
+            font-weight: 700;
+            flex-shrink: 0
+        }
+
+        /* Clients using */
+        .clients-using {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.25rem
+        }
+
+        .cu-card {
+            padding: 1.5rem;
+            border-radius: var(--r-xl);
+            border: 1px solid var(--border);
+            background: rgba(255, 255, 255, .02);
+            text-align: center;
+            transition: all var(--t2)
+        }
+
+        .cu-card:hover {
+            border-color: var(--border-md);
+            transform: translateY(-3px)
+        }
+
+        .cu-logo {
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--ff-head);
+            font-weight: 700;
+            font-size: .875rem;
+            color: #fff;
+            margin: 0 auto .875rem
+        }
+
+        .cu-name {
+            font-size: .875rem;
+            font-weight: 700;
+            color: var(--text);
+            margin-bottom: .25rem
+        }
+
+        .cu-sector {
+            font-size: .72rem;
+            color: var(--muted)
+        }
+
+        .cu-modules {
+            font-size: .72rem;
+            color: var(--blue);
+            margin-top: .5rem;
+            font-weight: 600
+        }
+
+        /* Pricing */
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem
+        }
+
+        .price-card {
+            padding: 2rem;
+            border-radius: var(--r-2xl);
+            border: 1px solid var(--border);
+            background: rgba(255, 255, 255, .02);
+            position: relative;
+            transition: all var(--t2)
+        }
+
+        .price-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 36px rgba(0, 0, 0, .3)
+        }
+
+        .price-card.featured {
+            border-color: rgba(79, 123, 247, .3);
+            background: var(--grad-soft)
+        }
+
+        .price-card.featured::before {
+            content: 'Le plus choisi';
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--grad);
+            color: #fff;
+            font-size: .65rem;
+            font-weight: 700;
+            padding: .25rem .875rem;
+            border-radius: 999px;
+            white-space: nowrap
+        }
+
+        .price-name {
+            font-size: .72rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: .1em;
+            color: var(--muted);
+            margin-bottom: .5rem
+        }
+
+        .price-desc {
+            font-size: .83rem;
+            color: var(--muted);
+            margin-bottom: 1.5rem;
+            line-height: 1.6
+        }
+
+        .price-items {
+            display: flex;
+            flex-direction: column;
+            gap: .5rem;
+            margin-bottom: 1.75rem
+        }
+
+        .price-items li {
+            font-size: .83rem;
+            color: var(--muted);
+            display: flex;
+            align-items: flex-start;
+            gap: .5rem
+        }
+
+        .price-items li::before {
+            content: '✓';
+            color: var(--green);
+            font-weight: 700;
+            flex-shrink: 0
+        }
+
+        .price-items li.na {
+            color: var(--subtle)
+        }
+
+        .price-items li.na::before {
+            content: '–';
+            color: var(--subtle)
+        }
+
+        .cta-box {
+            padding: 4rem;
+            border-radius: var(--r-2xl);
+            border: 1px solid rgba(79, 123, 247, .22);
+            background: var(--grad-soft);
+            text-align: center;
+            margin-top: 2rem
+        }
+
+        .cta-box h2 {
+            font-size: 2.25rem;
+            margin-bottom: 1rem;
+            color: var(--text)
+        }
+
+        .cta-box p {
+            color: var(--muted);
+            font-size: 1rem;
+            max-width: 500px;
+            margin: 0 auto 2.5rem;
+            line-height: 1.75
+        }
+
+        .cta-btns {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap
+        }
+
+        @media(max-width:1100px) {
+            .dh-layout {
+                grid-template-columns: 1fr
+            }
+
+            .erp-dash {
+                display: none
+            }
+
+            .modules-grid {
+                grid-template-columns: 1fr
+            }
+
+            .pricing-grid {
+                grid-template-columns: 1fr
+            }
+
+            .clients-using {
+                grid-template-columns: 1fr 1fr
+            }
+        }
+
+        @media(max-width:600px) {
+            .clients-using {
+                grid-template-columns: 1fr
+            }
+
+            .kpi-row {
+                gap: 1.5rem
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-grid" aria-hidden="true"></div>
+    <div class="bg-mesh" aria-hidden="true"></div>
+    <header class="header" id="header">
+        <div class="container header-inner">
+            <a href="../index.html" class="logo">
+                <div class="logo-mark"><svg width="30" height="30" viewBox="0 0 30 30" fill="none">
+                        <path d="M15 2L28 15L15 28L2 15L15 2Z" stroke="url(#lg)" stroke-width="2" fill="none" />
+                        <path d="M15 9L21 15L15 21L9 15L15 9Z" fill="url(#lg)" />
+                        <defs>
+                            <linearGradient id="lg" x1="2" y1="2" x2="28" y2="28" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#4F7BF7" />
+                                <stop offset="1" stop-color="#9D5CF5" />
+                            </linearGradient>
+                        </defs>
+                    </svg></div><span class="logo-name">Lym<em>ytz</em></span>
+            </a>
+            <nav class="nav-desktop">
+                <a href="../index.html#a-propos" class="nav-link">À Propos</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="produits.html" class="nav-link active">Produits</a>
+                <a href="realisations.html" class="nav-link">Réalisations</a>
+                <a href="../index.html#equipe" class="nav-link">Équipe</a>
+                <a href="../index.html#contact" class="nav-cta">Nous Contacter</a>
+            </nav>
+            <button class="hamburger" id="hamburger" aria-label="Menu"
+                aria-expanded="false"><span></span><span></span><span></span></button>
+        </div>
+        <nav class="mobile-menu" id="mobile-menu">
+            <a href="../index.html#a-propos" class="mob-link">À Propos</a>
+            <a href="services.html" class="mob-link">Services</a>
+            <a href="produits.html" class="mob-link">Produits</a>
+            <a href="realisations.html" class="mob-link">Réalisations</a>
+            <a href="../index.html#equipe" class="mob-link">Équipe</a>
+            <a href="../index.html#contact" class="mob-link mob-cta">Nous Contacter</a>
+        </nav>
+    </header>
+    <main>
+
+        <!-- HERO -->
+        <section class="detail-hero">
+            <div class="container dh-layout">
+                <div class="reveal">
+                    <div class="dh-breadcrumb"><a href="../index.html">Accueil</a><span>/</span><a
+                            href="produits.html">Produits</a><span>/</span><span style="color:var(--text)">Lymytz
+                            ERP</span></div>
+                    <div class="dh-eyebrow">🖥️ Produit — 01</div>
+                    <h1 class="dh-h1"><span class="grad-text">Lymytz ERP</span><br>La gestion complète,<br>conçue pour
+                        l'Afrique</h1>
+                    <p class="dh-lead">Un ERP SaaS multi-tenant intégrant ventes, stocks, comptabilité OHADA, RH et
+                        tableaux de bord en temps réel. Une seule plateforme pour piloter toute votre entreprise.</p>
+                    <div class="kpi-row">
+                        <div class="kpi"><span class="kpi-val stat-num" data-target="4">0</span><span
+                                class="kpi-lbl">Clients accompagnés</span></div>
+                        <div class="kpi"><span class="kpi-val stat-num" data-target="4">0</span><span
+                                class="kpi-lbl">Modules intégrés</span></div>
+                        <div class="kpi"><span class="kpi-val stat-num" data-target="99">0</span><span class="kpi-lbl">%
+                                Uptime</span></div>
+                    </div>
+                    <div style="display:flex;gap:1rem;flex-wrap:wrap">
+                        <a href="../index.html#contact" class="btn btn-primary">Demander une démo gratuite</a>
+                        <a href="service-erp.html" class="btn btn-secondary">Service d'intégration ERP</a>
+                    </div>
+                </div>
+                <div class="reveal delay-1">
+                    <div class="erp-dash">
+                        <div class="ed-topbar">
+                            <div class="ed-logo">⬡ Lymytz ERP</div>
+                            <div class="ed-user">
+                                <div class="ed-avatar">AD</div>Admin · Dashboard
+                            </div>
+                        </div>
+                        <div class="ed-body">
+                            <div class="ed-sidebar">
+                                <div class="ed-nav-item active">📊 Tableau de bord</div>
+                                <div class="ed-nav-item">💼 Ventes</div>
+                                <div class="ed-nav-item">📦 Stocks</div>
+                                <div class="ed-nav-item">💰 Comptabilité</div>
+                                <div class="ed-nav-item">👥 Ressources H.</div>
+                                <div class="ed-nav-item">📱 Application M.</div>
+                            </div>
+                            <div class="ed-main">
+                                <div class="ed-stats">
+                                    <div class="eds">
+                                        <div class="eds-lbl">CA du mois</div>
+                                        <div class="eds-val">4.2M FCFA</div>
+                                        <div class="eds-delta">↑ +12% vs N-1</div>
+                                    </div>
+                                    <div class="eds">
+                                        <div class="eds-lbl">Commandes</div>
+                                        <div class="eds-val">38</div>
+                                        <div class="eds-delta">↑ +5 cette semaine</div>
+                                    </div>
+                                    <div class="eds">
+                                        <div class="eds-lbl">Stock critique</div>
+                                        <div class="eds-val">3 réf.</div>
+                                        <div class="eds-delta" style="color:var(--amber)">⚠ À réapprovisionner</div>
+                                    </div>
+                                </div>
+                                <div class="ed-chart">
+                                    <div class="edc-lbl">Évolution des ventes — 6 derniers mois</div>
+                                    <div class="edc-bars">
+                                        <div class="ecb" style="height:45%"></div>
+                                        <div class="ecb" style="height:60%"></div>
+                                        <div class="ecb" style="height:52%"></div>
+                                        <div class="ecb" style="height:78%"></div>
+                                        <div class="ecb" style="height:65%"></div>
+                                        <div class="ecb"
+                                            style="height:100%;background:rgba(79,123,247,.45);border-color:rgba(79,123,247,.6)">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MODULES -->
+        <section class="section section-alt">
+            <div class="container">
+                <div class="section-eyebrow reveal">Les modules</div>
+                <h2 class="section-title reveal">Tout ce dont vous avez <span class="grad-text">besoin</span></h2>
+                <p class="section-lead reveal">Quatre modules nativement intégrés — aucune saisie en double, une seule
+                    source de vérité.</p>
+                <div class="modules-grid">
+                    <div class="mod-detail m-ventes reveal">
+                        <div class="md-ico">💼</div>
+                        <div class="md-name">Ventes & CRM</div>
+                        <p class="md-desc">Gérez l'intégralité de votre cycle de vente, de la prospection à
+                            l'encaissement. Historique client complet, relances automatiques et suivi des objectifs
+                            commerciaux.</p>
+                        <ul class="md-features">
+                            <li>Devis, bons de commande et factures clients</li>
+                            <li>Suivi des paiements et relances automatiques</li>
+                            <li>Fiche client avec historique complet</li>
+                            <li>Objectifs commerciaux et statistiques par vendeur</li>
+                            <li>Tarifs et remises clients personnalisables</li>
+                        </ul>
+                    </div>
+                    <div class="mod-detail m-stocks reveal delay-1">
+                        <div class="md-ico">📦</div>
+                        <div class="md-name">Stocks & Achats</div>
+                        <p class="md-desc">Visibilité temps réel sur vos niveaux de stock. Alertes de seuil critique,
+                            gestion des fournisseurs et traçabilité complète des mouvements.</p>
+                        <ul class="md-features">
+                            <li>Inventaire temps réel multi-entrepôts</li>
+                            <li>Alertes de réapprovisionnement automatiques</li>
+                            <li>Bons de commande fournisseurs</li>
+                            <li>Réceptions et contrôle qualité</li>
+                            <li>Valorisation FIFO / CUMP / PMP</li>
+                        </ul>
+                    </div>
+                    <div class="mod-detail m-compta reveal">
+                        <div class="md-ico">💰</div>
+                        <div class="md-name">Comptabilité OHADA</div>
+                        <p class="md-desc">Plan comptable OHADA intégré nativement. Saisie des écritures, rapprochement
+                            bancaire et génération des états financiers réglementaires.</p>
+                        <ul class="md-features">
+                            <li>Plan comptable OHADA configurable</li>
+                            <li>Journal général, grand livre, balance</li>
+                            <li>Bilan et compte de résultat automatiques</li>
+                            <li>Rapprochement bancaire assisté</li>
+                            <li>Gestion de la TVA et des déclarations</li>
+                        </ul>
+                    </div>
+                    <div class="mod-detail m-rh reveal delay-1">
+                        <div class="md-ico">👥</div>
+                        <div class="md-name">Ressources Humaines</div>
+                        <p class="md-desc">Gestion complète de vos collaborateurs : dossiers employés, contrats, congés,
+                            présences et paie simplifiée adaptée au contexte africain.</p>
+                        <ul class="md-features">
+                            <li>Dossier employé complet</li>
+                            <li>Gestion des contrats et des avenants</li>
+                            <li>Congés, absences et plannings</li>
+                            <li>Calcul automatique de la paie</li>
+                            <li>Bulletins de paie et virements</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CLIENTS -->
+        <section class="section">
+            <div class="container">
+                <div class="section-eyebrow reveal">Ils nous font confiance</div>
+                <h2 class="section-title reveal">Nos <span class="grad-text">références clients</span></h2>
+                <p class="section-lead reveal">Des entreprises de secteurs variés font confiance à Lymytz ERP pour leur
+                    gestion quotidienne.</p>
+                <div class="clients-using">
+                    <div class="cu-card reveal">
+                        <div class="cu-logo" style="background:linear-gradient(135deg,#4F7BF7,#9D5CF5)">GLP</div>
+                        <div class="cu-name">GLP-Entreprise</div>
+                        <div class="cu-sector">Boulangerie industrielle · Cameroun</div>
+                        <div class="cu-modules">Ventes · Stocks · Comptabilité · Production</div>
+                    </div>
+                    <div class="cu-card reveal delay-1" style="opacity:.75">
+                        <div class="cu-logo" style="background:linear-gradient(135deg,#64748b,#94a3b8)">YC</div>
+                        <div class="cu-name">Yatch Center</div>
+                        <div class="cu-sector">Restaurants & F&B · Cameroun</div>
+                        <div class="cu-modules" style="color:var(--muted)">Ancien client · ERP + App F&B</div>
+                    </div>
+                    <div class="cu-card reveal delay-2">
+                        <div class="cu-logo" style="background:linear-gradient(135deg,#059669,#0DB87B)">CCO</div>
+                        <div class="cu-name">CCO</div>
+                        <div class="cu-sector">Commerce · Cameroun</div>
+                        <div class="cu-modules">Ventes · Stocks · RH</div>
+                    </div>
+                    <div class="cu-card reveal delay-3">
+                        <div class="cu-logo" style="background:linear-gradient(135deg,#D97706,#F59E0B)">TK</div>
+                        <div class="cu-name">TEEKA</div>
+                        <div class="cu-sector">Commerce · Cameroun</div>
+                        <div class="cu-modules">Ventes · Comptabilité</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PRICING -->
+        <section class="section section-alt">
+            <div class="container">
+                <div class="section-eyebrow reveal">Tarification</div>
+                <h2 class="section-title reveal">Des formules <span class="grad-text">adaptées</span></h2>
+                <p class="section-lead reveal">Abonnement mensuel sans engagement annuel. Pas de surprise.</p>
+                <div class="pricing-grid">
+                    <div class="price-card reveal">
+                        <div class="price-name">Starter</div>
+                        <p class="price-desc">Pour les TPE et jeunes entreprises qui démarrent leur structuration.</p>
+                        <ul class="price-items">
+                            <li>Jusqu'à 3 utilisateurs</li>
+                            <li>Modules Ventes + Stocks</li>
+                            <li>Facturation client</li>
+                            <li>Support email</li>
+                            <li class="na">Comptabilité OHADA</li>
+                            <li class="na">Module RH</li>
+                            <li class="na">Application mobile</li>
+                        </ul>
+                        <a href="../index.html#contact" class="btn btn-secondary"
+                            style="width:100%;justify-content:center">Demander un devis</a>
+                    </div>
+                    <div class="price-card featured reveal delay-1">
+                        <div class="price-name">Business</div>
+                        <p class="price-desc">Pour les PME qui souhaitent une gestion complète et intégrée.</p>
+                        <ul class="price-items">
+                            <li>Jusqu'à 15 utilisateurs</li>
+                            <li>Tous les modules inclus</li>
+                            <li>Comptabilité OHADA complète</li>
+                            <li>Module RH & Paie</li>
+                            <li>Support prioritaire</li>
+                            <li>Formation initiale incluse</li>
+                            <li class="na">Application mobile</li>
+                        </ul>
+                        <a href="../index.html#contact" class="btn btn-primary"
+                            style="width:100%;justify-content:center">Demander une démo</a>
+                    </div>
+                    <div class="price-card reveal delay-2">
+                        <div class="price-name">Enterprise</div>
+                        <p class="price-desc">Pour les grandes entreprises et groupes multi-entités.</p>
+                        <ul class="price-items">
+                            <li>Utilisateurs illimités</li>
+                            <li>Multi-entités & multi-devises</li>
+                            <li>Tous les modules + App mobile</li>
+                            <li>Comptabilité multi-sociétés</li>
+                            <li>Support dédié 24/7</li>
+                            <li>Formation continue incluse</li>
+                            <li>Intégrations API personnalisées</li>
+                        </ul>
+                        <a href="../index.html#contact" class="btn btn-secondary"
+                            style="width:100%;justify-content:center">Parler à un expert</a>
+                    </div>
+                </div>
+                <div class="cta-box reveal">
+                    <h2>Prêt à piloter votre entreprise avec <span class="grad-text">Lymytz ERP</span> ?</h2>
+                    <p>Démo gratuite de 45 minutes, adaptée à votre secteur d'activité. Sans engagement.</p>
+                    <div class="cta-btns">
+                        <a href="../index.html#contact" class="btn btn-primary">Réserver ma démo gratuite</a>
+                        <a href="realisations.html" class="btn btn-secondary">Voir les réalisations</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand"><a href="../index.html" class="logo">
+                        <div class="logo-mark"><svg width="26" height="26" viewBox="0 0 30 30" fill="none">
+                                <path d="M15 2L28 15L15 28L2 15L15 2Z" stroke="url(#lfp)" stroke-width="2"
+                                    fill="none" />
+                                <path d="M15 9L21 15L15 21L9 15L15 9Z" fill="url(#lfp)" />
+                                <defs>
+                                    <linearGradient id="lfp" x1="2" y1="2" x2="28" y2="28"
+                                        gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#4F7BF7" />
+                                        <stop offset="1" stop-color="#9D5CF5" />
+                                    </linearGradient>
+                                </defs>
+                            </svg></div><span class="logo-name">Lym<em>ytz</em></span>
+                    </a>
+                    <p>Société camerounaise de conception logicielle, implantée en France.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="service-erp.html">Intégration ERP</a></li>
+                        <li><a href="service-formation.html">Formation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Produits</h4>
+                    <ul>
+                        <li><a href="produits.html">Tous les Produits</a></li>
+                        <li><a href="produit-app-fb.html">App F&B</a></li>
+                        <li><a href="produit-app-boulangerie.html">App Boulangerie</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:contact@lymytz.com">contact@lymytz.com</a></li>
+                        <li><a href="../index.html#contact">Nous écrire</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Lymytz · Cameroun & France</p>
+                <div class="footer-legal"><a href="mentions-legales.html">Mentions légales</a></div>
+            </div>
+        </div>
+    </footer>
+    <a href="https://wa.me/237600000000" target="_blank" rel="noopener" aria-label="WhatsApp"
+        style="position:fixed;bottom:1.75rem;right:1.75rem;z-index:9999;width:56px;height:56px;border-radius:50%;background:#25D366;box-shadow:0 4px 20px rgba(37,211,102,.45);display:flex;align-items:center;justify-content:center;transition:transform .2s;text-decoration:none"
+        onmouseenter="this.style.transform='scale(1.1)'" onmouseleave="this.style.transform=''">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

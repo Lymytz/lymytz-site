@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 40" fill="none">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4F7BF7"/>
+      <stop offset="1" stop-color="#9D5CF5"/>
+    </linearGradient>
+  </defs>
+  <path d="M20 4L36 20L20 36L4 20L20 4Z" stroke="url(#g)" stroke-width="2" fill="none"/>
+  <path d="M20 12L28 20L20 28L12 20L20 12Z" fill="url(#g)"/>
+  <text x="48" y="27" font-family="Space Grotesk, sans-serif" font-size="20" font-weight="700" fill="white">Lym<tspan fill="url(#g)">ytz</tspan></text>
+</svg>

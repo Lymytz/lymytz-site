@@ -1,0 +1,924 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Développement de Sites Web — Lymytz</title>
+    <meta name="description"
+        content="Lymytz crée des sites web professionnels : vitrines, e-commerce et portails corporatifs. Design moderne, SEO, performance optimale et adaptation mobile.">
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+    <link rel="apple-touch-icon" href="../assets/favicon.svg">
+    <!-- SEO -->
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.lymytz.com/service-sites-web.html">
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.lymytz.com/service-sites-web.html">
+    <meta property="og:title" content="Développement de Sites Web — Lymytz">
+    <meta property="og:description"
+        content="Sites vitrines, e-commerce et portails corporatifs. Design premium, SEO et performance garantis. Lymytz — Cameroun &amp; France.">
+    <meta property="og:image" content="https://www.lymytz.com/assets/og-lymytz.png">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:site_name" content="Lymytz">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Développement de Sites Web — Lymytz">
+    <meta name="twitter:description"
+        content="Sites vitrines, e-commerce et portails corporatifs. Design premium, SEO et performance garantis. Lymytz — Cameroun &amp; France.">
+    <meta name="twitter:image" content="https://www.lymytz.com/assets/og-lymytz.png">
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Développement de Sites Web",
+      "provider": {"@type": "Organization", "name": "Lymytz", "url": "https://www.lymytz.com"},
+      "url": "https://www.lymytz.com/service-sites-web.html",
+      "description": "Création de sites web professionnels : vitrines, e-commerce et portails corporatifs.",
+      "areaServed": ["CM", "FR"],
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://www.lymytz.com/"},
+          {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.lymytz.com/services.html"},
+          {"@type": "ListItem", "position": 3, "name": "Sites Web", "item": "https://www.lymytz.com/service-sites-web.html"}
+        ]
+      }
+    }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        .detail-hero {
+            padding: 9rem 0 6rem;
+            position: relative;
+            overflow: hidden
+        }
+
+        .detail-hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(ellipse 60% 50% at 15% 60%, rgba(34, 211, 238, .12) 0%, transparent 65%), radial-gradient(ellipse 40% 40% at 80% 30%, rgba(79, 123, 247, .09) 0%, transparent 65%);
+            pointer-events: none
+        }
+
+        .dh-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5rem;
+            align-items: center;
+            position: relative
+        }
+
+        .dh-breadcrumb {
+            font-size: .78rem;
+            color: var(--muted);
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: .5rem
+        }
+
+        .dh-breadcrumb a {
+            color: var(--muted);
+            transition: color var(--t1)
+        }
+
+        .dh-breadcrumb a:hover {
+            color: var(--text)
+        }
+
+        .dh-breadcrumb span {
+            color: var(--subtle)
+        }
+
+        .dh-eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: .5rem;
+            margin-bottom: 1.25rem;
+            font-size: .7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: .14em;
+            color: var(--cyan)
+        }
+
+        .dh-h1 {
+            font-size: clamp(2.25rem, 5vw, 3.5rem);
+            margin-bottom: 1.25rem;
+            line-height: 1.1
+        }
+
+        .dh-lead {
+            color: var(--muted);
+            font-size: 1.05rem;
+            line-height: 1.8;
+            margin-bottom: 2.5rem
+        }
+
+        .dh-badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: .625rem;
+            margin-bottom: 2.5rem
+        }
+
+        /* Browser mockup */
+        .browser-mock {
+            border-radius: var(--r-xl);
+            overflow: hidden;
+            background: var(--bg-card);
+            border: 1px solid var(--border-md);
+            box-shadow: 0 24px 64px rgba(0, 0, 0, .4)
+        }
+
+        .bm-bar {
+            padding: .875rem 1.125rem;
+            background: rgba(0, 0, 0, .35);
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            gap: .75rem
+        }
+
+        .bm-dots {
+            display: flex;
+            gap: .375rem
+        }
+
+        .bm-dot {
+            width: 9px;
+            height: 9px;
+            border-radius: 50%
+        }
+
+        .bm-dot.r {
+            background: #EF4444
+        }
+
+        .bm-dot.y {
+            background: #F59E0B
+        }
+
+        .bm-dot.g {
+            background: #10B981
+        }
+
+        .bm-tabs {
+            display: flex;
+            gap: .5rem;
+            flex: 1;
+            margin-left: .75rem
+        }
+
+        .bm-tab {
+            font-size: .7rem;
+            padding: .3rem .875rem;
+            border-radius: 6px 6px 0 0;
+            background: rgba(255, 255, 255, .05);
+            color: var(--muted);
+            border: 1px solid var(--border)
+        }
+
+        .bm-tab.act {
+            background: rgba(79, 123, 247, .15);
+            color: var(--blue);
+            border-color: rgba(79, 123, 247, .3)
+        }
+
+        .bm-body {
+            padding: 0
+        }
+
+        .site-preview {
+            padding: 1.25rem 1.25rem .5rem
+        }
+
+        .sp-hero {
+            background: var(--grad);
+            border-radius: .75rem;
+            padding: 1.25rem;
+            margin-bottom: .875rem;
+            text-align: center
+        }
+
+        .sp-hero-h {
+            font-family: var(--ff-head);
+            font-size: .875rem;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: .3rem
+        }
+
+        .sp-hero-p {
+            font-size: .65rem;
+            color: rgba(255, 255, 255, .7)
+        }
+
+        .sp-cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: .5rem;
+            margin-bottom: .875rem
+        }
+
+        .sp-card {
+            background: rgba(255, 255, 255, .04);
+            border: 1px solid var(--border);
+            border-radius: .5rem;
+            padding: .75rem .5rem;
+            text-align: center
+        }
+
+        .sp-card-ico {
+            font-size: .875rem;
+            margin-bottom: .25rem
+        }
+
+        .sp-card-lbl {
+            font-size: .6rem;
+            color: var(--muted)
+        }
+
+        .sp-footer {
+            background: rgba(0, 0, 0, .2);
+            border-radius: .5rem;
+            padding: .75rem;
+            display: flex;
+            justify-content: space-between;
+            font-size: .65rem;
+            color: var(--muted)
+        }
+
+        /* Metrics bar */
+        .perf-metrics {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.25rem;
+            margin-top: 2rem
+        }
+
+        .pm {
+            padding: 1.5rem;
+            border-radius: var(--r-xl);
+            border: 1px solid var(--border);
+            background: rgba(255, 255, 255, .02);
+            text-align: center
+        }
+
+        .pm-score {
+            font-family: var(--ff-head);
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: .25rem
+        }
+
+        .pm-lbl {
+            font-size: .75rem;
+            color: var(--muted)
+        }
+
+        .pm-bar-wrap {
+            height: 4px;
+            background: var(--border);
+            border-radius: 2px;
+            margin-top: .875rem;
+            overflow: hidden
+        }
+
+        .pm-bar {
+            height: 100%;
+            border-radius: 2px;
+            transition: width 1.2s cubic-bezier(.4, 0, .2, 1)
+        }
+
+        /* Offer cards */
+        .offer-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem
+        }
+
+        .offer-card {
+            padding: 2rem;
+            border-radius: var(--r-2xl);
+            border: 1px solid var(--border);
+            background: rgba(255, 255, 255, .02);
+            position: relative;
+            transition: all var(--t2)
+        }
+
+        .offer-card:hover {
+            border-color: rgba(79, 123, 247, .3);
+            transform: translateY(-4px);
+            box-shadow: 0 12px 36px rgba(79, 123, 247, .09)
+        }
+
+        .offer-card.featured {
+            border-color: rgba(79, 123, 247, .28);
+            background: var(--grad-soft)
+        }
+
+        .offer-card.featured::before {
+            content: 'Populaire';
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--grad);
+            color: #fff;
+            font-size: .65rem;
+            font-weight: 700;
+            padding: .25rem .875rem;
+            border-radius: 999px;
+            white-space: nowrap;
+            text-transform: uppercase;
+            letter-spacing: .08em
+        }
+
+        .offer-ico {
+            font-size: 2rem;
+            margin-bottom: 1.25rem
+        }
+
+        .offer-card h3 {
+            font-size: 1.25rem;
+            margin-bottom: .75rem;
+            color: var(--text)
+        }
+
+        .offer-card p {
+            font-size: .875rem;
+            color: var(--muted);
+            line-height: 1.75;
+            margin-bottom: 1.5rem
+        }
+
+        .offer-items {
+            list-style: none
+        }
+
+        .offer-items li {
+            font-size: .83rem;
+            color: var(--muted);
+            padding: .4rem 0;
+            display: flex;
+            align-items: center;
+            gap: .625rem;
+            border-bottom: 1px solid var(--border)
+        }
+
+        .offer-items li:last-child {
+            border: none
+        }
+
+        .offer-items li::before {
+            content: '✓';
+            color: var(--green);
+            font-weight: 700;
+            flex-shrink: 0
+        }
+
+        /* Process */
+        .process-row {
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem
+        }
+
+        .pr-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.5rem;
+            padding: 1.75rem;
+            border-radius: var(--r-xl);
+            border: 1px solid var(--border);
+            background: rgba(255, 255, 255, .02);
+            transition: border-color var(--t2)
+        }
+
+        .pr-item:hover {
+            border-color: var(--border-md)
+        }
+
+        .pr-num {
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            background: rgba(79, 123, 247, .12);
+            border: 1px solid rgba(79, 123, 247, .22);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--ff-head);
+            font-weight: 700;
+            color: var(--blue);
+            flex-shrink: 0
+        }
+
+        .pr-item h4 {
+            font-size: .9375rem;
+            font-weight: 700;
+            margin-bottom: .4rem;
+            color: var(--text)
+        }
+
+        .pr-item p {
+            font-size: .875rem;
+            color: var(--muted);
+            line-height: 1.7
+        }
+
+        .cta-box {
+            padding: 4rem;
+            border-radius: var(--r-2xl);
+            border: 1px solid rgba(34, 211, 238, .2);
+            background: rgba(34, 211, 238, .04);
+            text-align: center;
+            margin-top: 5rem
+        }
+
+        .cta-box h2 {
+            font-size: 2.25rem;
+            margin-bottom: 1rem;
+            color: var(--text)
+        }
+
+        .cta-box p {
+            color: var(--muted);
+            font-size: 1rem;
+            max-width: 500px;
+            margin: 0 auto 2.5rem;
+            line-height: 1.75
+        }
+
+        .cta-btns {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap
+        }
+
+        .rel-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.25rem
+        }
+
+        .rel-card {
+            padding: 1.75rem;
+            border-radius: var(--r-xl);
+            border: 1px solid var(--border);
+            background: rgba(255, 255, 255, .02);
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            transition: all var(--t2)
+        }
+
+        .rel-card:hover {
+            border-color: var(--border-md);
+            transform: translateY(-4px);
+            box-shadow: 0 8px 28px rgba(0, 0, 0, .3)
+        }
+
+        .rel-icon {
+            width: 42px;
+            height: 42px;
+            border-radius: 11px;
+            background: rgba(255, 255, 255, .04);
+            border: 1px solid var(--border-md);
+            display: flex;
+            align-items: center;
+            justify-content: center
+        }
+
+        .rel-card h4 {
+            font-size: .9375rem;
+            font-weight: 700;
+            color: var(--text)
+        }
+
+        .rel-card p {
+            font-size: .83rem;
+            color: var(--muted);
+            line-height: 1.65;
+            flex: 1
+        }
+
+        .rel-card a {
+            font-size: .825rem;
+            font-weight: 700;
+            color: var(--cyan);
+            display: flex;
+            align-items: center;
+            gap: .375rem;
+            transition: gap var(--t2)
+        }
+
+        .rel-card a:hover {
+            gap: .625rem
+        }
+
+        @media(max-width:1000px) {
+            .dh-layout {
+                grid-template-columns: 1fr
+            }
+
+            .browser-mock {
+                display: none
+            }
+
+            .offer-grid {
+                grid-template-columns: 1fr
+            }
+
+            .perf-metrics {
+                grid-template-columns: 1fr 1fr
+            }
+
+            .rel-grid {
+                grid-template-columns: 1fr 1fr
+            }
+        }
+
+        @media(max-width:600px) {
+            .perf-metrics {
+                grid-template-columns: 1fr
+            }
+
+            .rel-grid {
+                grid-template-columns: 1fr
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-grid" aria-hidden="true"></div>
+    <div class="bg-mesh" aria-hidden="true"></div>
+
+    <header class="header" id="header">
+        <div class="container header-inner">
+            <a href="../index.html" class="logo">
+                <div class="logo-mark"><svg width="30" height="30" viewBox="0 0 30 30" fill="none">
+                        <path d="M15 2L28 15L15 28L2 15L15 2Z" stroke="url(#lg)" stroke-width="2" fill="none" />
+                        <path d="M15 9L21 15L15 21L9 15L15 9Z" fill="url(#lg)" />
+                        <defs>
+                            <linearGradient id="lg" x1="2" y1="2" x2="28" y2="28" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#4F7BF7" />
+                                <stop offset="1" stop-color="#9D5CF5" />
+                            </linearGradient>
+                        </defs>
+                    </svg></div><span class="logo-name">Lym<em>ytz</em></span>
+            </a>
+            <nav class="nav-desktop">
+                <a href="../index.html#a-propos" class="nav-link">À Propos</a>
+                <a href="services.html" class="nav-link active">Services</a>
+                <a href="produits.html" class="nav-link">Produits</a>
+                <a href="realisations.html" class="nav-link">Réalisations</a>
+                <a href="../index.html#equipe" class="nav-link">Équipe</a>
+                <a href="../index.html#contact" class="nav-cta">Nous Contacter</a>
+            </nav>
+            <button class="hamburger" id="hamburger" aria-label="Menu"
+                aria-expanded="false"><span></span><span></span><span></span></button>
+        </div>
+        <nav class="mobile-menu" id="mobile-menu" aria-hidden="true">
+            <a href="../index.html#a-propos" class="mob-link">À Propos</a>
+            <a href="services.html" class="mob-link">Services</a>
+            <a href="produits.html" class="mob-link">Produits</a>
+            <a href="realisations.html" class="mob-link">Réalisations</a>
+            <a href="../index.html#equipe" class="mob-link">Équipe</a>
+            <a href="../index.html#contact" class="mob-link mob-cta">Nous Contacter</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="detail-hero">
+            <div class="container dh-layout">
+                <div class="reveal">
+                    <div class="dh-breadcrumb">
+                        <a href="../index.html">Accueil</a><span>/</span>
+                        <a href="services.html">Services</a><span>/</span>
+                        <span style="color:var(--text)">Sites Web</span>
+                    </div>
+                    <div class="dh-eyebrow">
+                        <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                            stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3" />
+                        </svg>
+                        Service — 02
+                    </div>
+                    <h1 class="dh-h1">Développement de<br><span class="grad-text">Sites Web</span></h1>
+                    <p class="dh-lead">Votre site web est votre première impression — 24h/24, 7j/7. Nous créons des
+                        expériences en ligne qui captivent, convertissent et reflètent l'identité de votre marque.</p>
+                    <div class="dh-badges">
+                        <span class="badge badge-blue">Sites Vitrines</span>
+                        <span class="badge badge-purple">E-commerce</span>
+                        <span class="badge badge-green">SEO & Performance</span>
+                        <span class="badge badge-amber">Design Sur Mesure</span>
+                    </div>
+                    <div style="display:flex;gap:1rem;flex-wrap:wrap">
+                        <a href="../index.html#contact" class="btn btn-primary">Créer mon site</a>
+                        <a href="realisations.html" class="btn btn-secondary">Voir les exemples</a>
+                    </div>
+                </div>
+                <div class="reveal delay-1">
+                    <div class="browser-mock">
+                        <div class="bm-bar">
+                            <div class="bm-dots">
+                                <div class="bm-dot r"></div>
+                                <div class="bm-dot y"></div>
+                                <div class="bm-dot g"></div>
+                            </div>
+                            <div class="bm-tabs">
+                                <div class="bm-tab act">www.votre-entreprise.com</div>
+                            </div>
+                        </div>
+                        <div class="bm-body">
+                            <div class="site-preview">
+                                <div class="sp-hero">
+                                    <div class="sp-hero-h">Bienvenue chez Votre Entreprise</div>
+                                    <div class="sp-hero-p">Solutions professionnelles pour votre croissance</div>
+                                </div>
+                                <div class="sp-cards">
+                                    <div class="sp-card">
+                                        <div class="sp-card-ico">🎯</div>
+                                        <div class="sp-card-lbl">Services</div>
+                                    </div>
+                                    <div class="sp-card">
+                                        <div class="sp-card-ico">📦</div>
+                                        <div class="sp-card-lbl">Produits</div>
+                                    </div>
+                                    <div class="sp-card">
+                                        <div class="sp-card-ico">📞</div>
+                                        <div class="sp-card-lbl">Contact</div>
+                                    </div>
+                                </div>
+                                <div class="sp-footer"><span>© 2026 Votre Entreprise</span><span>Réalisé par
+                                        Lymytz</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="perf-metrics">
+                        <div class="pm">
+                            <div class="pm-score" style="color:var(--green)">97</div>
+                            <div class="pm-lbl">Performance</div>
+                            <div class="pm-bar-wrap">
+                                <div class="pm-bar perf-bar" data-w="97" style="width:0%;background:var(--green)"></div>
+                            </div>
+                        </div>
+                        <div class="pm">
+                            <div class="pm-score" style="color:var(--green)">98</div>
+                            <div class="pm-lbl">Accessibilité</div>
+                            <div class="pm-bar-wrap">
+                                <div class="pm-bar perf-bar" data-w="98" style="width:0%;background:var(--blue)"></div>
+                            </div>
+                        </div>
+                        <div class="pm">
+                            <div class="pm-score" style="color:var(--green)">100</div>
+                            <div class="pm-lbl">SEO</div>
+                            <div class="pm-bar-wrap">
+                                <div class="pm-bar perf-bar" data-w="100" style="width:0%;background:var(--purple)">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- OFFRES -->
+        <section class="section section-alt">
+            <div class="container">
+                <div class="section-eyebrow reveal">Nos formules</div>
+                <h2 class="section-title reveal">Quel site <span class="grad-text">vous convient</span> ?</h2>
+                <p class="section-lead reveal">Chaque projet est différent. Choisissez la formule qui correspond à vos
+                    ambitions.</p>
+                <div class="offer-grid">
+                    <div class="offer-card reveal">
+                        <div class="offer-ico">🏢</div>
+                        <h3>Site Vitrine</h3>
+                        <p>Votre présence professionnelle en ligne : présentation de votre activité, de vos services, de
+                            votre équipe et formulaire de contact.</p>
+                        <ul class="offer-items">
+                            <li>Design sur mesure, responsive</li>
+                            <li>Pages : Accueil, À propos, Services, Contact</li>
+                            <li>Formulaire de contact</li>
+                            <li>Optimisation SEO de base</li>
+                            <li>Hébergement & domaine conseillés</li>
+                            <li>Formation à la gestion du contenu</li>
+                        </ul>
+                    </div>
+                    <div class="offer-card featured reveal delay-1">
+                        <div class="offer-ico">🛒</div>
+                        <h3>Site E-commerce</h3>
+                        <p>Vendez vos produits en ligne avec une boutique complète : catalogue, panier, paiement
+                            sécurisé et gestion des commandes.</p>
+                        <ul class="offer-items">
+                            <li>Catalogue produits illimité</li>
+                            <li>Panier & checkout sécurisé</li>
+                            <li>Intégration Mobile Money & carte bancaire</li>
+                            <li>Gestion des stocks</li>
+                            <li>Espace client & suivi commandes</li>
+                            <li>SEO e-commerce avancé</li>
+                            <li>Tableau de bord vendeur</li>
+                        </ul>
+                    </div>
+                    <div class="offer-card reveal delay-2">
+                        <div class="offer-ico">🏛️</div>
+                        <h3>Portail Corporate</h3>
+                        <p>Site institutionnel complet pour les entreprises à forte présence digitale : multilangue,
+                            espace presse, intranet, etc.</p>
+                        <ul class="offer-items">
+                            <li>Architecture multi-sections</li>
+                            <li>Multilangue (FR, EN, …)</li>
+                            <li>Blog & espace actualités</li>
+                            <li>Espace presse & téléchargements</li>
+                            <li>Intégrations CRM & analytics</li>
+                            <li>SEO avancé + stratégie de contenu</li>
+                            <li>Maintenance premium</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROCESS -->
+        <section class="section">
+            <div class="container">
+                <div class="section-eyebrow reveal">Notre approche</div>
+                <h2 class="section-title reveal">Comment nous <span class="grad-text">créons votre site</span></h2>
+                <div class="process-row" style="max-width:800px;margin:2rem auto 0">
+                    <div class="pr-item reveal">
+                        <div class="pr-num">01</div>
+                        <div>
+                            <h4>Brief & Stratégie</h4>
+                            <p>Nous analysons votre positionnement, vos concurrents, vos objectifs et vos cibles pour
+                                définir la stratégie éditoriale et UX de votre site.</p>
+                        </div>
+                    </div>
+                    <div class="pr-item reveal">
+                        <div class="pr-num">02</div>
+                        <div>
+                            <h4>Design & Maquettes</h4>
+                            <p>Création des wireframes puis des maquettes haute-fidélité. Vous validez le design avant
+                                que le développement commence.</p>
+                        </div>
+                    </div>
+                    <div class="pr-item reveal">
+                        <div class="pr-num">03</div>
+                        <div>
+                            <h4>Développement & Intégration</h4>
+                            <p>Intégration HTML/CSS au pixel près, développement des fonctionnalités, optimisation des
+                                performances et des images.</p>
+                        </div>
+                    </div>
+                    <div class="pr-item reveal">
+                        <div class="pr-num">04</div>
+                        <div>
+                            <h4>Tests & Mise en ligne</h4>
+                            <p>Tests cross-browser, tests de performance (Lighthouse), audit SEO et déploiement sur
+                                votre hébergement.</p>
+                        </div>
+                    </div>
+                    <div class="pr-item reveal">
+                        <div class="pr-num">05</div>
+                        <div>
+                            <h4>Formation & Maintenance</h4>
+                            <p>Formation à la mise à jour du contenu, remise de la documentation et support continu
+                                selon votre contrat de maintenance.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- RELATED -->
+        <section class="section section-alt">
+            <div class="container">
+                <div class="section-eyebrow reveal">Aller plus loin</div>
+                <h2 class="section-title reveal" style="margin-bottom:2rem">Services <span
+                        class="grad-text">associés</span></h2>
+                <div class="rel-grid">
+                    <div class="rel-card reveal">
+                        <div class="rel-icon">💻</div>
+                        <h4>Développement Logiciel</h4>
+                        <p>Besoin d'une application web plus complexe ? Notre équipe développe des plateformes sur
+                            mesure.</p>
+                        <a href="service-dev-logiciel.html">Découvrir →</a>
+                    </div>
+                    <div class="rel-card reveal delay-1">
+                        <div class="rel-icon">☁️</div>
+                        <h4>Cloud & Hébergement</h4>
+                        <p>Hébergement sécurisé, rapide et fiable pour votre site. Nous gérons l'infrastructure pour
+                            vous.</p>
+                        <a href="service-cloud.html">Découvrir →</a>
+                    </div>
+                    <div class="rel-card reveal delay-2">
+                        <div class="rel-icon">🔍</div>
+                        <h4>Audit & Conseil IT</h4>
+                        <p>Votre site existant est lent ou mal référencé ? Nous auditons et préconisons des
+                            améliorations.</p>
+                        <a href="service-audit.html">Découvrir →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="cta-box reveal">
+                    <h2>Votre site web en <span class="grad-text">60 jours</span></h2>
+                    <p>Partagez votre vision avec nous. Nous créons un site web qui vous ressemble et qui convertit.</p>
+                    <div class="cta-btns">
+                        <a href="../index.html#contact" class="btn btn-primary">Lancer mon projet</a>
+                        <a href="services.html" class="btn btn-secondary">Tous nos services</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="../index.html" class="logo">
+                        <div class="logo-mark"><svg width="26" height="26" viewBox="0 0 30 30" fill="none">
+                                <path d="M15 2L28 15L15 28L2 15L15 2Z" stroke="url(#lfx)" stroke-width="2"
+                                    fill="none" />
+                                <path d="M15 9L21 15L15 21L9 15L15 9Z" fill="url(#lfx)" />
+                                <defs>
+                                    <linearGradient id="lfx" x1="2" y1="2" x2="28" y2="28"
+                                        gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#4F7BF7" />
+                                        <stop offset="1" stop-color="#9D5CF5" />
+                                    </linearGradient>
+                                </defs>
+                            </svg></div><span class="logo-name">Lym<em>ytz</em></span>
+                    </a>
+                    <p>Société camerounaise de conception logicielle, implantée en France.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>La Société</h4>
+                    <ul>
+                        <li><a href="../index.html#a-propos">À Propos</a></li>
+                        <li><a href="../index.html#parcours">Parcours</a></li>
+                        <li><a href="../index.html#equipe">Équipe</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Services & Produits</h4>
+                    <ul>
+                        <li><a href="services.html">Tous les Services</a></li>
+                        <li><a href="produits.html">Nos Produits</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:contact@lymytz.com">contact@lymytz.com</a></li>
+                        <li><a href="../index.html#contact">Nous écrire</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Lymytz · Cameroun & France</p>
+                <div class="footer-legal"><a href="mentions-legales.html">Mentions légales</a><a href="confidentialite.html">Confidentialité</a></div>
+            </div>
+        </div>
+    </footer>
+    <a href="https://wa.me/237600000000" target="_blank" rel="noopener" aria-label="WhatsApp"
+        style="position:fixed;bottom:1.75rem;right:1.75rem;z-index:9999;width:56px;height:56px;border-radius:50%;background:#25D366;box-shadow:0 4px 20px rgba(37,211,102,.45);display:flex;align-items:center;justify-content:center;transition:transform .2s;text-decoration:none"
+        onmouseenter="this.style.transform='scale(1.1)'" onmouseleave="this.style.transform=''">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+    <script src="../js/script.js"></script>
+    <script>
+        // Animate perf bars on scroll
+        const perfBars = document.querySelectorAll('.perf-bar');
+        if (perfBars.length) {
+            const obs = new IntersectionObserver(entries => {
+                if (entries[0].isIntersecting) {
+                    perfBars.forEach(b => { b.style.width = b.dataset.w + '%'; });
+                    obs.disconnect();
+                }
+            }, { threshold: .4 });
+            obs.observe(document.querySelector('.perf-metrics'));
+        }
+    </script>
+</body>
+
+</html>

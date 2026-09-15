@@ -1,0 +1,866 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Gestion de Boulangerie — Lymytz | GLP-Entreprise</title>
+    <meta name="description"
+        content="Logiciel de gestion complet pour boulangeries : commercial, production, comptabilité et stocks. Développé pour GLP-Entreprise, premier projet client de Lymytz.">
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+    <link rel="apple-touch-icon" href="../assets/favicon.svg">
+    <!-- SEO -->
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.lymytz.com/produit-app-boulangerie.html">
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.lymytz.com/produit-app-boulangerie.html">
+    <meta property="og:title" content="Logiciel Gestion Boulangerie — Lymytz | GLP-Entreprise">
+    <meta property="og:description"
+        content="Logiciel boulangerie Lymytz : gestion commerciale, planification de production, comptabilité et stocks MP. Référence GLP-Entreprise.">
+    <meta property="og:image" content="https://www.lymytz.com/assets/og-lymytz.png">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:site_name" content="Lymytz">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Logiciel Gestion Boulangerie — Lymytz | GLP-Entreprise">
+    <meta name="twitter:description"
+        content="Logiciel boulangerie Lymytz : gestion commerciale, production, comptabilité et stocks MP. Référence GLP-Entreprise.">
+    <meta name="twitter:image" content="https://www.lymytz.com/assets/og-lymytz.png">
+    <!-- Schema.org SoftwareApplication -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Lymytz — Logiciel Gestion Boulangerie",
+      "url": "https://www.lymytz.com/produit-app-boulangerie.html",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Windows, Web",
+      "description": "Logiciel de gestion complet pour boulangeries : commercial, production, comptabilité OHADA et stocks matières premières.",
+      "author": {"@type": "Organization", "name": "Lymytz", "url": "https://www.lymytz.com"},
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://www.lymytz.com/"},
+          {"@type": "ListItem", "position": 2, "name": "Produits", "item": "https://www.lymytz.com/produits.html"},
+          {"@type": "ListItem", "position": 3, "name": "App Boulangerie", "item": "https://www.lymytz.com/produit-app-boulangerie.html"}
+        ]
+      }
+    }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        .detail-hero {
+            padding: 9rem 0 6rem;
+            position: relative;
+            overflow: hidden
+        }
+
+        .detail-hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(ellipse 60% 60% at 10% 60%, rgba(245, 166, 35, .12) 0%, transparent 65%), radial-gradient(ellipse 50% 40% at 85% 25%, rgba(79, 123, 247, .09) 0%, transparent 65%);
+            pointer-events: none
+        }
+
+        .dh-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5rem;
+            align-items: center
+        }
+
+        .dh-breadcrumb {
+            font-size: .78rem;
+            color: var(--muted);
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: .5rem
+        }
+
+        .dh-breadcrumb a {
+            color: var(--muted)
+        }
+
+        .dh-breadcrumb span {
+            color: var(--subtle)
+        }
+
+        .dh-eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: .5rem;
+            margin-bottom: 1.25rem;
+            font-size: .7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: .14em;
+            color: var(--amber)
+        }
+
+        .dh-h1 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            margin-bottom: 1.25rem;
+            line-height: 1.1
+        }
+
+        .dh-lead {
+            color: var(--muted);
+            font-size: 1.05rem;
+            line-height: 1.8;
+            margin-bottom: 2.5rem
+        }
+
+        /* Desktop mockup */
+        .desktop-mock {
+            background: var(--bg-card);
+            border: 1px solid var(--border-md);
+            border-radius: var(--r-2xl);
+            overflow: hidden;
+            box-shadow: 0 24px 60px rgba(0, 0, 0, .5)
+        }
+
+        .dm-bar {
+            padding: .875rem 1.25rem;
+            background: rgba(0, 0, 0, .3);
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            justify-content: space-between
+        }
+
+        .dm-dots {
+            display: flex;
+            gap: .375rem
+        }
+
+        .dm-dot {
+            width: 9px;
+            height: 9px;
+            border-radius: 50%
+        }
+
+        .dm-dot.r {
+            background: #EF4444
+        }
+
+        .dm-dot.y {
+            background: #F59E0B
+        }
+
+        .dm-dot.g {
+            background: #10B981
+        }
+
+        .dm-title {
+            font-size: .78rem;
+            color: var(--muted);
+            font-family: var(--ff-head)
+        }
+
+        .dm-body {
+            display: grid;
+            grid-template-columns: 140px 1fr
+        }
+
+        .dm-nav {
+            background: rgba(0, 0, 0, .2);
+            border-right: 1px solid var(--border);
+            padding: .875rem .625rem;
+            display: flex;
+            flex-direction: column;
+            gap: .25rem
+        }
+
+        .dm-nav-item {
+            padding: .5rem .75rem;
+            border-radius: 6px;
+            font-size: .7rem;
+            color: var(--muted);
+            display: flex;
+            align-items: center;
+            gap: .5rem
+        }
+
+        .dm-nav-item.active {
+            background: rgba(245, 166, 35, .15);
+            color: var(--amber);
+            font-weight: 600
+        }
+
+        .dm-content {
+            padding: 1.25rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem
+        }
+
+        .dm-stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: .625rem
+        }
+
+        .dms {
+            padding: .875rem;
+            background: rgba(255, 255, 255, .03);
+            border: 1px solid var(--border);
+            border-radius: 8px
+        }
+
+        .dms-lbl {
+            font-size: .58rem;
+            color: var(--muted);
+            text-transform: uppercase;
+            letter-spacing: .08em;
+            margin-bottom: .375rem
+        }
+
+        .dms-val {
+            font-family: var(--ff-head);
+            font-size: .9625rem;
+            font-weight: 700;
+            color: var(--text)
+        }
+
+        .dms-note {
+            font-size: .58rem;
+            color: var(--amber);
+            margin-top: .2rem
+        }
+
+        .dm-table {
+            background: rgba(0, 0, 0, .2);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            overflow: hidden
+        }
+
+        .dmt-head {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            padding: .625rem .875rem;
+            background: rgba(0, 0, 0, .2);
+            font-size: .58rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: var(--muted)
+        }
+
+        .dmt-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            padding: .625rem .875rem;
+            font-size: .7rem;
+            color: var(--text-2);
+            border-top: 1px solid var(--border)
+        }
+
+        .dmt-row:last-child {
+            border: none
+        }
+
+        .dm-status {
+            font-size: .6rem;
+            font-weight: 700;
+            padding: .2rem .5rem;
+            border-radius: 4px
+        }
+
+        .s-prod {
+            background: rgba(79, 123, 247, .15);
+            color: var(--blue)
+        }
+
+        .s-done {
+            background: rgba(13, 184, 123, .15);
+            color: var(--green)
+        }
+
+        .s-pending {
+            background: rgba(245, 166, 35, .15);
+            color: var(--amber)
+        }
+
+        /* 3 modules section */
+        .modules-trio {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 0;
+            border: 1px solid var(--border);
+            border-radius: var(--r-2xl);
+            overflow: hidden;
+            background: var(--bg-card)
+        }
+
+        .mt-col {
+            padding: 2.25rem 2rem;
+            border-right: 1px solid var(--border)
+        }
+
+        .mt-col:last-child {
+            border: none
+        }
+
+        .mt-color-bar {
+            height: 4px;
+            border-radius: 2px;
+            margin-bottom: 1.5rem
+        }
+
+        .mt-ico {
+            font-size: 2rem;
+            margin-bottom: 1rem
+        }
+
+        .mt-col h3 {
+            font-size: 1.125rem;
+            font-weight: 700;
+            margin-bottom: .75rem;
+            color: var(--text)
+        }
+
+        .mt-col p {
+            font-size: .875rem;
+            color: var(--muted);
+            line-height: 1.75;
+            margin-bottom: 1.5rem
+        }
+
+        .mt-items {
+            display: flex;
+            flex-direction: column;
+            gap: .5rem
+        }
+
+        .mt-items li {
+            font-size: .8rem;
+            color: var(--muted);
+            display: flex;
+            align-items: flex-start;
+            gap: .5rem
+        }
+
+        .mt-items li::before {
+            content: '›';
+            font-weight: 700;
+            flex-shrink: 0
+        }
+
+        .mt-col:nth-child(1) .mt-items li::before {
+            color: var(--amber)
+        }
+
+        .mt-col:nth-child(2) .mt-items li::before {
+            color: var(--blue)
+        }
+
+        .mt-col:nth-child(3) .mt-items li::before {
+            color: var(--green)
+        }
+
+        /* Story timeline */
+        .story-box {
+            padding: 3rem;
+            border-radius: var(--r-2xl);
+            border: 1px solid rgba(245, 166, 35, .22);
+            background: rgba(245, 166, 35, .04);
+            position: relative;
+            overflow: hidden
+        }
+
+        .story-box::before {
+            content: '«';
+            position: absolute;
+            font-size: 10rem;
+            font-family: var(--ff-head);
+            color: rgba(245, 166, 35, .06);
+            top: -2rem;
+            left: 1rem;
+            line-height: 1;
+            pointer-events: none
+        }
+
+        .sb-header {
+            display: flex;
+            align-items: center;
+            gap: 1.25rem;
+            margin-bottom: 1.75rem
+        }
+
+        .sb-logo {
+            width: 56px;
+            height: 56px;
+            border-radius: 16px;
+            background: linear-gradient(135deg, #F5A623, #D97706);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--ff-head);
+            font-weight: 700;
+            color: #fff;
+            flex-shrink: 0
+        }
+
+        .sb-header h4 {
+            font-size: 1.125rem;
+            font-weight: 700;
+            color: var(--text)
+        }
+
+        .sb-header span {
+            font-size: .8rem;
+            color: var(--muted)
+        }
+
+        .sb-text {
+            font-size: .9375rem;
+            color: var(--muted);
+            line-height: 1.85;
+            margin-bottom: 1.25rem
+        }
+
+        .sb-milestone {
+            display: flex;
+            flex-wrap: wrap;
+            gap: .875rem;
+            margin-top: 1.25rem
+        }
+
+        .sb-ms {
+            padding: .5rem 1.125rem;
+            border-radius: 999px;
+            border: 1px solid rgba(245, 166, 35, .28);
+            font-size: .78rem;
+            font-weight: 700;
+            color: var(--amber);
+            background: rgba(245, 166, 35, .06)
+        }
+
+        /* Customization offer */
+        .custom-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem
+        }
+
+        .custom-card {
+            padding: 2rem;
+            border-radius: var(--r-xl);
+            border: 1px solid var(--border);
+            background: rgba(255, 255, 255, .02);
+            transition: all var(--t2)
+        }
+
+        .custom-card:hover {
+            border-color: rgba(245, 166, 35, .3);
+            transform: translateY(-4px);
+            box-shadow: 0 10px 28px rgba(245, 166, 35, .08)
+        }
+
+        .cc-ico {
+            font-size: 1.75rem;
+            margin-bottom: 1rem
+        }
+
+        .custom-card h4 {
+            font-size: 1rem;
+            font-weight: 700;
+            margin-bottom: .625rem;
+            color: var(--text)
+        }
+
+        .custom-card p {
+            font-size: .875rem;
+            color: var(--muted);
+            line-height: 1.75
+        }
+
+        .cta-box {
+            padding: 4rem;
+            border-radius: var(--r-2xl);
+            border: 1px solid rgba(245, 166, 35, .22);
+            background: rgba(245, 166, 35, .04);
+            text-align: center;
+            margin-top: 2rem
+        }
+
+        .cta-box h2 {
+            font-size: 2.25rem;
+            margin-bottom: 1rem;
+            color: var(--text)
+        }
+
+        .cta-box p {
+            color: var(--muted);
+            font-size: 1rem;
+            max-width: 520px;
+            margin: 0 auto 2.5rem;
+            line-height: 1.75
+        }
+
+        .cta-btns {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap
+        }
+
+        @media(max-width:1000px) {
+            .dh-layout {
+                grid-template-columns: 1fr
+            }
+
+            .desktop-mock {
+                display: none
+            }
+
+            .modules-trio {
+                grid-template-columns: 1fr
+            }
+
+            .mt-col {
+                border: none;
+                border-bottom: 1px solid var(--border)
+            }
+
+            .custom-grid {
+                grid-template-columns: 1fr
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-grid" aria-hidden="true"></div>
+    <div class="bg-mesh" aria-hidden="true"></div>
+    <header class="header" id="header">
+        <div class="container header-inner">
+            <a href="../index.html" class="logo">
+                <div class="logo-mark"><svg width="30" height="30" viewBox="0 0 30 30" fill="none">
+                        <path d="M15 2L28 15L15 28L2 15L15 2Z" stroke="url(#lg)" stroke-width="2" fill="none" />
+                        <path d="M15 9L21 15L15 21L9 15L15 9Z" fill="url(#lg)" />
+                        <defs>
+                            <linearGradient id="lg" x1="2" y1="2" x2="28" y2="28" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#4F7BF7" />
+                                <stop offset="1" stop-color="#9D5CF5" />
+                            </linearGradient>
+                        </defs>
+                    </svg></div><span class="logo-name">Lym<em>ytz</em></span>
+            </a>
+            <nav class="nav-desktop">
+                <a href="../index.html#a-propos" class="nav-link">À Propos</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="produits.html" class="nav-link active">Produits</a>
+                <a href="realisations.html" class="nav-link">Réalisations</a>
+                <a href="../index.html#equipe" class="nav-link">Équipe</a>
+                <a href="../index.html#contact" class="nav-cta">Nous Contacter</a>
+            </nav>
+            <button class="hamburger" id="hamburger" aria-label="Menu"
+                aria-expanded="false"><span></span><span></span><span></span></button>
+        </div>
+        <nav class="mobile-menu" id="mobile-menu">
+            <a href="../index.html#a-propos" class="mob-link">À Propos</a>
+            <a href="services.html" class="mob-link">Services</a>
+            <a href="produits.html" class="mob-link">Produits</a>
+            <a href="realisations.html" class="mob-link">Réalisations</a>
+            <a href="../index.html#equipe" class="mob-link">Équipe</a>
+            <a href="../index.html#contact" class="mob-link mob-cta">Nous Contacter</a>
+        </nav>
+    </header>
+    <main>
+
+        <!-- HERO -->
+        <section class="detail-hero">
+            <div class="container dh-layout">
+                <div class="reveal">
+                    <div class="dh-breadcrumb"><a href="../index.html">Accueil</a><span>/</span><a
+                            href="produits.html">Produits</a><span>/</span><span style="color:var(--text)">App
+                            Boulangerie</span></div>
+                    <div class="dh-eyebrow">🥖 Produit — 03</div>
+                    <h1 class="dh-h1">Logiciel de Gestion<br><span class="grad-text">Boulangerie</span></h1>
+                    <p class="dh-lead">Le premier logiciel développé par Lymytz. Une solution verticale complète pour
+                        les boulangeries industrielles et artisanales : commercial, production, comptabilité et suivi
+                        des stocks de matières premières.</p>
+                    <div style="display:flex;flex-wrap:wrap;gap:.625rem;margin-bottom:2rem">
+                        <span class="badge badge-amber">Gestion Commerciale</span>
+                        <span class="badge badge-blue">Planification Production</span>
+                        <span class="badge badge-green">Comptabilité</span>
+                        <span class="badge badge-purple">Stocks MP</span>
+                    </div>
+                    <div
+                        style="margin-bottom:2rem;padding:1rem 1.375rem;background:rgba(245,166,35,.08);border:1px solid rgba(245,166,35,.22);border-radius:var(--r-xl)">
+                        <span style="font-size:.78rem;font-weight:700;color:var(--amber)">🏆 Notre premier projet</span>
+                        <p style="font-size:.83rem;color:var(--muted);margin:.375rem 0 0;line-height:1.6">Ce logiciel
+                            est le projet fondateur de Lymytz, développé pour GLP-Entreprise au Cameroun. Il est à
+                            l'origine de la naissance de Lymytz ERP.</p>
+                    </div>
+                    <div style="display:flex;gap:1rem;flex-wrap:wrap">
+                        <a href="../index.html#contact" class="btn btn-primary">Adapter à ma boulangerie</a>
+                        <a href="realisations.html" class="btn btn-secondary">Voir le projet GLP</a>
+                    </div>
+                </div>
+                <div class="reveal delay-1">
+                    <div class="desktop-mock">
+                        <div class="dm-bar">
+                            <div class="dm-dots">
+                                <div class="dm-dot r"></div>
+                                <div class="dm-dot y"></div>
+                                <div class="dm-dot g"></div>
+                            </div>
+                            <div class="dm-title">GLP-Entreprise — Boulangerie · Production du jour</div>
+                            <div style="font-size:.65rem;color:var(--muted)">Admin</div>
+                        </div>
+                        <div class="dm-body">
+                            <div class="dm-nav">
+                                <div class="dm-nav-item active">📊 Tableau de bord</div>
+                                <div class="dm-nav-item">🛒 Commercial</div>
+                                <div class="dm-nav-item">🏭 Production</div>
+                                <div class="dm-nav-item">💰 Comptabilité</div>
+                                <div class="dm-nav-item">📦 Stocks MP</div>
+                            </div>
+                            <div class="dm-content">
+                                <div class="dm-stats">
+                                    <div class="dms">
+                                        <div class="dms-lbl">Production prev.</div>
+                                        <div class="dms-val">2 400 pces</div>
+                                        <div class="dms-note">↑ +200 vs hier</div>
+                                    </div>
+                                    <div class="dms">
+                                        <div class="dms-lbl">Ventes aujourd'hui</div>
+                                        <div class="dms-val">187 400 FCFA</div>
+                                        <div class="dms-note">Livreurs : 4 en route</div>
+                                    </div>
+                                    <div class="dms">
+                                        <div class="dms-lbl">Stock farine</div>
+                                        <div class="dms-val">180 kg</div>
+                                        <div class="dms-note" style="color:var(--amber)">⚠ Seuil bas</div>
+                                    </div>
+                                </div>
+                                <div class="dm-table">
+                                    <div class="dmt-head">
+                                        <span>Produit</span><span>Quantité</span><span>Statut</span><span>Coût/u</span>
+                                    </div>
+                                    <div class="dmt-row"><span>Baguette 150g</span><span>800</span><span>
+                                            <div class="dm-status s-done">Cuite ✓</div>
+                                        </span><span>0.38€</span></div>
+                                    <div class="dmt-row"><span>Pain de mie 400g</span><span>240</span><span>
+                                            <div class="dm-status s-prod">En cours</div>
+                                        </span><span>0.82€</span></div>
+                                    <div class="dmt-row"><span>Croissant</span><span>360</span><span>
+                                            <div class="dm-status s-pending">Planifié</div>
+                                        </span><span>0.45€</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3 MODULES -->
+        <section class="section section-alt">
+            <div class="container">
+                <div class="section-eyebrow reveal">Les modules</div>
+                <h2 class="section-title reveal">Trois piliers pour <span class="grad-text">votre boulangerie</span>
+                </h2>
+                <p class="section-lead reveal">Chaque aspect de votre activité couvert par un module dédié, parfaitement
+                    interconnecté.</p>
+                <div class="modules-trio reveal">
+                    <div class="mt-col">
+                        <div class="mt-color-bar" style="background:var(--amber)"></div>
+                        <div class="mt-ico">🛒</div>
+                        <h3>Gestion Commerciale</h3>
+                        <p>Gérez vos clients, vos commandes et vos livraisons. Tournées de livraison optimisées,
+                            factures automatiques et suivi des encaissements.</p>
+                        <ul class="mt-items">
+                            <li>Catalogue produits avec tarifs clients</li>
+                            <li>Bon de commande et bon de livraison</li>
+                            <li>Gestion des tournées de livraison</li>
+                            <li>Facturation et suivi des paiements</li>
+                            <li>Relevés de compte clients</li>
+                            <li>Statistiques de vente par produit/client</li>
+                        </ul>
+                    </div>
+                    <div class="mt-col">
+                        <div class="mt-color-bar" style="background:var(--blue)"></div>
+                        <div class="mt-ico">🏭</div>
+                        <h3>Planification de Production</h3>
+                        <p>Planifiez vos fournées, calculez vos besoins en matières premières et suivez l'avancement de
+                            la production en temps réel.</p>
+                        <ul class="mt-items">
+                            <li>Plan de production journalier et hebdomadaire</li>
+                            <li>Gammes et recettes paramétrables</li>
+                            <li>Calcul automatique des besoins MP</li>
+                            <li>Suivi d'avancement par four / poste</li>
+                            <li>Ordre de fabrication et fiche technique</li>
+                            <li>Calcul du coût de revient par produit</li>
+                        </ul>
+                    </div>
+                    <div class="mt-col">
+                        <div class="mt-color-bar" style="background:var(--green)"></div>
+                        <div class="mt-ico">💰</div>
+                        <h3>Comptabilité & Stocks</h3>
+                        <p>Comptabilité adaptée aux boulangeries, gestion des stocks de farine, levure et emballages,
+                            avec valorisation automatique.</p>
+                        <ul class="mt-items">
+                            <li>Enregistrement automatique des ventes</li>
+                            <li>Journaux d'achats et de trésorerie</li>
+                            <li>Balance et grand livre</li>
+                            <li>Gestion des stocks de matières premières</li>
+                            <li>Alertes de réapprovisionnement</li>
+                            <li>Valorisation et calcul des marges</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- HISTOIRE GLP -->
+        <section class="section">
+            <div class="container">
+                <div class="section-eyebrow reveal">L'histoire</div>
+                <h2 class="section-title reveal" style="margin-bottom:2rem">À l'origine de <span
+                        class="grad-text">Lymytz</span></h2>
+                <div class="story-box reveal">
+                    <div class="sb-header">
+                        <div class="sb-logo">GLP</div>
+                        <div>
+                            <h4>GLP-Entreprise</h4>
+                            <span>Boulangerie industrielle · Cameroun · 1er projet Lymytz</span>
+                        </div>
+                    </div>
+                    <p class="sb-text">
+                        GLP-Entreprise est le tout premier client de Lymytz. C'est pour répondre aux besoins de cette
+                        boulangerie industrielle camerounaise que nous avons développé notre premier logiciel métier :
+                        une solution complète couvrant la gestion commerciale (clients, commandes, livraisons,
+                        facturation), la planification de la production (fournées, recettes, coûts de revient) et la
+                        comptabilité.
+                    </p>
+                    <p class="sb-text">
+                        Ce projet fondateur nous a appris à écouter les besoins terrain, à développer des interfaces
+                        robustes pour des opérateurs non-informaticiens, et à construire des modules comptables adaptés
+                        au contexte africain. Les enseignements de GLP-Entreprise sont directement intégrés dans l'ADN
+                        de Lymytz ERP.
+                    </p>
+                    <div class="sb-milestone">
+                        <span class="sb-ms">🏁 1er projet commercial Lymytz</span>
+                        <span class="sb-ms">🇨🇲 Boulangerie industrielle — Cameroun</span>
+                        <span class="sb-ms">💡 Fondateur de Lymytz ERP</span>
+                        <span class="sb-ms">✅ Actuellement en production</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ADAPTATION -->
+        <section class="section section-alt">
+            <div class="container">
+                <div class="section-eyebrow reveal">Sur mesure</div>
+                <h2 class="section-title reveal">Adapté à <span class="grad-text">votre boulangerie</span></h2>
+                <p class="section-lead reveal">Ce logiciel peut être adapté à la taille et aux spécificités de votre
+                    établissement.</p>
+                <div class="custom-grid">
+                    <div class="custom-card reveal">
+                        <div class="cc-ico">🏪</div>
+                        <h4>Boulangerie artisanale</h4>
+                        <p>Pour les boulangeries de quartier ou les pâtisseries artisanales avec une gestion simplifiée
+                            : suivi des ventes en direct, gestion des commandes clients réguliers et stock de farine.
+                        </p>
+                    </div>
+                    <div class="custom-card reveal delay-1">
+                        <div class="cc-ico">🏭</div>
+                        <h4>Boulangerie industrielle</h4>
+                        <p>Pour les unités de production à grande échelle avec plusieurs lignes de production, gestion
+                            des tournées de livraison, clients grossistes et reporting de production journalier.</p>
+                    </div>
+                    <div class="custom-card reveal">
+                        <div class="cc-ico">🚐</div>
+                        <h4>Réseau de distribution</h4>
+                        <p>Pour les boulangeries qui livrent des points de vente tiers : gestion des tournées
+                            chauffeurs, bons de livraison, consignation et suivi des retours invendus.</p>
+                    </div>
+                    <div class="custom-card reveal delay-1">
+                        <div class="cc-ico">📱</div>
+                        <h4>Intégration App Mobile</h4>
+                        <p>Couplé à une application mobile pour les livreurs : bon de livraison numérique, signature
+                            électronique du client et remontée des encaissements en temps réel.</p>
+                    </div>
+                </div>
+                <div class="cta-box reveal">
+                    <h2>Un logiciel taillé pour votre <span class="grad-text">boulangerie</span></h2>
+                    <p>Contactez-nous pour discuter de l'adaptation du logiciel à vos besoins spécifiques. Démonstration
+                        disponible.</p>
+                    <div class="cta-btns">
+                        <a href="../index.html#contact" class="btn btn-primary">Discuter de mon projet</a>
+                        <a href="produit-erp.html" class="btn btn-secondary">Découvrir Lymytz ERP</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand"><a href="../index.html" class="logo">
+                        <div class="logo-mark"><svg width="26" height="26" viewBox="0 0 30 30" fill="none">
+                                <path d="M15 2L28 15L15 28L2 15L15 2Z" stroke="url(#lfbk)" stroke-width="2"
+                                    fill="none" />
+                                <path d="M15 9L21 15L15 21L9 15L15 9Z" fill="url(#lfbk)" />
+                                <defs>
+                                    <linearGradient id="lfbk" x1="2" y1="2" x2="28" y2="28"
+                                        gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#4F7BF7" />
+                                        <stop offset="1" stop-color="#9D5CF5" />
+                                    </linearGradient>
+                                </defs>
+                            </svg></div><span class="logo-name">Lym<em>ytz</em></span>
+                    </a>
+                    <p>Société camerounaise de conception logicielle, implantée en France.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Produits</h4>
+                    <ul>
+                        <li><a href="produit-erp.html">Lymytz ERP</a></li>
+                        <li><a href="produit-app-fb.html">App F&B</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Référence</h4>
+                    <ul>
+                        <li><a href="realisations.html">Réalisations</a></li>
+                        <li><a href="services.html">Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:contact@lymytz.com">contact@lymytz.com</a></li>
+                        <li><a href="../index.html#contact">Nous écrire</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Lymytz · Cameroun & France</p>
+                <div class="footer-legal"><a href="mentions-legales.html">Mentions légales</a></div>
+            </div>
+        </div>
+    </footer>
+    <a href="https://wa.me/237600000000" target="_blank" rel="noopener" aria-label="WhatsApp"
+        style="position:fixed;bottom:1.75rem;right:1.75rem;z-index:9999;width:56px;height:56px;border-radius:50%;background:#25D366;box-shadow:0 4px 20px rgba(37,211,102,.45);display:flex;align-items:center;justify-content:center;transition:transform .2s;text-decoration:none"
+        onmouseenter="this.style.transform='scale(1.1)'" onmouseleave="this.style.transform=''">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

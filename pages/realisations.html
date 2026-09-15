@@ -1,0 +1,696 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réalisations — Lymytz | Portfolio & Projets Clients</title>
+    <meta name="description"
+        content="Découvrez les projets réalisés par Lymytz : ERP déployés, sites web, applications mobiles et systèmes d'information pour des entreprises au Cameroun et en France.">
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+    <link rel="apple-touch-icon" href="../assets/favicon.svg">
+    <!-- SEO -->
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.lymytz.com/realisations.html">
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.lymytz.com/realisations.html">
+    <meta property="og:title" content="Réalisations — Lymytz | Portfolio &amp; Projets Clients">
+    <meta property="og:description"
+        content="Portfolio Lymytz : ERP, sites web, apps mobiles pour GLP, TNE, CCO et d'autres entreprises au Cameroun et en France.">
+    <meta property="og:image" content="https://www.lymytz.com/assets/og-lymytz.png">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:site_name" content="Lymytz">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Réalisations — Lymytz | Portfolio &amp; Projets Clients">
+    <meta name="twitter:description"
+        content="Portfolio Lymytz : ERP, sites web, apps mobiles pour GLP, TNE, CCO et d'autres entreprises au Cameroun et en France.">
+    <meta name="twitter:image" content="https://www.lymytz.com/assets/og-lymytz.png">
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Réalisations — Lymytz",
+      "url": "https://www.lymytz.com/realisations.html",
+      "description": "Portfolio de projets réalisés par Lymytz : ERP, sites web, applications mobiles.",
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://www.lymytz.com/"},
+          {"@type": "ListItem", "position": 2, "name": "Réalisations", "item": "https://www.lymytz.com/realisations.html"}
+        ]
+      }
+    }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        .stats-row {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+            margin-bottom: 5rem
+        }
+
+        .sr-card {
+            padding: 1.75rem;
+            border-radius: var(--r-xl);
+            border: 1px solid var(--border);
+            background: rgba(255, 255, 255, .02);
+            text-align: center
+        }
+
+        .sr-num {
+            font-family: var(--ff-head);
+            font-size: 2.5rem;
+            font-weight: 700;
+            line-height: 1;
+            margin-bottom: .25rem
+        }
+
+        .sr-label {
+            font-size: .8rem;
+            color: var(--muted);
+            font-weight: 500
+        }
+
+        .real-list {
+            display: flex;
+            flex-direction: column;
+            gap: 3rem
+        }
+
+        .real-item {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 3rem;
+            padding: 2.5rem;
+            border-radius: var(--r-2xl);
+            border: 1px solid var(--border);
+            background: rgba(255, 255, 255, .02);
+            align-items: start;
+            transition: border-color var(--t2), box-shadow var(--t2)
+        }
+
+        .real-item:hover {
+            border-color: var(--border-md);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, .3)
+        }
+
+        .real-item.featured {
+            border-color: rgba(79, 123, 247, .22);
+            background: var(--grad-soft)
+        }
+
+        .ri-left {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 1rem
+        }
+
+        .ri-av {
+            width: 72px;
+            height: 72px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--ff-head);
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #fff
+        }
+
+        .ri-name {
+            font-size: 1.5rem;
+            color: var(--text)
+        }
+
+        .ri-sector {
+            font-size: .875rem;
+            color: var(--muted)
+        }
+
+        .ri-year {
+            font-size: .72rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: .1em;
+            color: var(--muted)
+        }
+
+        .ri-right h3 {
+            font-size: 1.2rem;
+            margin-bottom: .875rem;
+            color: var(--text)
+        }
+
+        .ri-right p {
+            font-size: .9375rem;
+            color: var(--muted);
+            line-height: 1.78;
+            margin-bottom: 1.5rem
+        }
+
+        .ri-deliverables {
+            display: flex;
+            flex-direction: column;
+            gap: .75rem;
+            margin-bottom: 1.5rem
+        }
+
+        .ri-deliv {
+            display: flex;
+            align-items: flex-start;
+            gap: .875rem;
+            padding: .875rem 1rem;
+            border-radius: var(--r-md);
+            background: rgba(0, 0, 0, .2);
+            border: 1px solid var(--border)
+        }
+
+        .ri-deliv-ico {
+            font-size: 1.125rem;
+            flex-shrink: 0
+        }
+
+        .ri-deliv strong {
+            display: block;
+            font-size: .875rem;
+            font-weight: 700;
+            margin-bottom: .2rem;
+            color: var(--text-2)
+        }
+
+        .ri-deliv p {
+            font-size: .8rem;
+            color: var(--muted);
+            line-height: 1.65
+        }
+
+        .ri-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: .5rem
+        }
+
+        .ri-status {
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+            font-size: .78rem;
+            font-weight: 600
+        }
+
+        .ri-status .dot {
+            width: 7px;
+            height: 7px;
+            border-radius: 50%
+        }
+
+        @media(max-width:900px) {
+            .stats-row {
+                grid-template-columns: 1fr 1fr
+            }
+
+            .real-item {
+                grid-template-columns: 1fr;
+                gap: 2rem
+            }
+        }
+
+        @media(max-width:600px) {
+            .stats-row {
+                grid-template-columns: 1fr 1fr
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-grid" aria-hidden="true"></div>
+    <div class="bg-mesh" aria-hidden="true"></div>
+
+    <header class="header" id="header">
+        <div class="container header-inner">
+            <a href="../index.html" class="logo">
+                <div class="logo-mark"><svg width="30" height="30" viewBox="0 0 30 30" fill="none">
+                        <path d="M15 2L28 15L15 28L2 15L15 2Z" stroke="url(#lhr)" stroke-width="2" fill="none" />
+                        <path d="M15 9L21 15L15 21L9 15L15 9Z" fill="url(#lhr)" />
+                        <defs>
+                            <linearGradient id="lhr" x1="2" y1="2" x2="28" y2="28" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#4F7BF7" />
+                                <stop offset="1" stop-color="#9D5CF5" />
+                            </linearGradient>
+                        </defs>
+                    </svg></div>
+                <span class="logo-name">Lym<em>ytz</em></span>
+            </a>
+            <nav class="nav-desktop">
+                <a href="../index.html#a-propos" class="nav-link">À Propos</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="produits.html" class="nav-link">Produits</a>
+                <a href="realisations.html" class="nav-link active">Réalisations</a>
+                <a href="../index.html#equipe" class="nav-link">Équipe</a>
+                <a href="../index.html#contact" class="nav-cta">Nous Contacter</a>
+            </nav>
+            <button class="hamburger" id="hamburger" aria-label="Menu"
+                aria-expanded="false"><span></span><span></span><span></span></button>
+        </div>
+        <nav class="mobile-menu" id="mobile-menu" aria-hidden="true">
+            <a href="../index.html#a-propos" class="mob-link">À Propos</a>
+            <a href="services.html" class="mob-link">Services</a>
+            <a href="produits.html" class="mob-link">Produits</a>
+            <a href="realisations.html" class="mob-link">Réalisations</a>
+            <a href="../index.html#equipe" class="mob-link">Équipe</a>
+            <a href="../index.html#contact" class="mob-link mob-cta">Nous Contacter</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="page-hero">
+            <div class="container reveal">
+                <div class="section-eyebrow" style="justify-content:center">Portfolio</div>
+                <h1 class="page-hero-h1"><span class="grad-text">Réalisations</span> & Projets</h1>
+                <p class="page-hero-p">Chaque projet est une histoire de confiance. Voici ce que nous avons bâti avec
+                    nos clients — des solutions qui tournent en production et qui font la différence.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+
+                <!-- Stats -->
+                <div class="stats-row">
+                    <div class="sr-card reveal">
+                        <div class="sr-num" style="color:var(--blue)">6+</div>
+                        <div class="sr-label">Projets livrés</div>
+                    </div>
+                    <div class="sr-card reveal delay-1">
+                        <div class="sr-num" style="color:var(--purple)">2</div>
+                        <div class="sr-label">Pays d'intervention</div>
+                    </div>
+                    <div class="sr-card reveal delay-2">
+                        <div class="sr-num" style="color:var(--green)">3</div>
+                        <div class="sr-label">Clients ERP actifs</div>
+                    </div>
+                    <div class="sr-card reveal delay-3">
+                        <div class="sr-num" style="color:var(--amber)">100%</div>
+                        <div class="sr-label">Satisfaction</div>
+                    </div>
+                </div>
+
+                <!-- Projets -->
+                <div class="section-eyebrow reveal">Nos Projets</div>
+                <h2 class="section-title reveal" style="margin-bottom:2.5rem">Ce que nous avons <span
+                        class="grad-text">réalisé</span></h2>
+
+                <div class="real-list">
+
+                    <!-- GLP -->
+                    <div class="real-item featured reveal" id="r-glp">
+                        <div class="ri-left">
+                            <div class="ri-av" style="background:linear-gradient(135deg,#4F7BF7,#9D5CF5)">GLP</div>
+                            <h3 class="ri-name">GLP-Entreprise</h3>
+                            <p class="ri-sector">Groupe La Paix</p>
+                            <p class="ri-sector">Boulangerie & Commerce</p>
+                            <div class="ri-year">1er Grand Projet</div>
+                            <div class="ri-status">
+                                <div class="dot" style="background:var(--green)"></div>
+                                <span style="color:var(--green)">Client actif — ERP</span>
+                            </div>
+                            <div class="ri-tags">
+                                <span class="badge badge-blue">Logiciel sur mesure</span>
+                                <span class="badge badge-purple">Lymytz ERP</span>
+                            </div>
+                        </div>
+                        <div class="ri-right">
+                            <h3>Logiciel de gestion de boulangerie + Lymytz ERP</h3>
+                            <p>
+                                GLP-Entreprise (Groupe La Paix) est le premier grand projet de Lymytz et une relation
+                                qui dure. Dans un premier temps, Lymytz a conçu et développé un <strong
+                                    style="color:var(--text-2)">logiciel de gestion de boulangerie</strong> sur mesure
+                                couvrant l'intégralité de la chaîne opérationnelle. Par la suite, GLP a aussi adopté
+                                <strong style="color:var(--text-2)">Lymytz ERP</strong> pour centraliser la gestion de
+                                ses autres entités.
+                            </p>
+                            <div class="ri-deliverables">
+                                <div class="ri-deliv">
+                                    <div class="ri-deliv-ico">🏬</div>
+                                    <div>
+                                        <strong>Module Commercial</strong>
+                                        <p>Gestion des commandes clients, catalogues de produits, tarification par
+                                            client, facturation et suivi des encaissements.</p>
+                                    </div>
+                                </div>
+                                <div class="ri-deliv">
+                                    <div class="ri-deliv-ico">🏭</div>
+                                    <div>
+                                        <strong>Module Production</strong>
+                                        <p>Gestion des recettes de fabrication, planification de la production
+                                            journalière, suivi des matières premières et contrôle des coûts de revient.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="ri-deliv">
+                                    <div class="ri-deliv-ico">📊</div>
+                                    <div>
+                                        <strong>Module Comptabilité</strong>
+                                        <p>Journaux de caisse, balance, états financiers adaptés au plan comptable OHADA
+                                            et rapports de gestion.</p>
+                                    </div>
+                                </div>
+                                <div class="ri-deliv">
+                                    <div class="ri-deliv-ico">🖥️</div>
+                                    <div>
+                                        <strong>Lymytz ERP — Gestion centralisée</strong>
+                                        <p>Déploiement de la plateforme ERP pour la gestion globale du groupe : ventes,
+                                            stocks, RH et comptabilité multi-entités.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Yatch Center -->
+                    <div class="real-item reveal" id="r-yatch">
+                        <div class="ri-left">
+                            <div class="ri-av" style="background:linear-gradient(135deg,#F59E0B,#D97706)">YC</div>
+                            <h3 class="ri-name">Yatch Center</h3>
+                            <p class="ri-sector">Centre Commercial</p>
+                            <div class="ri-year">Référence</div>
+                            <div class="ri-status">
+                                <div class="dot" style="background:var(--amber)"></div>
+                                <span style="color:var(--amber)">Ancien client</span>
+                            </div>
+                            <div class="ri-tags">
+                                <span class="badge badge-blue">Lymytz ERP</span>
+                                <span class="badge badge-amber">App Mobile</span>
+                            </div>
+                        </div>
+                        <div class="ri-right">
+                            <h3>Lymytz ERP + Application mobile F&B</h3>
+                            <p>
+                                Pour ce centre commercial, Lymytz a déployé la plateforme <strong
+                                    style="color:var(--text-2)">Lymytz ERP</strong> pour la gestion globale des
+                                opérations. En complément, une <strong style="color:var(--text-2)">application mobile de
+                                    gestion de snack, bar et restaurant</strong> a été développée sur mesure pour les
+                                équipes terrain de la restauration du centre.
+                            </p>
+                            <div class="ri-deliverables">
+                                <div class="ri-deliv">
+                                    <div class="ri-deliv-ico">🖥️</div>
+                                    <div>
+                                        <strong>Lymytz ERP</strong>
+                                        <p>Gestion commerciale, stocks, comptabilité et RH pour l'ensemble du centre
+                                            commercial.</p>
+                                    </div>
+                                </div>
+                                <div class="ri-deliv">
+                                    <div class="ri-deliv-ico">📱</div>
+                                    <div>
+                                        <strong>Application Mobile F&B</strong>
+                                        <p>Prise de commande en salle, gestion de la caisse, suivi des stocks
+                                            alimentaires et reporting journalier — intégrée à l'ERP.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ri-tags">
+                                <span class="tag">iOS & Android</span><span class="tag">POS</span><span
+                                    class="tag">Restauration</span><span class="tag">Gestion centre commercial</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- El Blanco -->
+                    <div class="real-item reveal" id="r-blanco">
+                        <div class="ri-left">
+                            <div class="ri-av" style="background:linear-gradient(135deg,#EF4444,#B91C1C)">EB</div>
+                            <h3 class="ri-name">El Blanco</h3>
+                            <p class="ri-sector">Commerce Cosmétique</p>
+                            <div class="ri-year">Référence</div>
+                            <div class="ri-status">
+                                <div class="dot" style="background:var(--amber)"></div>
+                                <span style="color:var(--amber)">Ancien client ERP</span>
+                            </div>
+                            <div class="ri-tags">
+                                <span class="badge badge-amber">Lymytz ERP</span>
+                            </div>
+                        </div>
+                        <div class="ri-right">
+                            <h3>Déploiement Lymytz ERP — Commerce de produits cosmétiques</h3>
+                            <p>
+                                El Blanco, spécialisé dans le commerce de produits cosmétiques, a adopté <strong
+                                    style="color:var(--text-2)">Lymytz ERP</strong> pour optimiser la gestion de ses
+                                opérations. La plateforme a permis une meilleure visibilité sur les ventes, les stocks
+                                et la trésorerie, contribuant à une meilleure prise de décision commerciale.
+                            </p>
+                            <div class="ri-deliverables">
+                                <div class="ri-deliv">
+                                    <div class="ri-deliv-ico">🛍️</div>
+                                    <div>
+                                        <strong>Gestion des ventes & Stocks</strong>
+                                        <p>Suivi du catalogue produits cosmétiques, des commandes clients, des
+                                            entrées/sorties de stock et des alertes de réapprovisionnement.</p>
+                                    </div>
+                                </div>
+                                <div class="ri-deliv">
+                                    <div class="ri-deliv-ico">📈</div>
+                                    <div>
+                                        <strong>Reporting & Tableau de bord</strong>
+                                        <p>Accès aux indicateurs clés de performance commerciale et aux états financiers
+                                            simplifiés.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ri-tags">
+                                <span class="tag">Commerce de détail</span><span class="tag">Cosmétiques</span><span
+                                    class="tag">Gestion stocks</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CCO -->
+                    <div class="real-item reveal" id="r-cco">
+                        <div class="ri-left">
+                            <div class="ri-av" style="background:linear-gradient(135deg,#9D5CF5,#7C3AED)">CCO</div>
+                            <h3 class="ri-name">CCO</h3>
+                            <p class="ri-sector">Industrie</p>
+                            <div class="ri-year">Client actif</div>
+                            <div class="ri-status">
+                                <div class="dot" style="background:var(--green)"></div>
+                                <span style="color:var(--green)">ERP actif</span>
+                            </div>
+                            <div class="ri-tags">
+                                <span class="badge badge-purple">Lymytz ERP</span>
+                            </div>
+                        </div>
+                        <div class="ri-right">
+                            <h3>Lymytz ERP — Gestion industrielle</h3>
+                            <p>
+                                CCO utilise <strong style="color:var(--text-2)">Lymytz ERP</strong> pour la gestion de
+                                son activité industrielle. La plateforme centralise les informations opérationnelles et
+                                financières, offrant une vision globale et précise des performances de l'entreprise.
+                            </p>
+                            <div class="ri-deliverables">
+                                <div class="ri-deliv">
+                                    <div class="ri-deliv-ico">🏭</div>
+                                    <div>
+                                        <strong>ERP Multi-modules</strong>
+                                        <p>Ventes, Stocks, Comptabilité et RH configurés selon les besoins spécifiques
+                                            de l'activité industrielle.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ri-tags">
+                                <span class="tag">Industrie</span><span class="tag">ERP</span><span class="tag">Gestion
+                                    multi-modules</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TEEKA -->
+                    <div class="real-item reveal" id="r-teeka">
+                        <div class="ri-left">
+                            <div class="ri-av" style="background:linear-gradient(135deg,#0DB87B,#059669)">TKA</div>
+                            <h3 class="ri-name">TEEKA</h3>
+                            <p class="ri-sector">Services</p>
+                            <div class="ri-year">Client actif</div>
+                            <div class="ri-status">
+                                <div class="dot" style="background:var(--green)"></div>
+                                <span style="color:var(--green)">ERP actif</span>
+                            </div>
+                            <div class="ri-tags">
+                                <span class="badge badge-green">Lymytz ERP</span>
+                            </div>
+                        </div>
+                        <div class="ri-right">
+                            <h3>Lymytz ERP — Société de services</h3>
+                            <p>
+                                TEEKA, société de services, a déployé <strong style="color:var(--text-2)">Lymytz
+                                    ERP</strong> pour unifier la gestion de ses opérations commerciales, la facturation
+                                clients et la gestion des ressources humaines dans une seule plateforme.
+                            </p>
+                            <div class="ri-deliverables">
+                                <div class="ri-deliv">
+                                    <div class="ri-deliv-ico">🤝</div>
+                                    <div>
+                                        <strong>Ventes & Facturation</strong>
+                                        <p>Gestion du pipeline commercial, devis, facturation et suivi des
+                                            encaissements.</p>
+                                    </div>
+                                </div>
+                                <div class="ri-deliv">
+                                    <div class="ri-deliv-ico">👥</div>
+                                    <div>
+                                        <strong>Ressources Humaines</strong>
+                                        <p>Gestion des collaborateurs, suivi des présences et traitement de la paie.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ri-tags">
+                                <span class="tag">Services</span><span class="tag">Facturation</span><span
+                                    class="tag">RH</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TNE -->
+                    <div class="real-item reveal" id="r-tne">
+                        <div class="ri-left">
+                            <div class="ri-av" style="background:linear-gradient(135deg,#22D3EE,#0891B2)">TNE</div>
+                            <h3 class="ri-name">Telecom & Network Engineering</h3>
+                            <p class="ri-sector">Télécommunications</p>
+                            <div class="ri-year">Mission terminée</div>
+                            <div class="ri-status">
+                                <div class="dot" style="background:var(--blue)"></div>
+                                <span style="color:var(--blue)">Consulting réalisé</span>
+                            </div>
+                            <div class="ri-tags">
+                                <span class="badge badge-blue">Consulting IT</span>
+                            </div>
+                        </div>
+                        <div class="ri-right">
+                            <h3>Mission de Consulting IT</h3>
+                            <p>
+                                TNE, spécialisé en infrastructures télécom et réseaux, a fait appel à Lymytz pour une
+                                <strong style="color:var(--text-2)">mission de consulting IT</strong>. L'objectif :
+                                disposer d'une expertise externe indépendante pour évaluer leur architecture technique,
+                                identifier les risques et définir une feuille de route d'amélioration.
+                            </p>
+                            <div class="ri-deliverables">
+                                <div class="ri-deliv">
+                                    <div class="ri-deliv-ico">🔍</div>
+                                    <div>
+                                        <strong>Audit Technique</strong>
+                                        <p>Analyse approfondie de l'infrastructure existante, identification des points
+                                            de défaillance et des opportunités d'optimisation.</p>
+                                    </div>
+                                </div>
+                                <div class="ri-deliv">
+                                    <div class="ri-deliv-ico">🗺️</div>
+                                    <div>
+                                        <strong>Recommandations Stratégiques</strong>
+                                        <p>Rapport de recommandations priorisées et plan d'action pour la modernisation
+                                            du système d'information.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ri-tags">
+                                <span class="tag">Télécoms</span><span class="tag">Réseaux</span><span class="tag">Audit
+                                    IT</span><span class="tag">Stratégie</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- CTA -->
+                <div style="margin-top:5rem;padding:3.5rem;border-radius:var(--r-2xl);border:1px solid rgba(79,123,247,.2);background:var(--grad-soft);text-align:center"
+                    class="reveal">
+                    <h2 style="font-size:2rem;margin-bottom:1rem">Votre projet sera le prochain</h2>
+                    <p style="color:var(--muted);max-width:500px;margin:0 auto 2rem;font-size:1rem">Nous sommes prêts à
+                        concevoir la solution qui fera avancer votre entreprise. Contactez-nous pour démarrer.</p>
+                    <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap">
+                        <a href="../index.html#contact" class="btn btn-primary">Démarrer un projet</a>
+                        <a href="services.html" class="btn btn-secondary">Voir nos services</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="../index.html" class="logo">
+                        <div class="logo-mark"><svg width="26" height="26" viewBox="0 0 30 30" fill="none">
+                                <path d="M15 2L28 15L15 28L2 15L15 2Z" stroke="url(#lfr)" stroke-width="2"
+                                    fill="none" />
+                                <path d="M15 9L21 15L15 21L9 15L15 9Z" fill="url(#lfr)" />
+                                <defs>
+                                    <linearGradient id="lfr" x1="2" y1="2" x2="28" y2="28"
+                                        gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#4F7BF7" />
+                                        <stop offset="1" stop-color="#9D5CF5" />
+                                    </linearGradient>
+                                </defs>
+                            </svg></div><span class="logo-name">Lym<em>ytz</em></span>
+                    </a>
+                    <p>Société camerounaise de conception logicielle, implantée en France.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>La Société</h4>
+                    <ul>
+                        <li><a href="../index.html#a-propos">À Propos</a></li>
+                        <li><a href="../index.html#parcours">Parcours</a></li>
+                        <li><a href="../index.html#equipe">Équipe</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Services & Produits</h4>
+                    <ul>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="produits.html">Produits</a></li>
+                        <li><a href="realisations.html">Réalisations</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:contact@lymytz.com">contact@lymytz.com</a></li>
+                        <li><a href="../index.html#contact">Nous écrire</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Lymytz · Cameroun & France</p>
+                <div class="footer-legal"><a href="mentions-legales.html">Mentions légales</a><a
+                        href="confidentialite.html">Confidentialité</a></div>
+            </div>
+        </div>
+    </footer>
+    <a href="https://wa.me/237600000000" target="_blank" rel="noopener" aria-label="WhatsApp"
+        style="position:fixed;bottom:1.75rem;right:1.75rem;z-index:9999;width:56px;height:56px;border-radius:50%;background:#25D366;box-shadow:0 4px 20px rgba(37,211,102,.45);display:flex;align-items:center;justify-content:center;transition:transform .2s;text-decoration:none"
+        onmouseenter="this.style.transform='scale(1.1)'" onmouseleave="this.style.transform=''">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="white">
+            <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+        </svg>
+    </a>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

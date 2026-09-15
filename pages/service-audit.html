@@ -1,0 +1,647 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audit & Conseil IT — Lymytz</title>
+    <meta name="description"
+        content="Lymytz audite votre infrastructure IT, identifie les risques et construit votre feuille de route de transformation numérique. Expertise Cameroun &amp; France.">
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+    <link rel="apple-touch-icon" href="../assets/favicon.svg">
+    <!-- SEO -->
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.lymytz.com/service-audit.html">
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.lymytz.com/service-audit.html">
+    <meta property="og:title" content="Audit &amp; Conseil IT — Lymytz">
+    <meta property="og:description"
+        content="Audit technique, sécurité IT, stratégie digitale et DSI externalisé. Lymytz identifie vos risques et construit votre feuille de route.">
+    <meta property="og:image" content="https://www.lymytz.com/assets/og-lymytz.png">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:site_name" content="Lymytz">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Audit &amp; Conseil IT — Lymytz">
+    <meta name="twitter:description"
+        content="Audit technique, sécurité IT, stratégie digitale et DSI externalisé. Lymytz identifie vos risques et construit votre feuille de route.">
+    <meta name="twitter:image" content="https://www.lymytz.com/assets/og-lymytz.png">
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Audit & Conseil IT",
+      "provider": {"@type": "Organization", "name": "Lymytz", "url": "https://www.lymytz.com"},
+      "url": "https://www.lymytz.com/service-audit.html",
+      "description": "Audit technique, sécurité IT et conseil en transformation digitale.",
+      "areaServed": ["CM", "FR"],
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://www.lymytz.com/"},
+          {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.lymytz.com/services.html"},
+          {"@type": "ListItem", "position": 3, "name": "Audit & Conseil IT", "item": "https://www.lymytz.com/service-audit.html"}
+        ]
+      }
+    }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        .detail-hero {
+            padding: 9rem 0 6rem;
+            position: relative;
+            overflow: hidden
+        }
+
+        .detail-hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(ellipse 60% 50% at 20% 60%, rgba(13, 184, 123, .12) 0%, transparent 65%), radial-gradient(ellipse 40% 40% at 80% 30%, rgba(79, 123, 247, .09) 0%, transparent 65%);
+            pointer-events: none
+        }
+
+        .dh-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5rem;
+            align-items: center
+        }
+
+        .dh-breadcrumb {
+            font-size: .78rem;
+            color: var(--muted);
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: .5rem
+        }
+
+        .dh-breadcrumb a {
+            color: var(--muted)
+        }
+
+        .dh-breadcrumb span {
+            color: var(--subtle)
+        }
+
+        .dh-eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: .5rem;
+            margin-bottom: 1.25rem;
+            font-size: .7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: .14em;
+            color: var(--green)
+        }
+
+        .dh-h1 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            margin-bottom: 1.25rem;
+            line-height: 1.1
+        }
+
+        .dh-lead {
+            color: var(--muted);
+            font-size: 1.05rem;
+            line-height: 1.8;
+            margin-bottom: 2.5rem
+        }
+
+        /* Audit visual */
+        .audit-visual {
+            background: var(--bg-card);
+            border: 1px solid var(--border-md);
+            border-radius: var(--r-2xl);
+            padding: 1.75rem;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, .4)
+        }
+
+        .av-title {
+            font-size: .72rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: .1em;
+            color: var(--muted);
+            margin-bottom: 1.25rem
+        }
+
+        .av-item {
+            margin-bottom: 1rem
+        }
+
+        .av-item-head {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: .5rem
+        }
+
+        .av-item-lbl {
+            font-size: .875rem;
+            font-weight: 600;
+            color: var(--text-2)
+        }
+
+        .av-item-score {
+            font-family: var(--ff-head);
+            font-size: .875rem;
+            font-weight: 700
+        }
+
+        .av-bar {
+            height: 8px;
+            background: var(--border);
+            border-radius: 999px;
+            overflow: hidden
+        }
+
+        .av-fill {
+            height: 100%;
+            border-radius: 999px;
+            transition: width 1.2s cubic-bezier(.4, 0, .2, 1)
+        }
+
+        .av-verdict {
+            margin-top: 1.5rem;
+            padding: 1rem;
+            border-radius: var(--r-md);
+            background: rgba(13, 184, 123, .08);
+            border: 1px solid rgba(13, 184, 123, .2);
+            display: flex;
+            gap: .875rem;
+            align-items: flex-start
+        }
+
+        .av-verdict-ico {
+            font-size: 1.25rem;
+            flex-shrink: 0
+        }
+
+        .av-verdict p {
+            font-size: .8rem;
+            color: var(--muted);
+            line-height: 1.65
+        }
+
+        .av-verdict strong {
+            display: block;
+            font-size: .875rem;
+            color: var(--green);
+            margin-bottom: .25rem
+        }
+
+        /* Offer types */
+        .offer-row {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem
+        }
+
+        .off-card {
+            padding: 2rem;
+            border-radius: var(--r-2xl);
+            border: 1px solid var(--border);
+            background: rgba(255, 255, 255, .02);
+            transition: all var(--t2)
+        }
+
+        .off-card:hover {
+            border-color: rgba(13, 184, 123, .3);
+            transform: translateY(-4px);
+            box-shadow: 0 10px 30px rgba(13, 184, 123, .09)
+        }
+
+        .off-ico {
+            font-size: 2rem;
+            margin-bottom: 1.25rem
+        }
+
+        .off-card h3 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: .75rem;
+            color: var(--text)
+        }
+
+        .off-card p {
+            font-size: .875rem;
+            color: var(--muted);
+            line-height: 1.75;
+            margin-bottom: 1.25rem
+        }
+
+        .off-items {
+            display: flex;
+            flex-direction: column;
+            gap: .5rem
+        }
+
+        .off-items li {
+            font-size: .8rem;
+            color: var(--muted);
+            display: flex;
+            align-items: flex-start;
+            gap: .5rem
+        }
+
+        .off-items li::before {
+            content: '✓';
+            color: var(--green);
+            font-weight: 700;
+            flex-shrink: 0;
+            margin-top: .05rem
+        }
+
+        .off-deliverable {
+            margin-top: 1.25rem;
+            padding: .875rem;
+            background: rgba(13, 184, 123, .06);
+            border: 1px solid rgba(13, 184, 123, .15);
+            border-radius: var(--r-md);
+            font-size: .78rem;
+            color: var(--muted)
+        }
+
+        .off-deliverable strong {
+            color: var(--green)
+        }
+
+        /* Reference -->TNE */
+        .ref-box {
+            padding: 2.5rem;
+            border-radius: var(--r-2xl);
+            border: 1px solid rgba(34, 211, 238, .2);
+            background: rgba(34, 211, 238, .04);
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 2rem;
+            align-items: start
+        }
+
+        .ref-av {
+            width: 64px;
+            height: 64px;
+            border-radius: 16px;
+            background: linear-gradient(135deg, #22D3EE, #0891B2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--ff-head);
+            font-weight: 700;
+            color: #fff;
+            flex-shrink: 0
+        }
+
+        .ref-box h4 {
+            font-size: 1.125rem;
+            font-weight: 700;
+            margin-bottom: .375rem;
+            color: var(--text)
+        }
+
+        .ref-box .sector {
+            font-size: .8rem;
+            color: var(--muted);
+            margin-bottom: .875rem
+        }
+
+        .ref-box p {
+            font-size: .9rem;
+            color: var(--muted);
+            line-height: 1.75
+        }
+
+        .cta-box {
+            padding: 4rem;
+            border-radius: var(--r-2xl);
+            border: 1px solid rgba(13, 184, 123, .22);
+            background: rgba(13, 184, 123, .04);
+            text-align: center;
+            margin-top: 2rem
+        }
+
+        .cta-box h2 {
+            font-size: 2.25rem;
+            margin-bottom: 1rem;
+            color: var(--text)
+        }
+
+        .cta-box p {
+            color: var(--muted);
+            font-size: 1rem;
+            max-width: 500px;
+            margin: 0 auto 2.5rem;
+            line-height: 1.75
+        }
+
+        .cta-btns {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap
+        }
+
+        @media(max-width:1000px) {
+            .dh-layout {
+                grid-template-columns: 1fr
+            }
+
+            .audit-visual {
+                display: none
+            }
+
+            .offer-row {
+                grid-template-columns: 1fr
+            }
+
+            .ref-box {
+                grid-template-columns: 1fr
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-grid" aria-hidden="true"></div>
+    <div class="bg-mesh" aria-hidden="true"></div>
+    <header class="header" id="header">
+        <div class="container header-inner">
+            <a href="../index.html" class="logo">
+                <div class="logo-mark"><svg width="30" height="30" viewBox="0 0 30 30" fill="none">
+                        <path d="M15 2L28 15L15 28L2 15L15 2Z" stroke="url(#lg)" stroke-width="2" fill="none" />
+                        <path d="M15 9L21 15L15 21L9 15L15 9Z" fill="url(#lg)" />
+                        <defs>
+                            <linearGradient id="lg" x1="2" y1="2" x2="28" y2="28" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#4F7BF7" />
+                                <stop offset="1" stop-color="#9D5CF5" />
+                            </linearGradient>
+                        </defs>
+                    </svg></div><span class="logo-name">Lym<em>ytz</em></span>
+            </a>
+            <nav class="nav-desktop">
+                <a href="../index.html#a-propos" class="nav-link">À Propos</a>
+                <a href="services.html" class="nav-link active">Services</a>
+                <a href="produits.html" class="nav-link">Produits</a>
+                <a href="realisations.html" class="nav-link">Réalisations</a>
+                <a href="../index.html#equipe" class="nav-link">Équipe</a>
+                <a href="../index.html#contact" class="nav-cta">Nous Contacter</a>
+            </nav>
+            <button class="hamburger" id="hamburger" aria-label="Menu"
+                aria-expanded="false"><span></span><span></span><span></span></button>
+        </div>
+        <nav class="mobile-menu" id="mobile-menu">
+            <a href="../index.html#a-propos" class="mob-link">À Propos</a>
+            <a href="services.html" class="mob-link">Services</a>
+            <a href="produits.html" class="mob-link">Produits</a>
+            <a href="realisations.html" class="mob-link">Réalisations</a>
+            <a href="../index.html#equipe" class="mob-link">Équipe</a>
+            <a href="../index.html#contact" class="mob-link mob-cta">Nous Contacter</a>
+        </nav>
+    </header>
+    <main>
+
+        <section class="detail-hero">
+            <div class="container dh-layout">
+                <div class="reveal">
+                    <div class="dh-breadcrumb"><a href="../index.html">Accueil</a><span>/</span><a
+                            href="services.html">Services</a><span>/</span><span style="color:var(--text)">Audit &
+                            Conseil</span></div>
+                    <div class="dh-eyebrow"><svg width="14" height="14" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>Service — 04</div>
+                    <h1 class="dh-h1">Audit &<br><span class="grad-text">Conseil IT</span></h1>
+                    <p class="dh-lead">Avant d'investir, sachez où vous en êtes. Nous évaluons votre infrastructure,
+                        identifions vos vulnérabilités et construisons un plan d'action concret pour votre
+                        transformation numérique.</p>
+                    <div style="display:flex;flex-wrap:wrap;gap:.625rem;margin-bottom:2.5rem">
+                        <span class="badge badge-green">Audit Technique</span>
+                        <span class="badge badge-blue">Sécurité IT</span>
+                        <span class="badge badge-purple">Stratégie Digitale</span>
+                        <span class="badge badge-amber">Feuille de Route</span>
+                    </div>
+                    <div style="display:flex;gap:1rem;flex-wrap:wrap">
+                        <a href="../index.html#contact" class="btn btn-primary">Demander un audit</a>
+                        <a href="realisations.html#r-tne" class="btn btn-secondary">Voir notre référence TNE</a>
+                    </div>
+                </div>
+                <div class="reveal delay-1">
+                    <div class="audit-visual">
+                        <div class="av-title">🔍 Rapport d'audit — Exemple</div>
+                        <div class="av-item">
+                            <div class="av-item-head"><span class="av-item-lbl">Sécurité des accès</span><span
+                                    class="av-item-score" style="color:var(--amber)">64/100</span></div>
+                            <div class="av-bar">
+                                <div class="av-fill audit-bar" data-w="64" style="width:0%;background:var(--amber)">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="av-item">
+                            <div class="av-item-head"><span class="av-item-lbl">Performance infrastructure</span><span
+                                    class="av-item-score" style="color:var(--green)">82/100</span></div>
+                            <div class="av-bar">
+                                <div class="av-fill audit-bar" data-w="82" style="width:0%;background:var(--green)">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="av-item">
+                            <div class="av-item-head"><span class="av-item-lbl">Qualité du code</span><span
+                                    class="av-item-score" style="color:var(--blue)">71/100</span></div>
+                            <div class="av-bar">
+                                <div class="av-fill audit-bar" data-w="71" style="width:0%;background:var(--blue)">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="av-item">
+                            <div class="av-item-head"><span class="av-item-lbl">Sauvegarde & Continuité</span><span
+                                    class="av-item-score" style="color:var(--red,#EF4444)">38/100</span></div>
+                            <div class="av-bar">
+                                <div class="av-fill audit-bar" data-w="38" style="width:0%;background:#EF4444"></div>
+                            </div>
+                        </div>
+                        <div class="av-verdict">
+                            <div class="av-verdict-ico">⚠️</div>
+                            <div>
+                                <strong>3 points critiques identifiés</strong>
+                                <p>Plan de sauvegarde insuffisant, mots de passe partagés et absence de monitoring.
+                                    Feuille de route 12 semaines prête.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- OFFRES AUDIT -->
+        <section class="section section-alt">
+            <div class="container">
+                <div class="section-eyebrow reveal">Formules</div>
+                <h2 class="section-title reveal">Nos types <span class="grad-text">d'intervention</span></h2>
+                <div class="offer-row">
+                    <div class="off-card reveal">
+                        <div class="off-ico">🔍</div>
+                        <h3>Audit Technique</h3>
+                        <p>Analyse approfondie de votre infrastructure, de votre code et de vos pratiques de sécurité.
+                            Livrable : rapport détaillé et plan d'action priorisé.</p>
+                        <ul class="off-items">
+                            <li>Revue de l'infrastructure serveurs</li>
+                            <li>Audit de sécurité & accès</li>
+                            <li>Analyse de la qualité du code</li>
+                            <li>Évaluation des sauvegardes</li>
+                            <li>Test de performance applicative</li>
+                        </ul>
+                        <div class="off-deliverable"><strong>Livrable :</strong> Rapport d'audit complet + plan d'action
+                            priorisé avec estimation effort</div>
+                    </div>
+                    <div class="off-card reveal delay-1">
+                        <div class="off-ico">🗺️</div>
+                        <h3>Conseil en Transformation Digitale</h3>
+                        <p>Vous souhaitez numériser vos processus mais ne savez pas par où commencer ? Nous construisons
+                            votre feuille de route avec vous.</p>
+                        <ul class="off-items">
+                            <li>Cartographie des processus actuels</li>
+                            <li>Identification des opportunités de digitalisation</li>
+                            <li>Recommandations d'outils & solutions</li>
+                            <li>Chiffrage des investissements</li>
+                            <li>Plan de conduite du changement</li>
+                        </ul>
+                        <div class="off-deliverable"><strong>Livrable :</strong> Feuille de route digitale sur 12-24
+                            mois avec budgets indicatifs</div>
+                    </div>
+                    <div class="off-card reveal delay-2">
+                        <div class="off-ico">🤝</div>
+                        <h3>DSI Externalisé (vCIO)</h3>
+                        <p>Bénéficiez d'un Directeur des Systèmes d'Information à temps partiel, qui pilote votre IT
+                            sans le coût d'un recrutement à plein temps.</p>
+                        <ul class="off-items">
+                            <li>Pilotage des prestataires IT</li>
+                            <li>Veille technologique</li>
+                            <li>Gouvernance & alignement stratégique</li>
+                            <li>Budget IT & gestion des priorités</li>
+                            <li>Comité IT mensuel</li>
+                        </ul>
+                        <div class="off-deliverable"><strong>Format :</strong> Contrat mensuel — de 2 à 8 jours/mois
+                            selon vos besoins</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- REFERENCE TNE -->
+        <section class="section">
+            <div class="container">
+                <div class="section-eyebrow reveal">Référence Client</div>
+                <h2 class="section-title reveal" style="margin-bottom:2rem">Un exemple <span
+                        class="grad-text">concret</span></h2>
+                <div class="ref-box reveal">
+                    <div class="ref-av">TNE</div>
+                    <div>
+                        <h4>Telecom & Network Engineering</h4>
+                        <div class="sector">Télécommunications · Cameroun</div>
+                        <p>TNE nous a mandatés pour une mission de consulting IT complète. Nous avons commencé par un
+                            audit de leur infrastructure réseau et de leurs outils de gestion interne. L'analyse a
+                            permis d'identifier des failles de sécurité dans leur gestion des accès distants et un
+                            manque de documentation critique sur leur infrastructure.</p>
+                        <p style="margin-top:.875rem">Le rapport a été suivi d'une série de recommandations stratégiques
+                            priorisées et d'un plan d'action sur 6 mois pour la sécurisation et la modernisation du
+                            système d'information.</p>
+                        <div style="margin-top:1.25rem;display:flex;flex-wrap:wrap;gap:.5rem">
+                            <span class="badge badge-blue">Audit Technique</span>
+                            <span class="badge badge-green">Recommandations Stratégiques</span>
+                            <span class="badge badge-purple">Plan d'action 6 mois</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cta-box reveal" style="margin-top:4rem">
+                    <h2>Que cache votre <span class="grad-text">infrastructure</span> ?</h2>
+                    <p>Un audit IT impartial révèle les risques cachés avant qu'ils deviennent des crises. Réservez
+                        votre session d'audit.</p>
+                    <div class="cta-btns">
+                        <a href="../index.html#contact" class="btn btn-primary">Réserver un audit</a>
+                        <a href="services.html" class="btn btn-secondary">Tous nos services</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand"><a href="../index.html" class="logo">
+                        <div class="logo-mark"><svg width="26" height="26" viewBox="0 0 30 30" fill="none">
+                                <path d="M15 2L28 15L15 28L2 15L15 2Z" stroke="url(#lfa)" stroke-width="2"
+                                    fill="none" />
+                                <path d="M15 9L21 15L15 21L9 15L15 9Z" fill="url(#lfa)" />
+                                <defs>
+                                    <linearGradient id="lfa" x1="2" y1="2" x2="28" y2="28"
+                                        gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#4F7BF7" />
+                                        <stop offset="1" stop-color="#9D5CF5" />
+                                    </linearGradient>
+                                </defs>
+                            </svg></div><span class="logo-name">Lym<em>ytz</em></span>
+                    </a>
+                    <p>Société camerounaise de conception logicielle, implantée en France.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>La Société</h4>
+                    <ul>
+                        <li><a href="../index.html#a-propos">À Propos</a></li>
+                        <li><a href="../index.html#parcours">Parcours</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Tous les Services</a></li>
+                        <li><a href="realisations.html">Réalisations</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:contact@lymytz.com">contact@lymytz.com</a></li>
+                        <li><a href="../index.html#contact">Nous écrire</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Lymytz · Cameroun & France</p>
+                <div class="footer-legal"><a href="mentions-legales.html">Mentions légales</a></div>
+            </div>
+        </div>
+    </footer>
+    <a href="https://wa.me/237600000000" target="_blank" rel="noopener" aria-label="WhatsApp"
+        style="position:fixed;bottom:1.75rem;right:1.75rem;z-index:9999;width:56px;height:56px;border-radius:50%;background:#25D366;box-shadow:0 4px 20px rgba(37,211,102,.45);display:flex;align-items:center;justify-content:center;transition:transform .2s;text-decoration:none"
+        onmouseenter="this.style.transform='scale(1.1)'" onmouseleave="this.style.transform=''">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+    <script src="../js/script.js"></script>
+    <script>
+        const auditBars = document.querySelectorAll('.audit-bar');
+        if (auditBars.length) {
+            const obs = new IntersectionObserver(entries => {
+                if (entries[0].isIntersecting) {
+                    auditBars.forEach(b => { b.style.width = b.dataset.w + '%'; });
+                    obs.disconnect();
+                }
+            }, { threshold: .3 });
+            obs.observe(document.querySelector('.audit-visual'));
+        }
+    </script>
+</body>
+
+</html>

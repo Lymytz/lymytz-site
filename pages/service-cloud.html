@@ -1,0 +1,719 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud & Hébergement — Lymytz</title>
+    <meta name="description"
+        content="Hébergement cloud sécurisé, déploiement d'applications et monitoring 24/7. Lymytz gère votre infrastructure pour que vous vous concentriez sur votre métier.">
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+    <link rel="apple-touch-icon" href="../assets/favicon.svg">
+    <!-- SEO -->
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.lymytz.com/service-cloud.html">
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.lymytz.com/service-cloud.html">
+    <meta property="og:title" content="Cloud &amp; Hébergement — Lymytz">
+    <meta property="og:description"
+        content="Hébergement cloud sécurisé, CI/CD, monitoring 24/7 et SLA 99.9%. Lymytz gère votre infrastructure.">
+    <meta property="og:image" content="https://www.lymytz.com/assets/og-lymytz.png">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:site_name" content="Lymytz">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Cloud &amp; Hébergement — Lymytz">
+    <meta name="twitter:description"
+        content="Hébergement cloud sécurisé, CI/CD, monitoring 24/7 et SLA 99.9%. Lymytz gère votre infrastructure.">
+    <meta name="twitter:image" content="https://www.lymytz.com/assets/og-lymytz.png">
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Cloud & Hébergement",
+      "provider": {"@type": "Organization", "name": "Lymytz", "url": "https://www.lymytz.com"},
+      "url": "https://www.lymytz.com/service-cloud.html",
+      "description": "Hébergement cloud sécurisé, déploiement continu et monitoring 24/7.",
+      "areaServed": ["CM", "FR"],
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://www.lymytz.com/"},
+          {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.lymytz.com/services.html"},
+          {"@type": "ListItem", "position": 3, "name": "Cloud & Hébergement", "item": "https://www.lymytz.com/service-cloud.html"}
+        ]
+      }
+    }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        .detail-hero {
+            padding: 9rem 0 6rem;
+            position: relative;
+            overflow: hidden
+        }
+
+        .detail-hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(ellipse 60% 50% at 20% 60%, rgba(34, 211, 238, .12) 0%, transparent 65%), radial-gradient(ellipse 40% 40% at 80% 30%, rgba(79, 123, 247, .08) 0%, transparent 65%);
+            pointer-events: none
+        }
+
+        .dh-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5rem;
+            align-items: center
+        }
+
+        .dh-breadcrumb {
+            font-size: .78rem;
+            color: var(--muted);
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: .5rem
+        }
+
+        .dh-breadcrumb a {
+            color: var(--muted)
+        }
+
+        .dh-breadcrumb span {
+            color: var(--subtle)
+        }
+
+        .dh-eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: .5rem;
+            margin-bottom: 1.25rem;
+            font-size: .7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: .14em;
+            color: var(--cyan)
+        }
+
+        .dh-h1 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            margin-bottom: 1.25rem;
+            line-height: 1.1
+        }
+
+        .dh-lead {
+            color: var(--muted);
+            font-size: 1.05rem;
+            line-height: 1.8;
+            margin-bottom: 2.5rem
+        }
+
+        /* Cloud visual */
+        .cloud-visual {
+            background: var(--bg-card);
+            border: 1px solid var(--border-md);
+            border-radius: var(--r-2xl);
+            padding: 1.75rem;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, .4)
+        }
+
+        .cv-head {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.25rem
+        }
+
+        .cv-title {
+            font-size: .72rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: .1em;
+            color: var(--muted)
+        }
+
+        .cv-status {
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+            font-size: .75rem;
+            font-weight: 700;
+            color: var(--green)
+        }
+
+        .cv-status::before {
+            content: '';
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: var(--green);
+            box-shadow: 0 0 6px var(--green)
+        }
+
+        .cv-nodes {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: .75rem;
+            margin-bottom: 1.25rem
+        }
+
+        .cv-node {
+            padding: 1rem;
+            border-radius: var(--r-lg);
+            border: 1px solid var(--border);
+            background: rgba(255, 255, 255, .025);
+            display: flex;
+            gap: .75rem;
+            align-items: flex-start
+        }
+
+        .cv-node-ico {
+            font-size: 1.25rem;
+            flex-shrink: 0
+        }
+
+        .cv-node-lbl {
+            font-size: .78rem;
+            font-weight: 600;
+            color: var(--text-2);
+            margin-bottom: .25rem
+        }
+
+        .cv-node-sub {
+            font-size: .7rem;
+            color: var(--muted)
+        }
+
+        .cv-up {
+            font-size: .7rem;
+            color: var(--green);
+            font-weight: 700
+        }
+
+        .uptime-row {
+            padding: 1rem;
+            background: rgba(34, 211, 238, .06);
+            border: 1px solid rgba(34, 211, 238, .18);
+            border-radius: var(--r-md);
+            display: flex;
+            justify-content: space-between;
+            align-items: center
+        }
+
+        .ur-lbl {
+            font-size: .8rem;
+            color: var(--muted)
+        }
+
+        .ur-val {
+            font-family: var(--ff-head);
+            font-size: 1.125rem;
+            font-weight: 700;
+            color: var(--cyan)
+        }
+
+        /* Plans */
+        .plans-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem
+        }
+
+        .plan-card {
+            padding: 2rem;
+            border-radius: var(--r-2xl);
+            border: 1px solid var(--border);
+            background: rgba(255, 255, 255, .02);
+            position: relative;
+            transition: all var(--t2)
+        }
+
+        .plan-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 36px rgba(0, 0, 0, .3)
+        }
+
+        .plan-card.featured {
+            border-color: rgba(34, 211, 238, .28);
+            background: rgba(34, 211, 238, .04)
+        }
+
+        .plan-card.featured::before {
+            content: 'Recommandé';
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: linear-gradient(135deg, var(--cyan), var(--blue));
+            color: #fff;
+            font-size: .65rem;
+            font-weight: 700;
+            padding: .25rem .875rem;
+            border-radius: 999px;
+            white-space: nowrap
+        }
+
+        .plan-name {
+            font-size: .78rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: .1em;
+            color: var(--muted);
+            margin-bottom: .5rem
+        }
+
+        .plan-desc {
+            font-size: .875rem;
+            color: var(--muted);
+            margin-bottom: 1.5rem;
+            line-height: 1.65
+        }
+
+        .plan-list {
+            display: flex;
+            flex-direction: column;
+            gap: .5rem;
+            margin-bottom: 1.75rem
+        }
+
+        .plan-list li {
+            font-size: .8375rem;
+            color: var(--muted);
+            display: flex;
+            align-items: flex-start;
+            gap: .5rem
+        }
+
+        .plan-list li::before {
+            content: '✓';
+            color: var(--green);
+            font-weight: 700;
+            flex-shrink: 0;
+            margin-top: .05rem
+        }
+
+        .plan-list li.na::before {
+            content: '–';
+            color: var(--subtle)
+        }
+
+        .plan-list li.na {
+            color: var(--subtle)
+        }
+
+        /* Feature strips */
+        .feature-strips {
+            display: flex;
+            flex-direction: column;
+            gap: 1px;
+            background: var(--border);
+            border-radius: var(--r-xl);
+            overflow: hidden
+        }
+
+        .fs-item {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            padding: 1.25rem 1.75rem;
+            background: rgba(255, 255, 255, .02);
+            align-items: center;
+            gap: 1rem;
+            transition: background var(--t2)
+        }
+
+        .fs-item:hover {
+            background: rgba(255, 255, 255, .04)
+        }
+
+        .fs-left {
+            display: flex;
+            align-items: center;
+            gap: 1rem
+        }
+
+        .fs-icon {
+            width: 38px;
+            height: 38px;
+            border-radius: 10px;
+            background: rgba(34, 211, 238, .1);
+            border: 1px solid rgba(34, 211, 238, .2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0
+        }
+
+        .fs-txt strong {
+            display: block;
+            font-size: .875rem;
+            font-weight: 700;
+            color: var(--text-2);
+            margin-bottom: .2rem
+        }
+
+        .fs-txt span {
+            font-size: .8rem;
+            color: var(--muted)
+        }
+
+        .fs-badge {
+            font-size: .72rem;
+            font-weight: 700;
+            padding: .25rem .75rem;
+            border-radius: 999px
+        }
+
+        .cta-box {
+            padding: 4rem;
+            border-radius: var(--r-2xl);
+            border: 1px solid rgba(34, 211, 238, .22);
+            background: rgba(34, 211, 238, .04);
+            text-align: center;
+            margin-top: 2rem
+        }
+
+        .cta-box h2 {
+            font-size: 2.25rem;
+            margin-bottom: 1rem;
+            color: var(--text)
+        }
+
+        .cta-box p {
+            color: var(--muted);
+            font-size: 1rem;
+            max-width: 500px;
+            margin: 0 auto 2.5rem;
+            line-height: 1.75
+        }
+
+        .cta-btns {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap
+        }
+
+        @media(max-width:1000px) {
+            .dh-layout {
+                grid-template-columns: 1fr
+            }
+
+            .cloud-visual {
+                display: none
+            }
+
+            .plans-grid {
+                grid-template-columns: 1fr
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-grid" aria-hidden="true"></div>
+    <div class="bg-mesh" aria-hidden="true"></div>
+    <header class="header" id="header">
+        <div class="container header-inner">
+            <a href="../index.html" class="logo">
+                <div class="logo-mark"><svg width="30" height="30" viewBox="0 0 30 30" fill="none">
+                        <path d="M15 2L28 15L15 28L2 15L15 2Z" stroke="url(#lg)" stroke-width="2" fill="none" />
+                        <path d="M15 9L21 15L15 21L9 15L15 9Z" fill="url(#lg)" />
+                        <defs>
+                            <linearGradient id="lg" x1="2" y1="2" x2="28" y2="28" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#4F7BF7" />
+                                <stop offset="1" stop-color="#9D5CF5" />
+                            </linearGradient>
+                        </defs>
+                    </svg></div><span class="logo-name">Lym<em>ytz</em></span>
+            </a>
+            <nav class="nav-desktop">
+                <a href="../index.html#a-propos" class="nav-link">À Propos</a>
+                <a href="services.html" class="nav-link active">Services</a>
+                <a href="produits.html" class="nav-link">Produits</a>
+                <a href="realisations.html" class="nav-link">Réalisations</a>
+                <a href="../index.html#equipe" class="nav-link">Équipe</a>
+                <a href="../index.html#contact" class="nav-cta">Nous Contacter</a>
+            </nav>
+            <button class="hamburger" id="hamburger" aria-label="Menu"
+                aria-expanded="false"><span></span><span></span><span></span></button>
+        </div>
+        <nav class="mobile-menu" id="mobile-menu">
+            <a href="../index.html#a-propos" class="mob-link">À Propos</a>
+            <a href="services.html" class="mob-link">Services</a>
+            <a href="produits.html" class="mob-link">Produits</a>
+            <a href="realisations.html" class="mob-link">Réalisations</a>
+            <a href="../index.html#equipe" class="mob-link">Équipe</a>
+            <a href="../index.html#contact" class="mob-link mob-cta">Nous Contacter</a>
+        </nav>
+    </header>
+    <main>
+
+        <section class="detail-hero">
+            <div class="container dh-layout">
+                <div class="reveal">
+                    <div class="dh-breadcrumb"><a href="../index.html">Accueil</a><span>/</span><a
+                            href="services.html">Services</a><span>/</span><span style="color:var(--text)">Cloud &
+                            Hébergement</span></div>
+                    <div class="dh-eyebrow">☁️ Service — 05</div>
+                    <h1 class="dh-h1">Cloud &<br><span class="grad-text">Hébergement</span></h1>
+                    <p class="dh-lead">Votre application mérite une infrastructure à la hauteur. Nous déployons,
+                        configurons et maintenons vos environnements cloud pour garantir disponibilité, sécurité et
+                        performances.</p>
+                    <div style="display:flex;flex-wrap:wrap;gap:.625rem;margin-bottom:2.5rem">
+                        <span class="badge badge-blue">Déploiement Cloud</span>
+                        <span class="badge badge-green">Monitoring 24/7</span>
+                        <span class="badge badge-purple">DevOps & CI/CD</span>
+                        <span class="badge badge-amber">99.9% SLA</span>
+                    </div>
+                    <div style="display:flex;gap:1rem;flex-wrap:wrap">
+                        <a href="../index.html#contact" class="btn btn-primary">Héberger mon application</a>
+                        <a href="services.html" class="btn btn-secondary">Tous les services</a>
+                    </div>
+                </div>
+                <div class="reveal delay-1">
+                    <div class="cloud-visual">
+                        <div class="cv-head">
+                            <div class="cv-title">🖥️ Tableau de bord infra</div>
+                            <div class="cv-status">Tous systèmes opérationnels</div>
+                        </div>
+                        <div class="cv-nodes">
+                            <div class="cv-node">
+                                <div class="cv-node-ico">🌐</div>
+                                <div>
+                                    <div class="cv-node-lbl">Web Server</div>
+                                    <div class="cv-node-sub">nginx 1.24</div>
+                                    <div class="cv-up">↑ 99.98%</div>
+                                </div>
+                            </div>
+                            <div class="cv-node">
+                                <div class="cv-node-ico">🗄️</div>
+                                <div>
+                                    <div class="cv-node-lbl">Base de données</div>
+                                    <div class="cv-node-sub">PostgreSQL 15</div>
+                                    <div class="cv-up">↑ 100%</div>
+                                </div>
+                            </div>
+                            <div class="cv-node">
+                                <div class="cv-node-ico">📦</div>
+                                <div>
+                                    <div class="cv-node-lbl">App Containers</div>
+                                    <div class="cv-node-sub">Docker / K8s</div>
+                                    <div class="cv-up">↑ 99.95%</div>
+                                </div>
+                            </div>
+                            <div class="cv-node">
+                                <div class="cv-node-ico">🔒</div>
+                                <div>
+                                    <div class="cv-node-lbl">SSL & Firewall</div>
+                                    <div class="cv-node-sub">Let's Encrypt</div>
+                                    <div class="cv-up">↑ Actif</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uptime-row">
+                            <div class="ur-lbl">Disponibilité des 90 derniers jours</div>
+                            <div class="ur-val">99.97%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FEATURES -->
+        <section class="section section-alt">
+            <div class="container">
+                <div class="section-eyebrow reveal">Fonctionnalités</div>
+                <h2 class="section-title reveal">Ce que nous <span class="grad-text">gérons pour vous</span></h2>
+                <div class="feature-strips reveal">
+                    <div class="fs-item">
+                        <div class="fs-left">
+                            <div class="fs-icon">🚀</div>
+                            <div class="fs-txt"><strong>Déploiement automatisé (CI/CD)</strong><span>Pipeline
+                                    d'intégration et de déploiement continu — chaque mise à jour en production en
+                                    quelques minutes, zéro interruption</span></div>
+                        </div>
+                        <span class="fs-badge badge-green">Inclus</span>
+                    </div>
+                    <div class="fs-item">
+                        <div class="fs-left">
+                            <div class="fs-icon">📊</div>
+                            <div class="fs-txt"><strong>Monitoring & Alertes 24/7</strong><span>Surveillance des
+                                    performances, des erreurs et de la disponibilité. Alerte immédiate en cas
+                                    d'incident</span></div>
+                        </div>
+                        <span class="fs-badge badge-green">Inclus</span>
+                    </div>
+                    <div class="fs-item">
+                        <div class="fs-left">
+                            <div class="fs-icon">💾</div>
+                            <div class="fs-txt"><strong>Sauvegardes automatiques</strong><span>Backups quotidiens
+                                    chiffrés avec rétention configurable. Restauration en moins de 2 heures
+                                    garantie</span></div>
+                        </div>
+                        <span class="fs-badge badge-green">Inclus</span>
+                    </div>
+                    <div class="fs-item">
+                        <div class="fs-left">
+                            <div class="fs-icon">🔒</div>
+                            <div class="fs-txt"><strong>Sécurité & Certifications SSL</strong><span>Certificats SSL/TLS,
+                                    firewall applicatif, mises à jour de sécurité et protection contre les attaques
+                                    DDoS</span></div>
+                        </div>
+                        <span class="fs-badge badge-green">Inclus</span>
+                    </div>
+                    <div class="fs-item">
+                        <div class="fs-left">
+                            <div class="fs-icon">📈</div>
+                            <div class="fs-txt"><strong>Scalabilité à la demande</strong><span>Ajout de ressources (CPU,
+                                    RAM, stockage) en quelques clics selon la croissance de votre trafic</span></div>
+                        </div>
+                        <span class="fs-badge badge-blue">Option</span>
+                    </div>
+                    <div class="fs-item">
+                        <div class="fs-left">
+                            <div class="fs-icon">📋</div>
+                            <div class="fs-txt"><strong>Rapport mensuel d'infrastructure</strong><span>Synthèse
+                                    mensuelle de l'état de votre infrastructure, des incidents résolus et des métriques
+                                    clés</span></div>
+                        </div>
+                        <span class="fs-badge badge-green">Inclus</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PLANS -->
+        <section class="section">
+            <div class="container">
+                <div class="section-eyebrow reveal">Formules</div>
+                <h2 class="section-title reveal">Nos <span class="grad-text">plans d'hébergement</span></h2>
+                <p class="section-lead reveal">Des formules adaptées à la taille et aux besoins de votre projet.</p>
+                <div class="plans-grid">
+                    <div class="plan-card reveal">
+                        <div class="plan-name">Starter</div>
+                        <p class="plan-desc">Pour les sites vitrines et petites applications à faible trafic.</p>
+                        <ul class="plan-list">
+                            <li>1 application web</li>
+                            <li>2 vCPU / 2 Go RAM</li>
+                            <li>20 Go SSD</li>
+                            <li>SSL automatique</li>
+                            <li>Backups hebdomadaires</li>
+                            <li>Monitoring de base</li>
+                            <li class="na">CI/CD pipeline</li>
+                            <li class="na">Support prioritaire</li>
+                        </ul>
+                        <a href="../index.html#contact" class="btn btn-secondary"
+                            style="width:100%;justify-content:center;margin-top:auto">Nous contacter</a>
+                    </div>
+                    <div class="plan-card featured reveal delay-1">
+                        <div class="plan-name">Business</div>
+                        <p class="plan-desc">Pour les applications métier et les PME avec un trafic régulier.</p>
+                        <ul class="plan-list">
+                            <li>Jusqu'à 5 services</li>
+                            <li>4 vCPU / 8 Go RAM</li>
+                            <li>80 Go SSD</li>
+                            <li>SSL + Firewall avancé</li>
+                            <li>Backups quotidiens</li>
+                            <li>Monitoring 24/7 + alertes</li>
+                            <li>CI/CD pipeline inclus</li>
+                            <li>Rapport mensuel</li>
+                        </ul>
+                        <a href="../index.html#contact" class="btn btn-primary"
+                            style="width:100%;justify-content:center;margin-top:auto">Demander un devis</a>
+                    </div>
+                    <div class="plan-card reveal delay-2">
+                        <div class="plan-name">Enterprise</div>
+                        <p class="plan-desc">Pour les plateformes critiques nécessitant une haute disponibilité.</p>
+                        <ul class="plan-list">
+                            <li>Services illimités</li>
+                            <li>Ressources dédiées</li>
+                            <li>Stockage customisé</li>
+                            <li>SLA 99.99% garanti</li>
+                            <li>Backups multi-zones</li>
+                            <li>Monitoring & NOC dédié</li>
+                            <li>CI/CD multi-environnements</li>
+                            <li>Support 24/7 téléphonique</li>
+                        </ul>
+                        <a href="../index.html#contact" class="btn btn-secondary"
+                            style="width:100%;justify-content:center;margin-top:auto">Parler à un expert</a>
+                    </div>
+                </div>
+                <div class="cta-box reveal">
+                    <h2>Votre infrastructure entre <span class="grad-text">de bonnes mains</span></h2>
+                    <p>Concentrez-vous sur votre métier, nous gérons le reste. Contactez-nous pour un audit de votre
+                        infrastructure actuelle.</p>
+                    <div class="cta-btns">
+                        <a href="../index.html#contact" class="btn btn-primary">Demander un audit gratuit</a>
+                        <a href="service-dev-logiciel.html" class="btn btn-secondary">Développement logiciel</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand"><a href="../index.html" class="logo">
+                        <div class="logo-mark"><svg width="26" height="26" viewBox="0 0 30 30" fill="none">
+                                <path d="M15 2L28 15L15 28L2 15L15 2Z" stroke="url(#lfc)" stroke-width="2"
+                                    fill="none" />
+                                <path d="M15 9L21 15L15 21L9 15L15 9Z" fill="url(#lfc)" />
+                                <defs>
+                                    <linearGradient id="lfc" x1="2" y1="2" x2="28" y2="28"
+                                        gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#4F7BF7" />
+                                        <stop offset="1" stop-color="#9D5CF5" />
+                                    </linearGradient>
+                                </defs>
+                            </svg></div><span class="logo-name">Lym<em>ytz</em></span>
+                    </a>
+                    <p>Société camerounaise de conception logicielle, implantée en France.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Tous les Services</a></li>
+                        <li><a href="service-dev-logiciel.html">Développement Logiciel</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Produits</h4>
+                    <ul>
+                        <li><a href="produits.html">Nos Produits</a></li>
+                        <li><a href="produit-erp.html">Lymytz ERP</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:contact@lymytz.com">contact@lymytz.com</a></li>
+                        <li><a href="../index.html#contact">Nous écrire</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Lymytz · Cameroun & France</p>
+                <div class="footer-legal"><a href="mentions-legales.html">Mentions légales</a></div>
+            </div>
+        </div>
+    </footer>
+    <a href="https://wa.me/237600000000" target="_blank" rel="noopener" aria-label="WhatsApp"
+        style="position:fixed;bottom:1.75rem;right:1.75rem;z-index:9999;width:56px;height:56px;border-radius:50%;background:#25D366;box-shadow:0 4px 20px rgba(37,211,102,.45);display:flex;align-items:center;justify-content:center;transition:transform .2s;text-decoration:none"
+        onmouseenter="this.style.transform='scale(1.1)'" onmouseleave="this.style.transform=''">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

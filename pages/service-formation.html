@@ -1,0 +1,698 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formation & Accompagnement — Lymytz</title>
+    <meta name="description"
+        content="Lymytz forme vos équipes aux outils déployés et vous accompagne sur le long terme. Formation utilisateurs, accompagnement au changement et support réactif.">
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+    <link rel="apple-touch-icon" href="../assets/favicon.svg">
+    <!-- SEO -->
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.lymytz.com/service-formation.html">
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.lymytz.com/service-formation.html">
+    <meta property="og:title" content="Formation &amp; Accompagnement — Lymytz">
+    <meta property="og:description"
+        content="Formation utilisateurs, conduite du changement et support long terme. Lymytz accompagne vos équipes après chaque déploiement logiciel.">
+    <meta property="og:image" content="https://www.lymytz.com/assets/og-lymytz.png">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:site_name" content="Lymytz">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Formation &amp; Accompagnement — Lymytz">
+    <meta name="twitter:description"
+        content="Formation utilisateurs, conduite du changement et support long terme. Lymytz accompagne vos équipes après chaque déploiement logiciel.">
+    <meta name="twitter:image" content="https://www.lymytz.com/assets/og-lymytz.png">
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Formation & Accompagnement",
+      "provider": {"@type": "Organization", "name": "Lymytz", "url": "https://www.lymytz.com"},
+      "url": "https://www.lymytz.com/service-formation.html",
+      "description": "Formation des équipes aux outils déployés et support long terme.",
+      "areaServed": ["CM", "FR"],
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://www.lymytz.com/"},
+          {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.lymytz.com/services.html"},
+          {"@type": "ListItem", "position": 3, "name": "Formation", "item": "https://www.lymytz.com/service-formation.html"}
+        ]
+      }
+    }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        .detail-hero {
+            padding: 9rem 0 6rem;
+            position: relative;
+            overflow: hidden
+        }
+
+        .detail-hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(ellipse 60% 50% at 20% 60%, rgba(245, 166, 35, .1) 0%, transparent 65%), radial-gradient(ellipse 40% 40% at 80% 30%, rgba(79, 123, 247, .08) 0%, transparent 65%);
+            pointer-events: none
+        }
+
+        .dh-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5rem;
+            align-items: start
+        }
+
+        .dh-breadcrumb {
+            font-size: .78rem;
+            color: var(--muted);
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: .5rem
+        }
+
+        .dh-breadcrumb a {
+            color: var(--muted)
+        }
+
+        .dh-breadcrumb span {
+            color: var(--subtle)
+        }
+
+        .dh-eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: .5rem;
+            margin-bottom: 1.25rem;
+            font-size: .7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: .14em;
+            color: var(--amber)
+        }
+
+        .dh-h1 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            margin-bottom: 1.25rem;
+            line-height: 1.1
+        }
+
+        .dh-lead {
+            color: var(--muted);
+            font-size: 1.05rem;
+            line-height: 1.8;
+            margin-bottom: 2.5rem
+        }
+
+        /* Training visual */
+        .train-visual {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-top: 4rem
+        }
+
+        .tv-session {
+            background: var(--bg-card);
+            border: 1px solid var(--border-md);
+            border-radius: var(--r-xl);
+            padding: 1.375rem;
+            transition: all var(--t2)
+        }
+
+        .tv-session:hover {
+            border-color: rgba(245, 166, 35, .3);
+            transform: translateX(4px)
+        }
+
+        .tv-session-head {
+            display: flex;
+            align-items: center;
+            gap: .875rem;
+            margin-bottom: .75rem
+        }
+
+        .tv-ico {
+            width: 36px;
+            height: 36px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            font-size: 1rem
+        }
+
+        .tv-session-title {
+            font-size: .9rem;
+            font-weight: 700;
+            color: var(--text)
+        }
+
+        .tv-session-meta {
+            font-size: .75rem;
+            color: var(--muted)
+        }
+
+        .tv-attendees {
+            display: flex;
+            gap: .375rem
+        }
+
+        .tv-av {
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            background: var(--grad);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: .55rem;
+            font-weight: 700;
+            color: #fff;
+            border: 2px solid var(--bg-card)
+        }
+
+        .tv-progress {
+            height: 4px;
+            background: var(--border);
+            border-radius: 999px;
+            overflow: hidden;
+            margin-top: .75rem
+        }
+
+        .tv-prog-fill {
+            height: 100%;
+            border-radius: 999px;
+            background: var(--amber)
+        }
+
+        .tv-prog-txt {
+            font-size: .7rem;
+            color: var(--muted);
+            margin-top: .375rem
+        }
+
+        /* Offer cards */
+        .train-offers {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem
+        }
+
+        .to-card {
+            padding: 2rem;
+            border-radius: var(--r-2xl);
+            border: 1px solid var(--border);
+            background: rgba(255, 255, 255, .02);
+            transition: all var(--t2)
+        }
+
+        .to-card:hover {
+            border-color: rgba(245, 166, 35, .3);
+            transform: translateY(-4px);
+            box-shadow: 0 10px 30px rgba(245, 166, 35, .09)
+        }
+
+        .to-ico {
+            font-size: 2rem;
+            margin-bottom: 1.25rem
+        }
+
+        .to-card h3 {
+            font-size: 1.125rem;
+            font-weight: 700;
+            margin-bottom: .75rem;
+            color: var(--text)
+        }
+
+        .to-card p {
+            font-size: .875rem;
+            color: var(--muted);
+            line-height: 1.75;
+            margin-bottom: 1.5rem
+        }
+
+        .to-items {
+            display: flex;
+            flex-direction: column;
+            gap: .5rem
+        }
+
+        .to-items li {
+            font-size: .8rem;
+            display: flex;
+            align-items: flex-start;
+            gap: .5rem;
+            color: var(--muted)
+        }
+
+        .to-items li::before {
+            content: '✓';
+            color: var(--amber);
+            font-weight: 700;
+            flex-shrink: 0
+        }
+
+        .to-format {
+            margin-top: 1.25rem;
+            padding: .75rem;
+            background: rgba(245, 166, 35, .06);
+            border: 1px solid rgba(245, 166, 35, .18);
+            border-radius: var(--r-md);
+            font-size: .78rem;
+            color: var(--muted)
+        }
+
+        .to-format strong {
+            color: var(--amber)
+        }
+
+        /* Support levels */
+        .support-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.25rem
+        }
+
+        .sup-card {
+            padding: 1.75rem;
+            border-radius: var(--r-xl);
+            border: 1px solid var(--border);
+            background: rgba(255, 255, 255, .02);
+            transition: all var(--t2)
+        }
+
+        .sup-card:hover {
+            border-color: var(--border-md);
+            transform: translateY(-3px)
+        }
+
+        .sup-card.featured {
+            border-color: rgba(245, 166, 35, .28);
+            background: rgba(245, 166, 35, .04)
+        }
+
+        .sup-name {
+            font-size: .72rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: .1em;
+            color: var(--muted);
+            margin-bottom: .75rem
+        }
+
+        .sup-title {
+            font-size: 1.125rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--text)
+        }
+
+        .sup-items {
+            display: flex;
+            flex-direction: column;
+            gap: .625rem
+        }
+
+        .sup-item {
+            font-size: .8375rem;
+            color: var(--muted);
+            display: flex;
+            align-items: flex-start;
+            gap: .625rem
+        }
+
+        .sup-item.ok::before {
+            content: '✓';
+            color: var(--green);
+            font-weight: 700;
+            flex-shrink: 0
+        }
+
+        .sup-item.na::before {
+            content: '–';
+            color: var(--subtle);
+            flex-shrink: 0
+        }
+
+        .sup-item.na {
+            color: var(--subtle)
+        }
+
+        .cta-box {
+            padding: 4rem;
+            border-radius: var(--r-2xl);
+            border: 1px solid rgba(245, 166, 35, .22);
+            background: rgba(245, 166, 35, .04);
+            text-align: center;
+            margin-top: 2rem
+        }
+
+        .cta-box h2 {
+            font-size: 2.25rem;
+            margin-bottom: 1rem;
+            color: var(--text)
+        }
+
+        .cta-box p {
+            color: var(--muted);
+            font-size: 1rem;
+            max-width: 500px;
+            margin: 0 auto 2.5rem;
+            line-height: 1.75
+        }
+
+        .cta-btns {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap
+        }
+
+        @media(max-width:1000px) {
+            .dh-layout {
+                grid-template-columns: 1fr
+            }
+
+            .train-visual {
+                display: none
+            }
+
+            .train-offers {
+                grid-template-columns: 1fr
+            }
+
+            .support-grid {
+                grid-template-columns: 1fr
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-grid" aria-hidden="true"></div>
+    <div class="bg-mesh" aria-hidden="true"></div>
+    <header class="header" id="header">
+        <div class="container header-inner">
+            <a href="../index.html" class="logo">
+                <div class="logo-mark"><svg width="30" height="30" viewBox="0 0 30 30" fill="none">
+                        <path d="M15 2L28 15L15 28L2 15L15 2Z" stroke="url(#lg)" stroke-width="2" fill="none" />
+                        <path d="M15 9L21 15L15 21L9 15L15 9Z" fill="url(#lg)" />
+                        <defs>
+                            <linearGradient id="lg" x1="2" y1="2" x2="28" y2="28" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#4F7BF7" />
+                                <stop offset="1" stop-color="#9D5CF5" />
+                            </linearGradient>
+                        </defs>
+                    </svg></div><span class="logo-name">Lym<em>ytz</em></span>
+            </a>
+            <nav class="nav-desktop">
+                <a href="../index.html#a-propos" class="nav-link">À Propos</a>
+                <a href="services.html" class="nav-link active">Services</a>
+                <a href="produits.html" class="nav-link">Produits</a>
+                <a href="realisations.html" class="nav-link">Réalisations</a>
+                <a href="../index.html#equipe" class="nav-link">Équipe</a>
+                <a href="../index.html#contact" class="nav-cta">Nous Contacter</a>
+            </nav>
+            <button class="hamburger" id="hamburger" aria-label="Menu"
+                aria-expanded="false"><span></span><span></span><span></span></button>
+        </div>
+        <nav class="mobile-menu" id="mobile-menu">
+            <a href="../index.html#a-propos" class="mob-link">À Propos</a>
+            <a href="services.html" class="mob-link">Services</a>
+            <a href="produits.html" class="mob-link">Produits</a>
+            <a href="realisations.html" class="mob-link">Réalisations</a>
+            <a href="../index.html#equipe" class="mob-link">Équipe</a>
+            <a href="../index.html#contact" class="mob-link mob-cta">Nous Contacter</a>
+        </nav>
+    </header>
+    <main>
+
+        <section class="detail-hero">
+            <div class="container dh-layout">
+                <div class="reveal">
+                    <div class="dh-breadcrumb"><a href="../index.html">Accueil</a><span>/</span><a
+                            href="services.html">Services</a><span>/</span><span
+                            style="color:var(--text)">Formation</span></div>
+                    <div class="dh-eyebrow">🎓 Service — 06</div>
+                    <h1 class="dh-h1">Formation &<br><span class="grad-text">Accompagnement</span></h1>
+                    <p class="dh-lead">Livrer un logiciel sans former les équipes, c'est livrer à moitié. Nous formons
+                        vos collaborateurs, conduisons le changement et restons présents sur le long terme pour garantir
+                        votre succès.</p>
+                    <div style="display:flex;flex-wrap:wrap;gap:.625rem;margin-bottom:2.5rem">
+                        <span class="badge badge-amber">Formation Utilisateurs</span>
+                        <span class="badge badge-blue">Conduite du Changement</span>
+                        <span class="badge badge-green">Support Long Terme</span>
+                        <span class="badge badge-purple">Documentation</span>
+                    </div>
+                    <div style="display:flex;gap:1rem;flex-wrap:wrap">
+                        <a href="../index.html#contact" class="btn btn-primary">Organiser une formation</a>
+                        <a href="services.html" class="btn btn-secondary">Tous les services</a>
+                    </div>
+                </div>
+                <div class="train-visual reveal delay-1">
+                    <div class="tv-session">
+                        <div class="tv-session-head">
+                            <div class="tv-ico"
+                                style="background:rgba(79,123,247,.12);border:1px solid rgba(79,123,247,.2)">💼</div>
+                            <div>
+                                <div class="tv-session-title">Module Ventes & CRM — Lymytz ERP</div>
+                                <div class="tv-session-meta">Session 1/3 · Durée : 2h30</div>
+                            </div>
+                        </div>
+                        <div class="tv-attendees">
+                            <div class="tv-av">AL</div>
+                            <div class="tv-av">MN</div>
+                            <div class="tv-av">BE</div>
+                            <div class="tv-av">+4</div>
+                        </div>
+                        <div class="tv-progress">
+                            <div class="tv-prog-fill" style="width:100%"></div>
+                        </div>
+                        <div class="tv-prog-txt">✓ Session terminée — Attestations émises</div>
+                    </div>
+                    <div class="tv-session">
+                        <div class="tv-session-head">
+                            <div class="tv-ico"
+                                style="background:rgba(13,184,123,.12);border:1px solid rgba(13,184,123,.2)">💰</div>
+                            <div>
+                                <div class="tv-session-title">Module Comptabilité OHADA</div>
+                                <div class="tv-session-meta">Session 2/3 · Durée : 3h</div>
+                            </div>
+                        </div>
+                        <div class="tv-attendees">
+                            <div class="tv-av">RM</div>
+                            <div class="tv-av">CF</div>
+                        </div>
+                        <div class="tv-progress">
+                            <div class="tv-prog-fill" style="width:60%;background:var(--green)"></div>
+                        </div>
+                        <div class="tv-prog-txt">Progression : 60% — En cours</div>
+                    </div>
+                    <div class="tv-session">
+                        <div class="tv-session-head">
+                            <div class="tv-ico"
+                                style="background:rgba(245,166,35,.12);border:1px solid rgba(245,166,35,.2)">⚙️</div>
+                            <div>
+                                <div class="tv-session-title">Formation Administrateur Système</div>
+                                <div class="tv-session-meta">Session 3/3 · Durée : 4h</div>
+                            </div>
+                        </div>
+                        <div class="tv-attendees">
+                            <div class="tv-av">KD</div>
+                        </div>
+                        <div class="tv-progress">
+                            <div class="tv-prog-fill" style="width:0%"></div>
+                        </div>
+                        <div class="tv-prog-txt">Planifiée : 20 Sept. 2026</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- OFFRES -->
+        <section class="section section-alt">
+            <div class="container">
+                <div class="section-eyebrow reveal">Nos formules</div>
+                <h2 class="section-title reveal">Types de <span class="grad-text">formation</span></h2>
+                <div class="train-offers">
+                    <div class="to-card reveal">
+                        <div class="to-ico">👩‍💻</div>
+                        <h3>Formation Utilisateurs</h3>
+                        <p>Formation pratique des utilisateurs finaux aux outils déployés chez vous. Chaque profil
+                            reçoit la formation adaptée à son rôle.</p>
+                        <ul class="to-items">
+                            <li>Sessions par profil (commercial, comptable, RH…)</li>
+                            <li>Exercices pratiques sur vos vraies données</li>
+                            <li>Support manuel et guide de référence</li>
+                            <li>Quiz de validation des acquis</li>
+                            <li>Attestation de formation</li>
+                        </ul>
+                        <div class="to-format"><strong>Format :</strong> Présentiel ou visioconférence · 2 à 8h / profil
+                        </div>
+                    </div>
+                    <div class="to-card reveal delay-1">
+                        <div class="to-ico">⚙️</div>
+                        <h3>Formation Administrateurs</h3>
+                        <p>Formation approfondie pour les responsables IT ou les super-utilisateurs qui administreront
+                            et feront évoluer le logiciel.</p>
+                        <ul class="to-items">
+                            <li>Configuration et paramétrage</li>
+                            <li>Gestion des utilisateurs et droits</li>
+                            <li>Maintenance de premier niveau</li>
+                            <li>Gestion des imports/exports de données</li>
+                            <li>Accès à la documentation technique</li>
+                        </ul>
+                        <div class="to-format"><strong>Format :</strong> Présentiel ou remote · 4 à 12h</div>
+                    </div>
+                    <div class="to-card reveal delay-2">
+                        <div class="to-ico">🔄</div>
+                        <h3>Conduite du Changement</h3>
+                        <p>Accompagnement organisationnel pour que la transition vers votre nouveau système se passe
+                            avec un minimum de résistance et de délai d'adoption.</p>
+                        <ul class="to-items">
+                            <li>Diagnostic de maturité digitale</li>
+                            <li>Plan de communication interne</li>
+                            <li>Identification des ambassadeurs clés</li>
+                            <li>Accompagnement des équipes réfractaires</li>
+                            <li>Suivi post-déploiement à J+30 et J+90</li>
+                        </ul>
+                        <div class="to-format"><strong>Format :</strong> Mission d'accompagnement · durée selon
+                            périmètre</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SUPPORT -->
+        <section class="section">
+            <div class="container">
+                <div class="section-eyebrow reveal">Après la formation</div>
+                <h2 class="section-title reveal">Nos niveaux de <span class="grad-text">support</span></h2>
+                <p class="section-lead reveal">Parce que les questions surgissent dans le travail quotidien, pas
+                    seulement en formation.</p>
+                <div class="support-grid">
+                    <div class="sup-card reveal">
+                        <div class="sup-name">Essentiel</div>
+                        <div class="sup-title">Support de base</div>
+                        <div class="sup-items">
+                            <div class="sup-item ok">Ticket support par email</div>
+                            <div class="sup-item ok">Délai de réponse sous 48h</div>
+                            <div class="sup-item ok">Correction des bugs critiques</div>
+                            <div class="sup-item ok">Mises à jour de sécurité</div>
+                            <div class="sup-item na">Support téléphonique</div>
+                            <div class="sup-item na">Évolutions mineures incluses</div>
+                            <div class="sup-item na">Formation continue</div>
+                        </div>
+                    </div>
+                    <div class="sup-card featured reveal delay-1">
+                        <div class="sup-name">Business</div>
+                        <div class="sup-title">Support prioritaire</div>
+                        <div class="sup-items">
+                            <div class="sup-item ok">Ticket + support téléphonique</div>
+                            <div class="sup-item ok">Délai de réponse sous 8h</div>
+                            <div class="sup-item ok">Correction de tous les bugs</div>
+                            <div class="sup-item ok">Mises à jour de sécurité</div>
+                            <div class="sup-item ok">5h d'évolutions/mois incluses</div>
+                            <div class="sup-item ok">Accès à votre référent dédié</div>
+                            <div class="sup-item na">Formation continue</div>
+                        </div>
+                    </div>
+                    <div class="sup-card reveal delay-2">
+                        <div class="sup-name">Premium</div>
+                        <div class="sup-title">Partenariat long terme</div>
+                        <div class="sup-items">
+                            <div class="sup-item ok">Support multicanal 24/7</div>
+                            <div class="sup-item ok">Délai de réponse sous 2h</div>
+                            <div class="sup-item ok">Correction de tous les bugs</div>
+                            <div class="sup-item ok">Mises à jour de sécurité</div>
+                            <div class="sup-item ok">15h d'évolutions/mois incluses</div>
+                            <div class="sup-item ok">Chef de projet dédié</div>
+                            <div class="sup-item ok">Formations continues incluses</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cta-box reveal">
+                    <h2>Un outil n'est utile que s'il est <span class="grad-text">bien utilisé</span></h2>
+                    <p>Investissez dans la formation pour maximiser le retour sur investissement de votre logiciel.
+                        Discutons de vos besoins.</p>
+                    <div class="cta-btns">
+                        <a href="../index.html#contact" class="btn btn-primary">Planifier une formation</a>
+                        <a href="service-erp.html" class="btn btn-secondary">Intégration ERP</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand"><a href="../index.html" class="logo">
+                        <div class="logo-mark"><svg width="26" height="26" viewBox="0 0 30 30" fill="none">
+                                <path d="M15 2L28 15L15 28L2 15L15 2Z" stroke="url(#lff)" stroke-width="2"
+                                    fill="none" />
+                                <path d="M15 9L21 15L15 21L9 15L15 9Z" fill="url(#lff)" />
+                                <defs>
+                                    <linearGradient id="lff" x1="2" y1="2" x2="28" y2="28"
+                                        gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#4F7BF7" />
+                                        <stop offset="1" stop-color="#9D5CF5" />
+                                    </linearGradient>
+                                </defs>
+                            </svg></div><span class="logo-name">Lym<em>ytz</em></span>
+                    </a>
+                    <p>Société camerounaise de conception logicielle, implantée en France.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Tous les Services</a></li>
+                        <li><a href="service-dev-logiciel.html">Développement Logiciel</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Produits</h4>
+                    <ul>
+                        <li><a href="produit-erp.html">Lymytz ERP</a></li>
+                        <li><a href="realisations.html">Réalisations</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:contact@lymytz.com">contact@lymytz.com</a></li>
+                        <li><a href="../index.html#contact">Nous écrire</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Lymytz · Cameroun & France</p>
+                <div class="footer-legal"><a href="mentions-legales.html">Mentions légales</a></div>
+            </div>
+        </div>
+    </footer>
+    <a href="https://wa.me/237600000000" target="_blank" rel="noopener" aria-label="WhatsApp"
+        style="position:fixed;bottom:1.75rem;right:1.75rem;z-index:9999;width:56px;height:56px;border-radius:50%;background:#25D366;box-shadow:0 4px 20px rgba(37,211,102,.45);display:flex;align-items:center;justify-content:center;transition:transform .2s;text-decoration:none"
+        onmouseenter="this.style.transform='scale(1.1)'" onmouseleave="this.style.transform=''">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

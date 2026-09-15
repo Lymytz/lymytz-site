@@ -1,0 +1,990 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Développement Logiciel Sur Mesure — Lymytz</title>
+    <meta name="description"
+        content="Lymytz conçoit des applications web, mobiles et desktop entièrement sur mesure. De l'idée à la production, nous bâtissons des logiciels robustes adaptés à vos processus métier.">
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+    <link rel="apple-touch-icon" href="../assets/favicon.svg">
+    <!-- SEO -->
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.lymytz.com/service-dev-logiciel.html">
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.lymytz.com/service-dev-logiciel.html">
+    <meta property="og:title" content="Développement Logiciel Sur Mesure — Lymytz">
+    <meta property="og:description"
+        content="Applications web, mobiles et desktop sur mesure. Java, Spring Boot, React, Flutter, APIs. Lymytz — Cameroun &amp; France.">
+    <meta property="og:image" content="https://www.lymytz.com/assets/og-lymytz.png">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:site_name" content="Lymytz">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Développement Logiciel Sur Mesure — Lymytz">
+    <meta name="twitter:description"
+        content="Applications web, mobiles et desktop sur mesure. Java, Spring Boot, React, Flutter, APIs. Lymytz — Cameroun &amp; France.">
+    <meta name="twitter:image" content="https://www.lymytz.com/assets/og-lymytz.png">
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Développement Logiciel Sur Mesure",
+      "provider": {"@type": "Organization", "name": "Lymytz", "url": "https://www.lymytz.com"},
+      "url": "https://www.lymytz.com/service-dev-logiciel.html",
+      "description": "Conception d'applications web, mobiles et desktop sur mesure adaptées aux processus métier.",
+      "areaServed": ["CM", "FR"],
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://www.lymytz.com/"},
+          {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.lymytz.com/services.html"},
+          {"@type": "ListItem", "position": 3, "name": "Développement Logiciel", "item": "https://www.lymytz.com/service-dev-logiciel.html"}
+        ]
+      }
+    }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        /* ---- COMMON DETAIL PAGE STYLES ---- */
+        .detail-hero {
+            padding: 9rem 0 6rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .detail-hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background:
+                radial-gradient(ellipse 60% 50% at 20% 60%, rgba(79, 123, 247, .14) 0%, transparent 65%),
+                radial-gradient(ellipse 40% 40% at 80% 30%, rgba(157, 92, 245, .10) 0%, transparent 65%);
+            pointer-events: none;
+        }
+
+        .dh-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5rem;
+            align-items: center;
+            position: relative
+        }
+
+        .dh-breadcrumb {
+            font-size: .78rem;
+            color: var(--muted);
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: .5rem
+        }
+
+        .dh-breadcrumb a {
+            color: var(--muted);
+            transition: color var(--t1)
+        }
+
+        .dh-breadcrumb a:hover {
+            color: var(--text)
+        }
+
+        .dh-breadcrumb span {
+            color: var(--subtle)
+        }
+
+        .dh-eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: .5rem;
+            margin-bottom: 1.25rem;
+            font-size: .7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: .14em;
+            color: var(--blue)
+        }
+
+        .dh-h1 {
+            font-size: clamp(2.25rem, 5vw, 3.5rem);
+            margin-bottom: 1.25rem;
+            line-height: 1.1
+        }
+
+        .dh-lead {
+            color: var(--muted);
+            font-size: 1.05rem;
+            line-height: 1.8;
+            margin-bottom: 2.5rem
+        }
+
+        .dh-badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: .625rem;
+            margin-bottom: 2.5rem
+        }
+
+        .dh-visual {
+            border-radius: var(--r-2xl);
+            overflow: hidden;
+            background: var(--bg-card);
+            border: 1px solid var(--border-md);
+            box-shadow: 0 24px 64px rgba(0, 0, 0, .4)
+        }
+
+        .dv-header {
+            padding: 1rem 1.375rem;
+            background: rgba(0, 0, 0, .3);
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            gap: .75rem
+        }
+
+        .dv-dots {
+            display: flex;
+            gap: .375rem
+        }
+
+        .dv-dot {
+            width: 9px;
+            height: 9px;
+            border-radius: 50%
+        }
+
+        .dv-dot.r {
+            background: #EF4444
+        }
+
+        .dv-dot.y {
+            background: #F59E0B
+        }
+
+        .dv-dot.g {
+            background: #10B981
+        }
+
+        .dv-title-bar {
+            font-size: .75rem;
+            color: var(--muted)
+        }
+
+        /* Features grid */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.25rem;
+            margin-top: 1.5rem
+        }
+
+        .feat-card {
+            padding: 1.75rem;
+            border-radius: var(--r-xl);
+            border: 1px solid var(--border);
+            background: rgba(255, 255, 255, .02);
+            transition: all var(--t2) var(--ease2)
+        }
+
+        .feat-card:hover {
+            border-color: rgba(79, 123, 247, .28);
+            transform: translateY(-4px);
+            box-shadow: 0 10px 32px rgba(79, 123, 247, .09)
+        }
+
+        .feat-icon {
+            width: 46px;
+            height: 46px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.25rem;
+            font-size: 1.25rem;
+            background: rgba(79, 123, 247, .1);
+            border: 1px solid rgba(79, 123, 247, .2)
+        }
+
+        .feat-card h4 {
+            font-size: .9375rem;
+            font-weight: 700;
+            margin-bottom: .625rem;
+            color: var(--text)
+        }
+
+        .feat-card p {
+            font-size: .875rem;
+            color: var(--muted);
+            line-height: 1.7
+        }
+
+        /* Why choose */
+        .why-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5rem;
+            align-items: start
+        }
+
+        .why-points {
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem
+        }
+
+        .why-pt {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.125rem
+        }
+
+        .why-pt-num {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: var(--grad);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--ff-head);
+            font-size: .825rem;
+            font-weight: 700;
+            color: #fff;
+            flex-shrink: 0
+        }
+
+        .why-pt-body strong {
+            display: block;
+            font-size: .9375rem;
+            font-weight: 700;
+            margin-bottom: .3rem;
+            color: var(--text)
+        }
+
+        .why-pt-body p {
+            font-size: .875rem;
+            color: var(--muted);
+            line-height: 1.7
+        }
+
+        /* Process */
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+            position: relative
+        }
+
+        .process-grid::before {
+            content: '';
+            position: absolute;
+            top: 28px;
+            left: calc(12.5% + 18px);
+            right: calc(12.5% + 18px);
+            height: 1px;
+            background: var(--border);
+            z-index: 0
+        }
+
+        .pg-step {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: .875rem;
+            position: relative;
+            z-index: 1
+        }
+
+        .pg-num {
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            background: var(--bg-card);
+            border: 2px solid rgba(79, 123, 247, .3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--ff-head);
+            font-weight: 700;
+            color: var(--blue)
+        }
+
+        .pg-step h4 {
+            font-size: .875rem;
+            font-weight: 700;
+            color: var(--text)
+        }
+
+        .pg-step p {
+            font-size: .78rem;
+            color: var(--muted);
+            line-height: 1.65
+        }
+
+        /* Tech stack */
+        .tech-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: .625rem;
+            margin-top: 1.5rem
+        }
+
+        .tech-badge {
+            padding: .4rem 1rem;
+            border-radius: 999px;
+            border: 1px solid var(--border-md);
+            font-size: .8rem;
+            font-weight: 600;
+            color: var(--text-2);
+            background: rgba(255, 255, 255, .03);
+            transition: all var(--t2)
+        }
+
+        .tech-badge:hover {
+            border-color: var(--blue);
+            color: var(--blue)
+        }
+
+        /* FAQ */
+        .faq-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem
+        }
+
+        .faq-item {
+            border: 1px solid var(--border);
+            border-radius: var(--r-xl);
+            overflow: hidden;
+            background: rgba(255, 255, 255, .02)
+        }
+
+        .faq-q {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1.375rem 1.75rem;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: .9375rem;
+            color: var(--text);
+            transition: background var(--t2)
+        }
+
+        .faq-q:hover {
+            background: rgba(255, 255, 255, .04)
+        }
+
+        .faq-a {
+            padding: 0 1.75rem 1.375rem;
+            color: var(--muted);
+            font-size: .9rem;
+            line-height: 1.75
+        }
+
+        .faq-item.open .faq-q {
+            color: var(--blue)
+        }
+
+        /* Related services */
+        .related-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.25rem
+        }
+
+        .rel-card {
+            padding: 1.75rem;
+            border-radius: var(--r-xl);
+            border: 1px solid var(--border);
+            background: rgba(255, 255, 255, .02);
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            transition: all var(--t2)
+        }
+
+        .rel-card:hover {
+            border-color: var(--border-md);
+            transform: translateY(-4px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, .3)
+        }
+
+        .rel-icon {
+            width: 42px;
+            height: 42px;
+            border-radius: 11px;
+            background: rgba(255, 255, 255, .04);
+            border: 1px solid var(--border-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text)
+        }
+
+        .rel-card h4 {
+            font-size: .9375rem;
+            font-weight: 700;
+            color: var(--text)
+        }
+
+        .rel-card p {
+            font-size: .83rem;
+            color: var(--muted);
+            line-height: 1.65;
+            flex: 1
+        }
+
+        .rel-card a {
+            font-size: .825rem;
+            font-weight: 700;
+            color: var(--blue);
+            display: flex;
+            align-items: center;
+            gap: .375rem;
+            transition: gap var(--t2)
+        }
+
+        .rel-card a:hover {
+            gap: .625rem
+        }
+
+        /* CTA section */
+        .cta-section {
+            padding: 5rem 0;
+            border-top: 1px solid var(--border)
+        }
+
+        .cta-box {
+            padding: 4rem;
+            border-radius: var(--r-2xl);
+            border: 1px solid rgba(79, 123, 247, .22);
+            background: var(--grad-soft);
+            text-align: center
+        }
+
+        .cta-box h2 {
+            font-size: 2.25rem;
+            margin-bottom: 1rem;
+            color: var(--text)
+        }
+
+        .cta-box p {
+            color: var(--muted);
+            font-size: 1rem;
+            max-width: 500px;
+            margin: 0 auto 2.5rem;
+            line-height: 1.75
+        }
+
+        .cta-btns {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap
+        }
+
+        /* Code snippet decoration */
+        .code-decoration {
+            background: rgba(0, 0, 0, .4);
+            border-radius: var(--r-lg);
+            padding: 1.5rem;
+            font-family: 'Fira Code', 'Courier New', monospace;
+            font-size: .78rem;
+            line-height: 1.8;
+            color: var(--muted);
+            overflow: hidden
+        }
+
+        .cd-kw {
+            color: #79C0FF
+        }
+
+        .cd-fn {
+            color: #D2A8FF
+        }
+
+        .cd-str {
+            color: #A5D6FF
+        }
+
+        .cd-comment {
+            color: #6E7681
+        }
+
+        .cd-val {
+            color: #F0883E
+        }
+
+        @media(max-width:1000px) {
+            .dh-layout {
+                grid-template-columns: 1fr;
+                gap: 3rem
+            }
+
+            .dh-visual {
+                display: none
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr 1fr
+            }
+
+            .why-grid {
+                grid-template-columns: 1fr
+            }
+
+            .related-grid {
+                grid-template-columns: 1fr 1fr
+            }
+
+            .process-grid::before {
+                display: none
+            }
+        }
+
+        @media(max-width:650px) {
+            .features-grid {
+                grid-template-columns: 1fr
+            }
+
+            .related-grid {
+                grid-template-columns: 1fr
+            }
+
+            .process-grid {
+                grid-template-columns: 1fr 1fr
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-grid" aria-hidden="true"></div>
+    <div class="bg-mesh" aria-hidden="true"></div>
+
+    <header class="header" id="header">
+        <div class="container header-inner">
+            <a href="../index.html" class="logo">
+                <div class="logo-mark"><svg width="30" height="30" viewBox="0 0 30 30" fill="none">
+                        <path d="M15 2L28 15L15 28L2 15L15 2Z" stroke="url(#lg)" stroke-width="2" fill="none" />
+                        <path d="M15 9L21 15L15 21L9 15L15 9Z" fill="url(#lg)" />
+                        <defs>
+                            <linearGradient id="lg" x1="2" y1="2" x2="28" y2="28" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#4F7BF7" />
+                                <stop offset="1" stop-color="#9D5CF5" />
+                            </linearGradient>
+                        </defs>
+                    </svg></div>
+                <span class="logo-name">Lym<em>ytz</em></span>
+            </a>
+            <nav class="nav-desktop">
+                <a href="../index.html#a-propos" class="nav-link">À Propos</a>
+                <a href="services.html" class="nav-link active">Services</a>
+                <a href="produits.html" class="nav-link">Produits</a>
+                <a href="realisations.html" class="nav-link">Réalisations</a>
+                <a href="../index.html#equipe" class="nav-link">Équipe</a>
+                <a href="../index.html#contact" class="nav-cta">Nous Contacter</a>
+            </nav>
+            <button class="hamburger" id="hamburger" aria-label="Menu"
+                aria-expanded="false"><span></span><span></span><span></span></button>
+        </div>
+        <nav class="mobile-menu" id="mobile-menu" aria-hidden="true">
+            <a href="../index.html#a-propos" class="mob-link">À Propos</a>
+            <a href="services.html" class="mob-link">Services</a>
+            <a href="produits.html" class="mob-link">Produits</a>
+            <a href="realisations.html" class="mob-link">Réalisations</a>
+            <a href="../index.html#equipe" class="mob-link">Équipe</a>
+            <a href="../index.html#contact" class="mob-link mob-cta">Nous Contacter</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- HERO -->
+        <section class="detail-hero">
+            <div class="container dh-layout">
+                <div class="reveal">
+                    <div class="dh-breadcrumb">
+                        <a href="../index.html">Accueil</a><span>/</span>
+                        <a href="services.html">Services</a><span>/</span>
+                        <span style="color:var(--text)">Développement Logiciel</span>
+                    </div>
+                    <div class="dh-eyebrow">
+                        <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                            stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5" />
+                        </svg>
+                        Service — 01
+                    </div>
+                    <h1 class="dh-h1">Développement<br><span class="grad-text">Logiciel Sur Mesure</span></h1>
+                    <p class="dh-lead">Votre activité est unique. Votre logiciel devrait l'être aussi. Nous concevons
+                        des applications web, mobiles et desktop qui s'adaptent précisément à vos processus — pas
+                        l'inverse.</p>
+                    <div class="dh-badges">
+                        <span class="badge badge-blue">Applications Web</span>
+                        <span class="badge badge-purple">Applications Mobiles</span>
+                        <span class="badge badge-green">APIs & Micro-services</span>
+                        <span class="badge badge-amber">SaaS & Multi-tenant</span>
+                    </div>
+                    <div style="display:flex;gap:1rem;flex-wrap:wrap">
+                        <a href="../index.html#contact" class="btn btn-primary">Démarrer un projet</a>
+                        <a href="realisations.html" class="btn btn-secondary">Voir nos réalisations</a>
+                    </div>
+                </div>
+                <div class="dh-visual reveal delay-1">
+                    <div class="dv-header">
+                        <div class="dv-dots">
+                            <div class="dv-dot r"></div>
+                            <div class="dv-dot y"></div>
+                            <div class="dv-dot g"></div>
+                        </div>
+                        <div class="dv-title-bar">app.lymytz-client.com</div>
+                    </div>
+                    <div class="code-decoration" style="border-radius:0">
+                        <span class="cd-comment">// Logiciel sur mesure — Gestion boulangerie</span>
+                        <span class="cd-comment">// GLP-Entreprise × Lymytz</span>
+                        &nbsp;
+                        <span class="cd-kw">class</span> <span class="cd-fn">ProductionPlanner</span> {
+                        <span class="cd-fn">schedule</span>(<span class="cd-val">date</span>, <span
+                            class="cd-val">recipes</span>) {
+                        <span class="cd-kw">const</span> <span class="cd-val">plan</span> = <span
+                            class="cd-fn">this</span>.buildPlan(date);
+                        <span class="cd-val">recipes</span>.<span class="cd-fn">forEach</span>(r =&gt; {
+                        plan.<span class="cd-fn">addBatch</span>(r.name, r.qty);
+                        stock.<span class="cd-fn">reserve</span>(r.ingredients);
+                        });
+                        <span class="cd-kw">return</span> plan.<span class="cd-fn">validate</span>();
+                        }
+                        }
+                        &nbsp;
+                        <span class="cd-comment">// ✅ Production planifiée : 240 baguettes</span>
+                        <span class="cd-comment">// ✅ Stock réservé : farine 48kg, levure 1.2kg</span>
+                        <span class="cd-comment">// ✅ Coût de revient calculé : 0.42€/unité</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FEATURES -->
+        <section class="section section-alt">
+            <div class="container">
+                <div class="section-eyebrow reveal">Ce que nous développons</div>
+                <h2 class="section-title reveal">Nos <span class="grad-text">spécialités</span></h2>
+                <p class="section-lead reveal">Quatre grandes familles de projets que nous maîtrisons de bout en bout.
+                </p>
+                <div class="features-grid">
+                    <div class="feat-card reveal">
+                        <div class="feat-icon">🌐</div>
+                        <h4>Applications Web & SaaS</h4>
+                        <p>Plateformes métier, back-offices, portails clients, outils internes, dashboards analytiques.
+                            Interfaces réactives utilisables sur tous les écrans.</p>
+                    </div>
+                    <div class="feat-card reveal delay-1">
+                        <div class="feat-icon">📱</div>
+                        <h4>Applications Mobiles</h4>
+                        <p>Apps iOS & Android natives ou cross-platform pour vos équipes terrain ou vos clients.
+                            Synchronisation temps réel avec vos systèmes centraux.</p>
+                    </div>
+                    <div class="feat-card reveal delay-2">
+                        <div class="feat-icon">⚙️</div>
+                        <h4>APIs & Micro-services</h4>
+                        <p>Architecture back-end robuste, APIs REST bien documentées, micro-services découplés.
+                            Interopérabilité avec vos outils existants.</p>
+                    </div>
+                    <div class="feat-card reveal">
+                        <div class="feat-icon">🤖</div>
+                        <h4>Automatisation de Processus</h4>
+                        <p>Élimination des tâches manuelles répétitives par des workflows automatisés, des notifications
+                            intelligentes et des imports/exports de données.</p>
+                    </div>
+                    <div class="feat-card reveal delay-1">
+                        <div class="feat-icon">🏢</div>
+                        <h4>Logiciels Métier Verticaux</h4>
+                        <p>Solutions dédiées à un secteur précis : boulangerie, restaurant, commerce, logistique, santé…
+                            Nous connaissons les spécificités de votre domaine.</p>
+                    </div>
+                    <div class="feat-card reveal delay-2">
+                        <div class="feat-icon">🔗</div>
+                        <h4>Intégrations & Connecteurs</h4>
+                        <p>Connexion entre vos logiciels existants (ERP, CRM, comptabilité, e-commerce) via des
+                            connecteurs stables et maintenables.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROCESS -->
+        <section class="section">
+            <div class="container">
+                <div class="section-eyebrow reveal">Notre Méthode</div>
+                <h2 class="section-title reveal">De l'idée à la <span class="grad-text">production</span></h2>
+                <p class="section-lead reveal">Un processus agile et transparent — vous êtes impliqué à chaque étape.
+                </p>
+                <div class="process-grid reveal">
+                    <div class="pg-step">
+                        <div class="pg-num">01</div>
+                        <h4>Découverte</h4>
+                        <p>Analyse de vos besoins, de vos utilisateurs et de vos contraintes techniques et
+                            organisationnelles</p>
+                    </div>
+                    <div class="pg-step">
+                        <div class="pg-num">02</div>
+                        <h4>Conception</h4>
+                        <p>Architecture logicielle, wireframes, spécifications fonctionnelles et plan de développement
+                            chiffré</p>
+                    </div>
+                    <div class="pg-step">
+                        <div class="pg-num">03</div>
+                        <h4>Développement</h4>
+                        <p>Sprints de 2 semaines avec démonstrations régulières. Vous voyez l'avancement en continu</p>
+                    </div>
+                    <div class="pg-step">
+                        <div class="pg-num">04</div>
+                        <h4>Livraison & Suivi</h4>
+                        <p>Tests, déploiement, formation des équipes et contrat de support/maintenance post-livraison
+                        </p>
+                    </div>
+                </div>
+                <div style="margin-top:4rem">
+                    <div class="section-eyebrow reveal" style="margin-bottom:1rem">Technologies</div>
+                    <h3 style="font-size:1.375rem;margin-bottom:.5rem;color:var(--text)" class="reveal">Notre stack
+                        technique</h3>
+                    <p style="color:var(--muted);font-size:.9rem;margin-bottom:1.5rem" class="reveal">Nous choisissons
+                        les technologies les plus adaptées à chaque projet, sans dogmatisme.</p>
+                    <div class="tech-list reveal">
+                        <span class="tech-badge">Java / Spring Boot</span><span class="tech-badge">Python /
+                            Django</span>
+                        <span class="tech-badge">Node.js</span><span class="tech-badge">React / Next.js</span>
+                        <span class="tech-badge">Vue.js</span><span class="tech-badge">Flutter</span>
+                        <span class="tech-badge">React Native</span><span class="tech-badge">PostgreSQL</span>
+                        <span class="tech-badge">MySQL</span><span class="tech-badge">MongoDB</span>
+                        <span class="tech-badge">Docker</span><span class="tech-badge">REST APIs</span>
+                        <span class="tech-badge">GraphQL</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- WHY -->
+        <section class="section section-alt">
+            <div class="container why-grid">
+                <div class="reveal">
+                    <div class="section-eyebrow">Pourquoi Lymytz</div>
+                    <h2 class="section-title">Ce qui nous <span class="grad-text">distingue</span></h2>
+                    <p style="color:var(--muted);font-size:1rem;line-height:1.8;margin-bottom:1rem">Des dizaines de
+                        sociétés développent du logiciel. Ce qui different Lymytz, c'est notre profondeur de
+                        compréhension des réalités opérationnelles africaines combinée à une rigueur technique de haut
+                        niveau.</p>
+                </div>
+                <div class="why-points reveal delay-1">
+                    <div class="why-pt">
+                        <div class="why-pt-num">1</div>
+                        <div class="why-pt-body">
+                            <strong>Expertise métier, pas seulement technique</strong>
+                            <p>Nous posons les bonnes questions sur vos processus avant d'écrire la première ligne de
+                                code. Le résultat : un logiciel qui colle à votre réalité terrain.</p>
+                        </div>
+                    </div>
+                    <div class="why-pt">
+                        <div class="why-pt-num">2</div>
+                        <div class="why-pt-body">
+                            <strong>Code maintenable sur le long terme</strong>
+                            <p>Nous construisons avec des standards de qualité qui vous permettront de faire évoluer
+                                votre logiciel dans 3 ans sans tout réécrire.</p>
+                        </div>
+                    </div>
+                    <div class="why-pt">
+                        <div class="why-pt-num">3</div>
+                        <div class="why-pt-body">
+                            <strong>Transparence totale sur l'avancement</strong>
+                            <p>Accès à notre outil de suivi de projet, démonstrations bi-hebdomadaires, point de
+                                situation à chaque fin de sprint.</p>
+                        </div>
+                    </div>
+                    <div class="why-pt">
+                        <div class="why-pt-num">4</div>
+                        <div class="why-pt-body">
+                            <strong>Accompagnement post-livraison</strong>
+                            <p>La livraison n'est pas la fin — c'est le début de notre relation. Formation, maintenance
+                                et évolutions sont inclus dans notre offre.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="section">
+            <div class="container">
+                <div class="section-eyebrow reveal">FAQ</div>
+                <h2 class="section-title reveal" style="margin-bottom:2.5rem">Questions <span
+                        class="grad-text">fréquentes</span></h2>
+                <div class="faq-list" style="max-width:800px">
+                    <div class="faq-item reveal">
+                        <div class="faq-q">Combien coûte un logiciel sur mesure ? <span class="faq-arr">›</span></div>
+                        <div class="faq-a">Le coût dépend de la complexité et du périmètre fonctionnel. Une application
+                            simple peut démarrer à partir de quelques milliers d'euros, tandis qu'une plateforme
+                            complexe multi-modules sera plus significative. Nous réalisons toujours un devis détaillé
+                            après la phase de découverte.</div>
+                    </div>
+                    <div class="faq-item reveal">
+                        <div class="faq-q">Combien de temps prend le développement ? <span class="faq-arr">›</span>
+                        </div>
+                        <div class="faq-a">Un MVP fonctionnel peut être livré en 6 à 12 semaines selon le périmètre.
+                            Nous privilégions des livraisons incrémentales : vous recevez de la valeur rapidement et
+                            pouvez valider les fonctionnalités au fur et à mesure.</div>
+                    </div>
+                    <div class="faq-item reveal">
+                        <div class="faq-q">Que se passe-t-il si mes besoins évoluent en cours de développement ? <span
+                                class="faq-arr">›</span></div>
+                        <div class="faq-a">C'est normal et prévisible. Notre méthode agile prévoit des ajustements à
+                            chaque sprint. Les modifications de priorité et les nouvelles fonctionnalités sont gérées de
+                            manière transparente, avec un impact clair sur le calendrier et le budget.</div>
+                    </div>
+                    <div class="faq-item reveal">
+                        <div class="faq-q">Gardez-vous la propriété du code développé ? <span class="faq-arr">›</span>
+                        </div>
+                        <div class="faq-a">Non. Vous êtes l'unique propriétaire du code livré. Dès la livraison, tous
+                            les droits vous appartiennent. Vous recevez le code source complet, documenté et hébergé sur
+                            votre propre infastructure si vous le souhaitez.</div>
+                    </div>
+                    <div class="faq-item reveal">
+                        <div class="faq-q">Proposez-vous de la maintenance après la livraison ? <span
+                                class="faq-arr">›</span></div>
+                        <div class="faq-a">Oui, nous proposons des contrats de maintenance incluant les correctifs de
+                            bugs, les mises à jour de sécurité et jusqu'à un certain nombre d'heures d'évolutions
+                            mineures par mois.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- RELATED -->
+        <section class="section section-alt">
+            <div class="container">
+                <div class="section-eyebrow reveal">Aller plus loin</div>
+                <h2 class="section-title reveal" style="margin-bottom:2rem">Services <span
+                        class="grad-text">complémentaires</span></h2>
+                <div class="related-grid">
+                    <div class="rel-card reveal">
+                        <div class="rel-icon">🌐</div>
+                        <h4>Développement de Sites Web</h4>
+                        <p>Votre présence en ligne : sites vitrines, e-commerce et portails web modernes et performants.
+                        </p>
+                        <a href="service-sites-web.html">Découvrir →</a>
+                    </div>
+                    <div class="rel-card reveal delay-1">
+                        <div class="rel-icon">☁️</div>
+                        <h4>Cloud & Hébergement</h4>
+                        <p>Déployez votre logiciel sur une infrastructure cloud fiable et sécurisée, avec un monitoring
+                            continu.</p>
+                        <a href="service-cloud.html">Découvrir →</a>
+                    </div>
+                    <div class="rel-card reveal delay-2">
+                        <div class="rel-icon">🎓</div>
+                        <h4>Formation & Accompagnement</h4>
+                        <p>Formation de vos équipes à l'utilisation du logiciel et support sur le long terme.</p>
+                        <a href="service-formation.html">Découvrir →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-box reveal">
+                    <h2>Votre logiciel mérite d'être <span class="grad-text">sur mesure</span></h2>
+                    <p>Décrivez-nous votre projet lors d'un premier échange gratuit. Nous revenons vers vous avec une
+                        analyse et un plan d'action.</p>
+                    <div class="cta-btns">
+                        <a href="../index.html#contact" class="btn btn-primary">Démarrer la conversation</a>
+                        <a href="realisations.html" class="btn btn-secondary">Voir nos projets</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="../index.html" class="logo">
+                        <div class="logo-mark"><svg width="26" height="26" viewBox="0 0 30 30" fill="none">
+                                <path d="M15 2L28 15L15 28L2 15L15 2Z" stroke="url(#lf)" stroke-width="2" fill="none" />
+                                <path d="M15 9L21 15L15 21L9 15L15 9Z" fill="url(#lf)" />
+                                <defs>
+                                    <linearGradient id="lf" x1="2" y1="2" x2="28" y2="28"
+                                        gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#4F7BF7" />
+                                        <stop offset="1" stop-color="#9D5CF5" />
+                                    </linearGradient>
+                                </defs>
+                            </svg></div><span class="logo-name">Lym<em>ytz</em></span>
+                    </a>
+                    <p>Société camerounaise de conception logicielle, implantée en France.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>La Société</h4>
+                    <ul>
+                        <li><a href="../index.html#a-propos">À Propos</a></li>
+                        <li><a href="../index.html#parcours">Parcours</a></li>
+                        <li><a href="../index.html#equipe">Équipe</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Services & Produits</h4>
+                    <ul>
+                        <li><a href="services.html">Tous les Services</a></li>
+                        <li><a href="produits.html">Nos Produits</a></li>
+                        <li><a href="realisations.html">Réalisations</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:contact@lymytz.com">contact@lymytz.com</a></li>
+                        <li><a href="../index.html#contact">Nous écrire</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Lymytz · Cameroun & France</p>
+                <div class="footer-legal"><a href="mentions-legales.html">Mentions légales</a><a href="confidentialite.html">Confidentialité</a></div>
+            </div>
+        </div>
+    </footer>
+    <a href="https://wa.me/237600000000" target="_blank" rel="noopener" aria-label="WhatsApp"
+        style="position:fixed;bottom:1.75rem;right:1.75rem;z-index:9999;width:56px;height:56px;border-radius:50%;background:#25D366;box-shadow:0 4px 20px rgba(37,211,102,.45);display:flex;align-items:center;justify-content:center;transition:transform .2s;text-decoration:none"
+        onmouseenter="this.style.transform='scale(1.1)'" onmouseleave="this.style.transform=''">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+    <script src="../js/script.js"></script>
+    <script>
+        // FAQ accordion
+        document.querySelectorAll('.faq-q').forEach(q => {
+            q.addEventListener('click', () => {
+                const item = q.closest('.faq-item');
+                const wasOpen = item.classList.contains('open');
+                document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+                if (!wasOpen) item.classList.add('open');
+            });
+        });
+    </script>
+</body>
+
+</html>
