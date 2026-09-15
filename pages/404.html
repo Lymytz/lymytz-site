@@ -7,7 +7,9 @@
     <title>Page introuvable — Lymytz</title>
     <meta name="description" content="La page que vous recherchez est introuvable. Retournez à l'accueil de Lymytz.">
     <meta name="robots" content="noindex, follow">
-    <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -33,7 +35,7 @@
             font-size: clamp(5rem, 18vw, 10rem);
             font-weight: 700;
             line-height: 1;
-            background: linear-gradient(135deg, #4F7BF7, #9D5CF5);
+            background: linear-gradient(135deg, #0E86B4, #E8600F);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -50,7 +52,7 @@
             width: 60px;
             height: 3px;
             border-radius: 2px;
-            background: linear-gradient(135deg, #4F7BF7, #9D5CF5);
+            background: linear-gradient(135deg, #0E86B4, #E8600F);
         }
 
         .error-icon {
@@ -114,7 +116,7 @@
         .error-link:hover {
             border-color: var(--border-md);
             color: var(--text-2);
-            background: rgba(255, 255, 255, .04);
+            background: rgba(14, 134, 180, .04);
         }
     </style>
 </head>
@@ -126,18 +128,7 @@
     <header class="header" id="header">
         <div class="container header-inner">
             <a href="../index.html" class="logo">
-                <div class="logo-mark">
-                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none">
-                        <path d="M15 2L28 15L15 28L2 15L15 2Z" stroke="url(#l404)" stroke-width="2" fill="none" />
-                        <path d="M15 9L21 15L15 21L9 15L15 9Z" fill="url(#l404)" />
-                        <defs>
-                            <linearGradient id="l404" x1="2" y1="2" x2="28" y2="28" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#4F7BF7" />
-                                <stop offset="1" stop-color="#9D5CF5" />
-                            </linearGradient>
-                        </defs>
-                    </svg>
-                </div>
+                <div class="logo-mark"><img src="../assets/logo.jpeg" alt="Lymytz" width="30" height="30"></div>
                 <span class="logo-name">Lym<em>ytz</em></span>
             </a>
             <nav class="nav-desktop">
